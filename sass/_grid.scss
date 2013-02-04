@@ -1,0 +1,64 @@
+$offset: $offset/100;
+
+/* Grid with margins and border */
+.container{ 
+ 	width: $pageWidth; 
+ 	overflow: hidden;
+ 	margin: auto;
+ 	color: $textColor;
+ }
+.row{
+	overflow:hidden;
+	clear: both;
+	@include clearfix;
+}
+.col{
+  float:left;
+}
+@for $i from 1 through $numCols {
+  .#{$classSlug}#{$i}{
+    $xwidth : percentage($i/$numCols);
+	width: $xwidth - ($gutter * 98);
+	margin-left: percentage($gutter);
+        &:first-child{
+        margin-left:0;
+        }
+    }
+}
+/* no margin */
+
+@for $i from 1 through $numCols {
+  .#{$classSlug}#{$i}-#{$no-margin}{
+    $xwidth : percentage($i/$numCols);
+	width: $xwidth;
+       	margin-left:0;
+  }
+}
+
+@for $i from 1 through $numCols {
+  .#{$addBorder}-#{$classSlug}#{$i}{
+    $xwidth : percentage($i/$numCols);
+    @include addBorder(1px, $borderStyle, $borderColor, $offset, $xwidth);
+  }
+}
+//.span1.right{ 
+//	left: percentage($colWidth);
+//}
+
+@for $i from 1 through $numCols {
+  .#{$right}-#{$classSlug}#{$i}{
+    $xwidth : percentage($i/$numCols);
+	left: $hundred - $xwidth;
+         //@include clearfix;
+	width: $xwidth;
+        
+	    }
+}
+@for $i from 1 through $numCols {
+  .#{$left}-#{$classSlug}#{$i}{
+    $xwidth : percentage($i/$numCols);
+	left: ($hundred - $xwidth) * -1;
+         //@include clearfix;
+	width: $xwidth;
+	  }
+}

@@ -1,0 +1,34 @@
+@mixin clearfix {
+//&{clear:both;}
+  &:after {
+    content: "";
+    display: table;
+    clear: both; }
+}
+@mixin lrPad($padding:0.5em) {
+	 padding: 0 $padding;
+}
+
+@mixin addBorder($borderWidth:1px, $borderStyle:solid, $color:$borderColor, $offset:4, $colWidth:0.1) {
+	@include rhythm-borders($borderWidth, $lines, $font-size, $borderStyle);
+	border-color: $color;
+	width: $colWidth - $offset;
+}
+@mixin tbBorder($borderWidth:1px, $borderStyle:solid, $color: $borderColor){
+	@include leading-border($borderWidth, $lines, $font-size, $borderStyle);
+	@include trailing-border($borderWidth, $lines, $font-size, $borderStyle);
+	border-color: $color;
+}
+@mixin lrBorder($borderWidth:1px, $borderStyle:solid, $color: $borderColor, $offset:5, $colWidth:0.1){
+	@include apply-side-rhythm-border(left, $borderWidth, $lines, $font-size, $borderStyle);
+	@include apply-side-rhythm-border(right, $borderWidth, $lines, $font-size, $borderStyle);
+	border-color: $color;
+	width: percentage($colWidth - $offset);
+}
+
+@mixin tBorder($borderWidth:1px, $borderStyle:solid, $color: $borderColor){
+	@include leading-border($borderWidth, $lines, $font-size, $borderStyle);
+}
+@mixin bBorder($borderWidth:1px, $borderStyle:solid, $color: $borderColor){
+	@include trailing-border($borderWidth, $lines, $font-size, $borderStyle);
+}

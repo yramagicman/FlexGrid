@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grid system</title>
+<!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700,400italic,700italic" type="text/css" media="screen" />-->
+<!--<link rel="stylesheet" href="normalize.css" type="text/css">
+<link rel="stylesheet" href="grid.css" type="text/css">
+<link rel="stylesheet" href="grid.no-margin.css" type="text/css">
+<link rel="stylesheet" href="grid.flipped.css" type="text/css">
+<link rel="stylesheet" href="typography.images.css" type="text/css">
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="mediaqueries.fluid.css" type="text/css">
+<link rel="stylesheet" href="colorbox.css" type="text/css">-->
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html6.js"></script>
+	<![endif]-->
+
+</head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
+<div class="container">
+  <header class="col span12">
+    <h1 class="page-title float-left">Choosy</h1>
+    <h1 class="sub-title float-right">The responsive grid system that lets you decide</h1>
+  </header>
+  <div id="body" class="col span12-no-marign">
+    <article class="col span12-no-marign">
+      <div class="col span12-no-marign boxtop">
+        <h2>Why Choose the Choosy Grid System </h2>
+        <p>As far as I know, outside of Twitter's Bootstrap, this is the only responsive grid system that incorporates the ability to specifically choose what is shown and hidden and how your page breaks. So if you want your page to look col span12 way on an iPad, another on a mobile phcol span12, and yet another on desktops and laptops, this system makes it possible. And while at the moment, this page is entirely lorem ipsum text, I think it might give you an idea of how the system works</p>
+        <p>If you're curious, <a href="#example" id="exLink">check out an example</a>, or keep reading to find out more.</p>
+      </div>
+<div class="row">      <div class="col span4 first ipad-break-portrait">
+        <h2>Math and Media Queries</h2>
+        <p class="justified">The Choosy Grid System is percentage based, not pixel based, so you don't have to bother with nasty re-calculations when changing media types. Just add the modify the appropriate css file and let the system take do the work. This also allows for completely fluid layouts, or adaptive layouts, if that's more your thing. Just swich the media query file when you want to switch responsive modes.</p>
+      </div>
+      <div class="col span4 ipad-break-portrait ">
+        <h2>Built in compression</h2>
+        <p>This grid system contains a buit in PHP based CSS compression script that compiles and minifies all the necessary CSS files. All you have to do is include your css files along with the others and they're automatically compressed with the rest of the files. just use<br>
+           <code>&lt;link href=&quot;example-folder/minified.php&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</code> <br > instead of the usual link to a stylesheet. The cool thing about this system, is that your stylesheets are always readable and editable, but you serve the end user a slower page because they get a compressed file.</p>
+      </div>
+      <div class="col span4 ipad-break-portrait ">
+        <h2>Typography and Images</h2>
+        <p class="justified">Like most other grid systems, this col span12 comes with basic typography and image styles already defined, saving you time.</p>
+        <h2>WordPress Classes</h2>
+        <p class="justified">The Choosy Grid System also comes with a stylesheet containing all the classes required to make a valid WordPress theme and a few more usefull classes so that you don't have to go sniffing through the code of your theme to find an obscure comment or widget class.</p>
+      </div></div>
+    </article>
+    <hgroup class="col span12-no-marign boxbottom">
+      <h2>Typography</h2>
+    </hgroup>
+    <div class="row span12 boxbottom">
+      <div class="col span6">
+        <h4>Ordered List </h4>
+        <ol>
+          <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+          <li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. </li>
+          <li>Nulla vitae elit libero, a pharetra augue. </li>
+        </ol>
+        <h4>Unordered List </h4>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Dcol span12c id elit non mi porta gravida at eget metus. </li>
+          <li>Maecenas faucibus mollis interdum.</li>
+        </ul>
+      </div>
+      <div class="col span6-no-margin ipad-break-portrait">
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h4>heading 4</h4>
+        <h4>heading 4</h4>
+        <h6>heading 6</h6>
+        <h6>heading 6</h6>
+      </div>
+    </div>
+    <hgroup class="col span12 images">
+      <h2 class="inline">Images</h2> <h6 class="inline">and lorem ipsum</h6>
+    </hgroup>
+    <div class="col span12">
+    <h4>Left Aligned Image</h4>
+    <p class="cf"> <span class="cap float-left small-img"><img src="images/monkey1.jpg">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2446976124/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+    <h4>Right Aligned Image</h4>
+    <p class="cf"><span class="cap float-right small-img"><img src="images/monkey2.jpg">Photo Credit: <a href="http://www.flickr.com/photos/8070464@N04/627607268/">Tambako the Jaguar</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></span>Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Maecenas sed diam eget risus varius blandit sit amet non magna. Dcol span12c sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Dcol span12c sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    <h4>Centered Image</h4>
+    <p><img src="images/monkey3.jpg" class="center" /><span class="cap center text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2284440868/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Dcol span12c sed odio dui. Dcol span12c id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <img src="images/waterfall.jpg" alt="" class="center"/>
+    <col span class="cap float-left mid-img text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/44419264@N06/4406942040/">© Salim Photography/ www.salimphoto.com</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></span>
+    </div>
+   </div>
+  <footer class="col span12">
+    <p>Copyright 2014, Jonathan Gilson. All code released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU License</a></p><a id="example" name="example" href="#example"></a>  </footer>
+</div>
+</body>
+</html>
