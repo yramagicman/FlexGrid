@@ -1,34 +1,13 @@
-//Normalize vars
-
-$legacy_support_for_ie: false; // Used also in Compass
-
-
- // Set the default font family here so you don't have to override it later
-$normalized_font_family: sans-serif !default;
-
-$normalize_headings: false !default;
 //font size stuff
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;//line11
 $lines: 1;
 
-$h1_font_size: 2em !default;
-$h2_font_size: 1.5em !default;
-$h3_font_size: 1.17em !default;
-$h4_font_size: 1em !default;
-$h5_font_size: 0.83em !default;
-$h6_font_size: 0.75em !default;
-
-$h1_margin: 0.67em 0 !default;
-$h2_margin: 0.83em 0 !default;
-$h3_margin: 1em 0 !default;
-$h4_margin: 1.33em 0 !default;
-$h5_margin: 1.67em 0 !default;
-$h6_margin: 2.33em 0 !default;
-
 // grid definitions
 $pageWidth: 1200px;
+$ipadPageWidthPortrait: 750px;
+$ipadPageWidthLandscape: 1000px;
 $numCols: 12;
 $gutter: .02;
 $offset: 5;
@@ -56,3 +35,4 @@ $borderWidth: $borderWidth !default; //line 35
 $borderStyle: solid !default;
 $borderColor: $borderColor !default; //line 43
 
+$subMenuWidth: 9.5em;

@@ -1,3 +1,5 @@
+//font size declarations for responsive design are in their respective files. This file contains allignment classes and image size definitions
+
 img{
   max-width:100%;
   margin:1em;
@@ -28,4 +30,7 @@ caption, .cap{
 }
 .text-align-center{
   text-align:center;
+}
+.cleared{
+  clear:both;
 }
