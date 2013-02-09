@@ -17,8 +17,9 @@ img{
 .cap{
   font-size: 0.8em;
   display:block;
+   margin: 0 1em 0;
 }
-.cap img, caption img{
+.cap img, .cap img{
   display:block;
   margin-bottom:0;
 }

@@ -8,7 +8,7 @@
 // Set to false if you want to drop support for IE6 and IE7
 // Notice: setting to false might render some elements
 // slightly differently than when set to true
-$legacy-ie: false !default;
+$legacy-ie: true !default;
 
 
 // Set the default font family here so you don't have to override it later

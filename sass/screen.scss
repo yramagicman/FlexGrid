@@ -13,6 +13,12 @@
 @media only screen and (max-device-width: 480px){
 /* Styles */
 @import "_mobile_layout.scss";
+img, .cap img, .cap{
+  margin: 5px;
+}
+.cap{ width: 200px; 
+  margin: 10px;
+}
 }
 @media only screen 
 and (min-device-width : 768px){
@@ -22,7 +28,7 @@ and (min-device-width : 768px){
 }
 
 @media only screen 
-and (min-device-width : 1224px) {
+and (min-width : 1224px) {
 /* Styles */
 @import "_desktop_layout.scss";
 }

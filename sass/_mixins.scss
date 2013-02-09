@@ -11,8 +11,12 @@
 
 @mixin addBorder($borderWidth:1px, $borderStyle:solid, $color:$borderColor, $offset:5, $colWidth:0.1) {
 	@include rhythm-borders($borderWidth, $lines, $font-size, $borderStyle);
+        @include margin-leader(0.5);
 	border-color: $color;
 	width: $colWidth - $offset;
+        & h2, & p { 
+        margin-top:0;
+      }
 }
 @mixin tbBorder($borderWidth:1px, $borderStyle:solid, $color: $borderColor){
 	@include leading-border($borderWidth, $lines, $font-size, $borderStyle);

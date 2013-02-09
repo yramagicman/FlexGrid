@@ -10,6 +10,7 @@
 .row{
 	overflow:hidden;
 	clear: both;
+        position: relative;
 	@include clearfix;
 }
 .col{

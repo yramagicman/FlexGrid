@@ -14,19 +14,30 @@
 <link rel="stylesheet" href="colorbox.css" type="text/css">-->
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" />
 <!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html6.js"></script>
-	<![endif]-->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>
+          document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 <div class="container">
-  <header class="row col span12">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#why" id="whylink">Why the Choosy Grid System</a></li>
+      <li><a href="#typography" id="typelink">Typography</a>
+      <li><a href="#images" id="imageslink">Images</a>
+      <li><a href="#forms" id="formslink">Forms</a>
+    </ul>
+  </nav>
+  <header class="row col span12-no-margin">
     <h1 class="page-title float-left">Choosy</h1>
     <h1 class="sub-title float-right">The responsive grid system that lets you decide</h1>
-  </header>
-  <div id="body" class="row col span12-no-marign">
+    </header>
+    <div id="body" class="row col span12-no-marign">
     <article class="row col span12-no-marign">
-      <div class="row col span12-no-marign boxtop">
+      <div id="why" class="row col span12-no-marign boxtop">
         <h2 class="cleared">Why Choose the Choosy Grid System </h2>
         <p>As far as I know, outside of Twitter's Bootstrap, this is the only responsive grid system that incorporates the ability to specifically choose what is shown and hidden and how your page breaks. So if you want your page to look col span12 way on an iPad, another on a mobile phcol span12, and yet another on desktops and laptops, this system makes it possible. And while at the moment, this page is entirely lorem ipsum text, I think it might give you an idea of how the system works</p>
         <p>If you're curious, <a href="#example" id="exLink">check out an example</a>, or keep reading to find out more.</p>
@@ -50,7 +61,7 @@
         </div>
       </div>
     </article>
-    <hgroup class="col row span12-no-marign boxbottom">
+    <hgroup class="col row span12-no-marign boxbottom" id="typography">
       <h2>Typography</h2>
     </hgroup>
     <div class="row span12 boxbottom">
@@ -77,7 +88,7 @@
         <h6>heading 6</h6>
       </div>
     </div>
-    <hgroup class="col span12 images">
+    <hgroup class="col span12 images" id="images">
       <h2 class="inline">Images</h2>
       <h5 class="inline">and lorem ipsum</h5>
     </hgroup>
@@ -91,7 +102,7 @@
       <img src="images/waterfall.jpg" alt="waterfall" class="center"/> <span class="cap float-left mid-img text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/44419264@N06/4406942040/">© Salim Photography/ www.salimphoto.com</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></span>
     </div>
   </div>
-  <div class="row col span12-no-margin">
+  <div class="row col span12-no-margin" id="forms">
     <h2>Forms </h2>
     <form action=".">
       <div class="text">
@@ -188,6 +199,31 @@
   <footer class="col span12">
     <p>Copyright 2014, Jonathan Gilson. All code released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU License</a></p>
     <a id="example" name="example" href="#example"></a> </footer>
-</div>
+  </div>
+  <script type="text/javascript">
+var loc = window.location;
+var url = loc.origin + loc.hostname + loc.pathname;
+$('#whylink').click(function(){
+     event.preventDefault();
+     window.location = url + "#why";
+        $(document).scrollTop(90);
+      });
+ $('#typelink').click(function(){
+     event.preventDefault();
+     window.location = url + "#typography";
+        $(document).scrollTop(980);
+        });
+$('#imageslink').click(function(){
+       event.preventDefault();
+       window.location = url + "#images";
+        $(document).scrollTop(1500);
+        });
+$('#formslink').click(function(){
+    event.preventDefault();
+    window.location = url + "#forms";
+        $(document).scrollTop(3530);
+    });
+ </script>
+
 </body>
 </html>

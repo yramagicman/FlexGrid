@@ -6,8 +6,9 @@ $lines: 0.5;
 
 // grid definitions
 $pageWidth: 1200px;
+$desktopPageWidth: $pageWidth;
 $ipadPageWidthPortrait: 750px;
-$ipadPageWidthLandscape: 1000px;
+$ipadPageWidthLandscape: 900px;
 $numCols: 12;
 $gutter: .02;
 $offset: 5.5;
