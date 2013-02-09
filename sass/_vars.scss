@@ -2,7 +2,7 @@
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;//line11
-$lines: 1;
+$lines: 0.5;
 
 // grid definitions
 $pageWidth: 1200px;
@@ -10,7 +10,7 @@ $ipadPageWidthPortrait: 750px;
 $ipadPageWidthLandscape: 1000px;
 $numCols: 12;
 $gutter: .02;
-$offset: 5;
+$offset: 5.5;
 $borderWidth: 1;
 $hundred: 100;
 
@@ -25,11 +25,11 @@ $offsetSlug: offset !default;
 //colors
 $textColor: #333;
 $bgColor: #f5f5f5;
+$action: #ff8d0c;
 $borderColor: #000;
 $links: rgb(30,30,140);
 $hover: darken($links, 10%);
 $visited: rgb(140,30,30);
-
 // border stuff
 $borderWidth: $borderWidth !default; //line 35
 $borderStyle: solid !default;
@@ -40,7 +40,7 @@ $subMenuWidth: 9.5em;
 
 // box-shadow
 $default-border-radius: 4px;
-$default-box-shadow-color: #aaa;
+$default-box-shadow-color: darken($bgColor, 20%);
 $color: $default-box-shadow-color;
 $default-box-shadow-h-offset: 1px;
 $hOffset:$default-box-shadow-h-offset;
@@ -63,5 +63,8 @@ $default-box-shadow-inset: true;
 $inset: false;
 
 //gradient
-$startColor:rgba(255, 255, 255,1);
-$endColor:rgba( 233, 233, 233,1);
+$startColor:lighten($bgColor, 5%);
+$endColor:darken($bgColor, 20%);
+
+$startActionColor:lighten($action, 15%);
+$endActionColor:darken($action, 5%);

@@ -52,4 +52,16 @@ top:0;
 display: block;
 }
 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+
+  .container{
+   // width: 750px;
+  }
+
+
+}
 /* end layout */

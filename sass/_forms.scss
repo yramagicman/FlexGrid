@@ -23,7 +23,7 @@ input{
 }
 }
 input[type=submit]{
-  @include simpleGradient();
+  @include simpleGradient($startColor, $endColor);
    box-shadow: none;
 }
 textarea{

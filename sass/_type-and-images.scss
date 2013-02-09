@@ -35,12 +35,14 @@ img{
   clear:both;
 }
 /*links*/
-a:link{
+a{
+  &:link{
 	color: $links;
-}
-a:visited{
+      }
+&:visited{
 	color: $visited;
 }
-a:hover, a:active{
+&:hover, &:active{
 	color: $hover;
+}
 }

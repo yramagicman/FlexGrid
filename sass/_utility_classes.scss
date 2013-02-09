@@ -1,0 +1,35 @@
+.action{
+  @include simpleGradient($startActionColor,$endActionColor);
+  text-shadow: 0px -1px 1px #fff;
+  padding:5px 10px;
+  border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
+  @include border-radius();
+  text-decoration:none;
+  &:link, &:visited{
+    color: $textColor;
+  }
+  &:hover{
+    color: darken($textColor, 20%);
+  }
+  &:active{
+   @include simpleGradient($endActionColor,$startActionColor);
+  }
+}
+
+.button{
+  @extend input[type=submit];
+  text-shadow: 0px -1px 1px #fff;
+  padding: 5px 10px;
+  border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
+  @include border-radius();
+  text-decoration:none;
+   &:link, &:visited{
+    color: $textColor;
+  }
+  &:hover{
+    color: darken($textColor, 20%);
+  }
+  &:active{
+   @include simpleGradient($endColor,$startColor);
+  }
+}

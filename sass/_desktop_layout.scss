@@ -20,7 +20,7 @@ li{
 $base-font-size: 19px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;//line11
-$lines: 1;
+//$lines: 1;
 
 @include establish-baseline();
 .container{ 
