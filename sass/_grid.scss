@@ -14,14 +14,18 @@ $offset: $offset/100;
 }
 .col{
   float:left;
+  overflow: hidden;
 }
+/*main "default" grid*/
 @for $i from 1 through $numCols {
   .#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
-	width: $xwidth - ($gutter * 98);
+	width: $xwidth - ($gutter * 98); 
+	// because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
 	margin-left: percentage($gutter);
+	//express gutter as percentage
         &:first-child{
-        margin-left:0;
+        margin-left:0;/*remove margin from every first element in a row */
         }
     }
 }
@@ -31,10 +35,10 @@ $offset: $offset/100;
   .#{$classSlug}#{$i}-#{$no-margin}{
     $xwidth : percentage($i/$numCols);
 	width: $xwidth;
-       	margin-left:0;
+  margin-left:0;
   }
 }
-
+/* with a border */
 @for $i from 1 through $numCols {
   .#{$addBorder}-#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
@@ -44,7 +48,7 @@ $offset: $offset/100;
 //.span1.right{ 
 //	left: percentage($colWidth);
 //}
-
+/*pull and push*/
 @for $i from 1 through $numCols {
   .#{$right}-#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
@@ -61,4 +65,11 @@ $offset: $offset/100;
          //@include clearfix;
 	width: $xwidth;
 	  }
+}
+/*offset*/
+@for $i from 1 through $numCols {
+#{$offsetSlug}#{$i}{
+    $xwidth : percentage($i/$numCols);
+	margin-left: $xwidth;
+  }
 }

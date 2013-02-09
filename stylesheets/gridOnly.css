@@ -26,202 +26,217 @@
 /* line 15, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .col {
   float: left;
+  overflow: hidden;
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/*main "default" grid*/
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span1 {
   width: 6.373%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span1:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span2 {
   width: 14.707%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span2:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span3 {
   width: 23.04%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span3:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span4 {
   width: 31.373%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span4:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span5 {
   width: 39.707%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span5:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span6 {
   width: 48.04%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span6:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span7 {
   width: 56.373%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span7:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span8 {
   width: 64.707%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span8:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span9 {
   width: 73.04%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span9:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span10 {
   width: 81.373%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span10:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span11 {
   width: 89.707%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span11:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
-/* line 19, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 21, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span12 {
   width: 98.04%;
   margin-left: 2%;
 }
-/* line 23, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 27, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span12:first-child {
   margin-left: 0;
+  /*remove margin from every first element in a row */
 }
 
 /* no margin */
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span1-no-margin {
   width: 8.333%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span2-no-margin {
   width: 16.667%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span3-no-margin {
   width: 25%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span4-no-margin {
   width: 33.333%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span5-no-margin {
   width: 41.667%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span6-no-margin {
   width: 50%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span7-no-margin {
   width: 58.333%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span8-no-margin {
   width: 66.667%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span9-no-margin {
   width: 75%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span10-no-margin {
   width: 83.333%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span11-no-margin {
   width: 91.667%;
   margin-left: 0;
 }
 
-/* line 31, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 35, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .span12-no-margin {
   width: 100%;
   margin-left: 0;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* with a border */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span1 {
   border-style: solid;
   border-width: 0.063em;
@@ -230,7 +245,7 @@
   width: 8.283%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span2 {
   border-style: solid;
   border-width: 0.063em;
@@ -239,7 +254,7 @@
   width: 16.617%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span3 {
   border-style: solid;
   border-width: 0.063em;
@@ -248,7 +263,7 @@
   width: 24.95%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span4 {
   border-style: solid;
   border-width: 0.063em;
@@ -257,7 +272,7 @@
   width: 33.283%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span5 {
   border-style: solid;
   border-width: 0.063em;
@@ -266,7 +281,7 @@
   width: 41.617%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span6 {
   border-style: solid;
   border-width: 0.063em;
@@ -275,7 +290,7 @@
   width: 49.95%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span7 {
   border-style: solid;
   border-width: 0.063em;
@@ -284,7 +299,7 @@
   width: 58.283%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span8 {
   border-style: solid;
   border-width: 0.063em;
@@ -293,7 +308,7 @@
   width: 66.617%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span9 {
   border-style: solid;
   border-width: 0.063em;
@@ -302,7 +317,7 @@
   width: 74.95%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span10 {
   border-style: solid;
   border-width: 0.063em;
@@ -311,7 +326,7 @@
   width: 83.283%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span11 {
   border-style: solid;
   border-width: 0.063em;
@@ -320,7 +335,7 @@
   width: 91.617%;
 }
 
-/* line 39, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 43, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .add-border-span12 {
   border-style: solid;
   border-width: 0.063em;
@@ -329,146 +344,208 @@
   width: 99.95%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/*pull and push*/
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span1 {
   left: 91.667%;
   width: 8.333%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span2 {
   left: 83.333%;
   width: 16.667%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span3 {
   left: 75%;
   width: 25%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span4 {
   left: 66.667%;
   width: 33.333%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span5 {
   left: 58.333%;
   width: 41.667%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span6 {
   left: 50%;
   width: 50%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span7 {
   left: 41.667%;
   width: 58.333%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span8 {
   left: 33.333%;
   width: 66.667%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span9 {
   left: 25%;
   width: 75%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span10 {
   left: 16.667%;
   width: 83.333%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span11 {
   left: 8.333%;
   width: 91.667%;
 }
 
-/* line 49, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 53, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .pull-span12 {
   left: 0%;
   width: 100%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span1 {
   left: -91.667%;
   width: 8.333%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span2 {
   left: -83.333%;
   width: 16.667%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span3 {
   left: -75%;
   width: 25%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span4 {
   left: -66.667%;
   width: 33.333%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span5 {
   left: -58.333%;
   width: 41.667%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span6 {
   left: -50%;
   width: 50%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span7 {
   left: -41.667%;
   width: 58.333%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span8 {
   left: -33.333%;
   width: 66.667%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span9 {
   left: -25%;
   width: 75%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span10 {
   left: -16.667%;
   width: 83.333%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span11 {
   left: -8.333%;
   width: 91.667%;
 }
 
-/* line 58, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+/* line 62, /Users/jdg/Sites/gridScss/sass/_grid.scss */
 .push-span12 {
   left: 0%;
   width: 100%;
+}
+
+/*offset*/
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset1 {
+  margin-left: 8.333%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset2 {
+  margin-left: 16.667%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset3 {
+  margin-left: 25%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset4 {
+  margin-left: 33.333%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset5 {
+  margin-left: 41.667%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset6 {
+  margin-left: 50%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset7 {
+  margin-left: 58.333%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset8 {
+  margin-left: 66.667%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset9 {
+  margin-left: 75%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset10 {
+  margin-left: 83.333%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset11 {
+  margin-left: 91.667%;
+}
+
+/* line 71, /Users/jdg/Sites/gridScss/sass/_grid.scss */
+offset12 {
+  margin-left: 100%;
 }

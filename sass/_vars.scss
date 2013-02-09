@@ -20,9 +20,9 @@ $no-margin: no-margin !default;
 $addBorder: add-border !default;
 $left: push !default;
 $right: pull !default;
+$offsetSlug: offset !default;
 
 //colors
-
 $textColor: #333;
 $bgColor: #f5f5f5;
 $borderColor: #000;
@@ -36,3 +36,32 @@ $borderStyle: solid !default;
 $borderColor: $borderColor !default; //line 43
 
 $subMenuWidth: 9.5em;
+
+
+// box-shadow
+$default-border-radius: 4px;
+$default-box-shadow-color: #aaa;
+$color: $default-box-shadow-color;
+$default-box-shadow-h-offset: 1px;
+$hOffset:$default-box-shadow-h-offset;
+//The default horizontal offset. Positive is to the right.
+
+$default-box-shadow-v-offset: 1px;
+$vOffset: $default-box-shadow-v-offset;
+//The default vertical offset. Positive is down.
+
+$default-box-shadow-blur: 2px;
+$blur:$default-box-shadow-blur;
+//The default blur length.
+
+$default-box-shadow-spread: false;
+$spread: $default-box-shadow-spread;
+
+//The default spread length.
+
+$default-box-shadow-inset: true;
+$inset: false;
+
+//gradient
+$startColor:rgba(255, 255, 255,1);
+$endColor:rgba( 233, 233, 233,1);
