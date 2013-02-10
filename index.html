@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
 <title>Grid system</title>
 <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700,400italic,700italic" type="text/css" media="screen" />-->
 <!--<link rel="stylesheet" href="normalize.css" type="text/css">
@@ -14,15 +16,15 @@
 <link rel="stylesheet" href="colorbox.css" type="text/css">-->
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" />
 <!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
         <script>
           document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 <div class="container">
-  <nav>
+  <nav id="nav">
+  <a href="#nav" class="mobileOnly">Skip Nav</a>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#why" id="whylink">Why the Choosy Grid System</a></li>
@@ -200,6 +202,9 @@
     <p>Copyright 2014, Jonathan Gilson. All code released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU License</a></p>
     <a id="example" name="example" href="#example"></a> </footer>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script>window.jQuery || document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>')</script>
+  
   <script type="text/javascript">
 var loc = window.location;
 var url = loc.pathname;

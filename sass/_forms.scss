@@ -12,7 +12,7 @@ select{
 }
 input{
   &[type=date],&[type=time],&[type=color], &[type=datetime]{
-  padding:0px;
+  padding:0;
   background: #fff;
   //border:inherit;
 }
@@ -21,14 +21,16 @@ input{
   border:none;
   box-shadow:none;
 }
-}
-input[type=submit]{
+
+
+&[type=submit]{
   @include simpleGradient($startColor, $endColor);
    box-shadow: none;
 }
+}
 textarea{
-  width:500px;
-  height: 250px;
+  width:17em;
+  height: 7em;
 }
 input:focus, textarea:focus{
 background-color: #fff;

@@ -22,8 +22,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 /* line 68, ../sass/_normalize.scss */
@@ -34,7 +32,6 @@ audio:not([controls]) {
 
 /* line 89, ../sass/_normalize.scss */
 html {
-  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -111,11 +108,6 @@ strong {
   font-weight: bold;
 }
 
-/* line 193, ../sass/_normalize.scss */
-blockquote {
-  margin: 1em 40px;
-}
-
 /* line 200, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
@@ -127,19 +119,12 @@ mark {
   color: #000;
 }
 
-/* line 214, ../sass/_normalize.scss */
-p,
-pre {
-  margin: 1em 0;
-}
-
 /* line 225, ../sass/_normalize.scss */
 pre,
 code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
   font-size: 1em;
 }
 
@@ -148,11 +133,6 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
-}
-
-/* line 246, ../sass/_normalize.scss */
-q {
-  quotes: none;
 }
 
 /* line 254, ../sass/_normalize.scss */
@@ -186,31 +166,10 @@ sub {
   bottom: -0.25em;
 }
 
-/* line 291, ../sass/_normalize.scss */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-/* line 297, ../sass/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/* line 306, ../sass/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
 /* line 315, ../sass/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none;
 }
 
 /* line 331, ../sass/_normalize.scss */
@@ -219,37 +178,31 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 340, ../sass/_normalize.scss */
+/* line 338, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 350, ../sass/_normalize.scss */
+/* line 348, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 360, ../sass/_normalize.scss */
-form {
-  margin: 0;
-}
-
-/* line 367, ../sass/_normalize.scss */
+/* line 365, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 377, ../sass/_normalize.scss */
+/* line 375, ../sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
-  *margin-left: -7px;
 }
 
-/* line 393, ../sass/_normalize.scss */
+/* line 391, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -257,65 +210,61 @@ textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 
-/* line 405, ../sass/_normalize.scss */
+/* line 403, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 420, ../sass/_normalize.scss */
+/* line 418, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  *overflow: visible;
 }
 
-/* line 431, ../sass/_normalize.scss */
+/* line 429, ../sass/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 441, ../sass/_normalize.scss */
+/* line 439, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  *height: 13px;
-  *width: 13px;
 }
 
-/* line 454, ../sass/_normalize.scss */
+/* line 452, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-/* line 459, ../sass/_normalize.scss */
+/* line 457, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 468, ../sass/_normalize.scss */
+/* line 466, ../sass/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 477, ../sass/_normalize.scss */
+/* line 475, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 488, ../sass/_normalize.scss */
+/* line 486, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -414,7 +363,7 @@ select {
 
 /* line 14, ../sass/_forms.scss */
 input[type=date], input[type=time], input[type=color], input[type=datetime] {
-  padding: 0px;
+  padding: 0;
   background: #fff;
 }
 /* line 19, ../sass/_forms.scss */
@@ -423,8 +372,7 @@ input[type=range] {
   border: none;
   box-shadow: none;
 }
-
-/* line 25, ../sass/_forms.scss */
+/* line 26, ../sass/_forms.scss */
 input[type=submit], .button {
   background: white;
   background: -moz-linear-gradient(top, white 0%, #c2c2c2 100%);
@@ -437,13 +385,13 @@ input[type=submit], .button {
   box-shadow: none;
 }
 
-/* line 29, ../sass/_forms.scss */
+/* line 31, ../sass/_forms.scss */
 textarea {
-  width: 500px;
-  height: 250px;
+  width: 17em;
+  height: 7em;
 }
 
-/* line 33, ../sass/_forms.scss */
+/* line 35, ../sass/_forms.scss */
 input:focus, textarea:focus {
   background-color: #fff;
   background-image: none;
@@ -453,16 +401,16 @@ input:focus, textarea:focus {
 
 /* line 1, ../sass/_utility_classes.scss */
 .action {
-  background: #ffb159;
-  background: -moz-linear-gradient(top, #ffb159 0%, #f28000 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffb159), color-stop(100%, #f28000));
-  background: -webkit-linear-gradient(top, #ffb159 0%, #f28000 100%);
-  background: -o-linear-gradient(top, #ffb159 0%, #f28000 100%);
-  background: -ms-linear-gradient(top, #ffb159 0%, #f28000 100%);
-  background: linear-gradient(to bottom, #ffb159 0%, #f28000 100%);
+  background: #7a9fe6;
+  background: -moz-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a9fe6), color-stop(100%, #2861d3));
+  background: -webkit-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
+  background: -o-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
+  background: -ms-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
+  background: linear-gradient(to bottom, #7a9fe6 0%, #2861d3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
-  text-shadow: 0px -1px 1px white;
-  padding: 5px 10px;
+  text-shadow: 0 1px 1px #030812;
+  padding: 5px 10;
   border: 1px solid gray;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -473,28 +421,28 @@ input:focus, textarea:focus {
 }
 /* line 8, ../sass/_utility_classes.scss */
 .action:link, .action:visited {
-  color: #333333;
+  color: white;
 }
 /* line 11, ../sass/_utility_classes.scss */
 .action:hover {
-  color: black;
+  text-shadow: 0 -1px 1px #030812;
 }
-/* line 14, ../sass/_utility_classes.scss */
+/* line 16, ../sass/_utility_classes.scss */
 .action:active {
-  background: #f28000;
-  background: -moz-linear-gradient(top, #f28000 0%, #ffb159 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f28000), color-stop(100%, #ffb159));
-  background: -webkit-linear-gradient(top, #f28000 0%, #ffb159 100%);
-  background: -o-linear-gradient(top, #f28000 0%, #ffb159 100%);
-  background: -ms-linear-gradient(top, #f28000 0%, #ffb159 100%);
-  background: linear-gradient(to bottom, #f28000 0%, #ffb159 100%);
+  background: #2861d3;
+  background: -moz-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2861d3), color-stop(100%, #7a9fe6));
+  background: -webkit-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
+  background: -o-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
+  background: -ms-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
+  background: linear-gradient(to bottom, #2861d3 0%, #7a9fe6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
 }
 
-/* line 19, ../sass/_utility_classes.scss */
+/* line 21, ../sass/_utility_classes.scss */
 .button {
-  text-shadow: 0px -1px 1px white;
-  padding: 5px 10px;
+  text-shadow: 0 1px 0 #767676;
+  padding: 5px 10;
   border: 1px solid gray;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -503,15 +451,15 @@ input:focus, textarea:focus {
   border-radius: 4px;
   text-decoration: none;
 }
-/* line 26, ../sass/_utility_classes.scss */
+/* line 28, ../sass/_utility_classes.scss */
 .button:link, .button:visited {
-  color: #333333;
-}
-/* line 29, ../sass/_utility_classes.scss */
-.button:hover {
   color: black;
 }
-/* line 32, ../sass/_utility_classes.scss */
+/* line 31, ../sass/_utility_classes.scss */
+.button:hover {
+  text-shadow: 0 -1px 0 #767676;
+}
+/* line 34, ../sass/_utility_classes.scss */
 .button:active {
   background: #c2c2c2;
   background: -moz-linear-gradient(top, #c2c2c2 0%, white 100%);
@@ -523,9 +471,48 @@ input:focus, textarea:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
 }
 
-/* line 36, ../sass/_utility_classes.scss */
+/* line 38, ../sass/_utility_classes.scss */
 .zero-margin {
   margin: 0;
+}
+
+/* line 41, ../sass/_utility_classes.scss */
+.zero-padding {
+  padding: 0;
+}
+
+/* line 44, ../sass/_utility_classes.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 49, ../sass/_utility_classes.scss */
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 60, ../sass/_utility_classes.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 68, ../sass/_utility_classes.scss */
+.invisible {
+  visibility: hidden;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -553,7 +540,6 @@ input:focus, textarea:focus {
     width: 100%;
     height: 50px;
     overflow: hidden;
-    background: #ccc;
   }
   /* line 18, ../sass/_mobile_layout.scss */
   nav ul {
@@ -567,29 +553,17 @@ input:focus, textarea:focus {
   }
 
   /* line 27, ../sass/_mobile_layout.scss */
-  nav:after {
-    content: "click for nav";
-    font-weight: bold;
-    text-align: center;
-  }
-
-  /* line 33, ../sass/_mobile_layout.scss */
-  nav:active, nav:hover {
+  #nav:target {
     width: 100%;
     height: auto;
   }
-  /* line 36, ../sass/_mobile_layout.scss */
-  nav:active ul, nav:hover ul {
+  /* line 30, ../sass/_mobile_layout.scss */
+  #nav:target ul {
     display: block;
   }
-  /* line 39, ../sass/_mobile_layout.scss */
-  nav:active:after, nav:hover:after {
+  /* line 33, ../sass/_mobile_layout.scss */
+  #nav:target:after {
     content: "";
-  }
-
-  /* line 43, ../sass/_mobile_layout.scss */
-  body {
-    font-size: 250%;
   }
 
   /* end layout */
@@ -1316,66 +1290,8 @@ input:focus, textarea:focus {
   /* Styles */
   /*start layout */
   /* line 3, ../sass/_desktop_layout.scss */
-  header {
-    clear: both;
-    margin-top: 60px;
-  }
-
-  /* line 9, ../sass/_desktop_layout.scss */
-  nav {
-    clear: both;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: #c2c2c2;
-    background: -moz-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c2c2c2), color-stop(100%, rgba(230, 230, 230, 0.6)));
-    background: -webkit-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -o-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -ms-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: linear-gradient(to bottom, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
-    line-height: 50px;
-  }
-  /* line 17, ../sass/_desktop_layout.scss */
   nav ul {
-    margin: 0 auto;
     width: 1200px;
-    background: rgba(250, 250, 250, 0.5);
-    overflow: hidden;
-  }
-  /* line 26, ../sass/_desktop_layout.scss */
-  nav li {
-    float: left;
-    position: relative;
-    z-index: 5;
-  }
-  /* line 31, ../sass/_desktop_layout.scss */
-  nav li a {
-    display: block;
-    background: none;
-    margin: -1px 0 0;
-    padding: 5px 17px;
-  }
-  /* line 36, ../sass/_desktop_layout.scss */
-  nav li a:link, nav li a:visited {
-    color: #333333;
-    text-decoration: none;
-    border: 1px solid transparent;
-  }
-  /* line 41, ../sass/_desktop_layout.scss */
-  nav li a:hover {
-    border: 1px solid #b3b3b3;
-    border-bottom: none;
-    background: whitesmoke;
-    background: -moz-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, whitesmoke), color-stop(100%, rgba(245, 245, 245, 0)));
-    background: -webkit-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -o-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -ms-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: linear-gradient(to bottom, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
   }
 
   /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -1389,7 +1305,7 @@ input:focus, textarea:focus {
     line-height: 1.7em;
   }
 
-  /* line 56, ../sass/_desktop_layout.scss */
+  /* line 13, ../sass/_desktop_layout.scss */
   .container {
     width: 1200px;
   }

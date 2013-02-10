@@ -1,15 +1,17 @@
 .action{
   @include simpleGradient($startActionColor,$endActionColor);
-  text-shadow: 0px -1px 1px #fff;
-  padding:5px 10px;
+  text-shadow: 0 1px 1px darken($action, 50%);
+  padding:5px 10;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
   @include border-radius();
   text-decoration:none;
   &:link, &:visited{
-    color: $textColor;
+    color: white;
   }
   &:hover{
-    color: darken($textColor, 20%);
+    //color: lighten($textColor, 50%);
+    text-shadow: 0 -1px 1px darken($action, 50%);
+
   }
   &:active{
    @include simpleGradient($endActionColor,$startActionColor);
@@ -18,16 +20,16 @@
 
 .button{
   @extend input[type=submit];
-  text-shadow: 0px -1px 1px #fff;
-  padding: 5px 10px;
+  text-shadow: 0 1px 0 darken($bgColor, 50%);
+  padding: 5px 10;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
   @include border-radius();
   text-decoration:none;
    &:link, &:visited{
-    color: $textColor;
+    color: black;
   }
   &:hover{
-    color: darken($textColor, 20%);
+    text-shadow: 0 -1px 0 darken($bgColor, 50%);
   }
   &:active{
    @include simpleGradient($endColor,$startColor);
@@ -35,4 +37,34 @@
 }
 .zero-margin{
   margin:0;
+}
+.zero-padding{
+  padding:0;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyHidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible{
+  visibility:hidden
 }
