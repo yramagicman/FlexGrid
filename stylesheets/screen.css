@@ -1,8 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 49, ../sass/_normalize.scss */
 article,
 aside,
 details,
@@ -17,26 +12,22 @@ summary {
   display: block;
 }
 
-/* line 57, ../sass/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 68, ../sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 89, ../sass/_normalize.scss */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 103, ../sass/_normalize.scss */
 html,
 button,
 input,
@@ -45,81 +36,67 @@ textarea {
   font-family: sans-serif;
 }
 
-/* line 109, ../sass/_normalize.scss */
 body {
   margin: 0;
   background: whitesmoke;
   color: #333333;
 }
 
-/* line 128, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 135, ../sass/_normalize.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 148, ../sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 153, ../sass/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 158, ../sass/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 163, ../sass/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 168, ../sass/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 173, ../sass/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
 }
 
-/* line 181, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 188, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 200, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 206, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 225, ../sass/_normalize.scss */
 pre,
 code,
 kbd,
@@ -128,26 +105,22 @@ samp {
   font-size: 1em;
 }
 
-/* line 235, ../sass/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 254, ../sass/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 259, ../sass/_normalize.scss */
 small {
   font-size: 75%;
 }
 
-/* line 267, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -156,53 +129,44 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 274, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 278, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 315, ../sass/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
 }
 
-/* line 331, ../sass/_normalize.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 338, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 348, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 365, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 375, ../sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
 }
 
-/* line 391, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -212,13 +176,11 @@ textarea {
   vertical-align: baseline;
 }
 
-/* line 403, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 418, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -227,120 +189,99 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 429, ../sass/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 439, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 452, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-/* line 457, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 466, ../sass/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 475, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 486, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /*image definitions and usefull classes*/
-/* line 3, ../sass/_type-and-images.scss */
 img {
   max-width: 100%;
   margin: 1em;
 }
 
-/* line 7, ../sass/_type-and-images.scss */
 .float-left {
   float: left;
 }
 
-/* line 10, ../sass/_type-and-images.scss */
 .float-right {
   float: right;
 }
 
-/* line 13, ../sass/_type-and-images.scss */
 .center {
   margin: auto;
   display: block;
 }
 
-/* line 17, ../sass/_type-and-images.scss */
 .cap {
   font-size: 0.8em;
   display: block;
   margin: 0 1em 0;
 }
 
-/* line 22, ../sass/_type-and-images.scss */
 .cap img, .cap img {
   display: block;
   margin-bottom: 0;
 }
 
-/* line 26, ../sass/_type-and-images.scss */
 .text-align-left {
   text-align: left;
 }
 
-/* line 29, ../sass/_type-and-images.scss */
 .text-align-right {
   text-align: right;
 }
 
-/* line 32, ../sass/_type-and-images.scss */
 .text-align-center {
   text-align: center;
 }
 
-/* line 35, ../sass/_type-and-images.scss */
 .cleared {
   clear: both;
 }
 
 /*links*/
-/* line 40, ../sass/_type-and-images.scss */
 a:link {
   color: #1e1e8c;
 }
-/* line 43, ../sass/_type-and-images.scss */
 a:visited {
   color: #8c1e1e;
 }
-/* line 46, ../sass/_type-and-images.scss */
 a:hover, a:active {
   color: #151562;
 }
 
-/* line 2, ../sass/_forms.scss */
 input, textarea, select[size] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -356,23 +297,19 @@ input, textarea, select[size] {
   box-shadow: inset 1px 1px 2px #c2c2c2;
 }
 
-/* line 10, ../sass/_forms.scss */
 select {
   margin: 5px;
 }
 
-/* line 14, ../sass/_forms.scss */
 input[type=date], input[type=time], input[type=color], input[type=datetime] {
   padding: 0;
   background: #fff;
 }
-/* line 19, ../sass/_forms.scss */
 input[type=range] {
   background: none;
   border: none;
   box-shadow: none;
 }
-/* line 26, ../sass/_forms.scss */
 input[type=submit], .button {
   background: white;
   background: -moz-linear-gradient(top, white 0%, #c2c2c2 100%);
@@ -385,13 +322,11 @@ input[type=submit], .button {
   box-shadow: none;
 }
 
-/* line 31, ../sass/_forms.scss */
 textarea {
   width: 17em;
   height: 7em;
 }
 
-/* line 35, ../sass/_forms.scss */
 input:focus, textarea:focus {
   background-color: #fff;
   background-image: none;
@@ -399,7 +334,6 @@ input:focus, textarea:focus {
   box-shadow: none;
 }
 
-/* line 1, ../sass/_utility_classes.scss */
 .action {
   background: #7a9fe6;
   background: -moz-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
@@ -419,15 +353,12 @@ input:focus, textarea:focus {
   border-radius: 4px;
   text-decoration: none;
 }
-/* line 8, ../sass/_utility_classes.scss */
 .action:link, .action:visited {
   color: white;
 }
-/* line 11, ../sass/_utility_classes.scss */
 .action:hover {
   text-shadow: 0 -1px 1px #030812;
 }
-/* line 16, ../sass/_utility_classes.scss */
 .action:active {
   background: #2861d3;
   background: -moz-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
@@ -439,7 +370,6 @@ input:focus, textarea:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
 }
 
-/* line 21, ../sass/_utility_classes.scss */
 .button {
   text-shadow: 0 1px 0 #767676;
   padding: 5px 10;
@@ -451,15 +381,12 @@ input:focus, textarea:focus {
   border-radius: 4px;
   text-decoration: none;
 }
-/* line 28, ../sass/_utility_classes.scss */
 .button:link, .button:visited {
   color: black;
 }
-/* line 31, ../sass/_utility_classes.scss */
 .button:hover {
   text-shadow: 0 -1px 0 #767676;
 }
-/* line 34, ../sass/_utility_classes.scss */
 .button:active {
   background: #c2c2c2;
   background: -moz-linear-gradient(top, #c2c2c2 0%, white 100%);
@@ -471,23 +398,19 @@ input:focus, textarea:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
 }
 
-/* line 38, ../sass/_utility_classes.scss */
 .zero-margin {
   margin: 0;
 }
 
-/* line 41, ../sass/_utility_classes.scss */
 .zero-padding {
   padding: 0;
 }
 
-/* line 44, ../sass/_utility_classes.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 49, ../sass/_utility_classes.scss */
 .visuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -499,7 +422,6 @@ input:focus, textarea:focus {
   width: 1px;
 }
 
-/* line 60, ../sass/_utility_classes.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -510,7 +432,6 @@ input:focus, textarea:focus {
   width: auto;
 }
 
-/* line 68, ../sass/_utility_classes.scss */
 .invisible {
   visibility: hidden;
 }
@@ -518,61 +439,50 @@ input:focus, textarea:focus {
 @media only screen and (max-device-width: 480px) {
   /* Styles */
   /*start layout */
-  /* line 2, ../sass/_mobile_layout.scss */
   .container {
     width: 95%;
     margin: auto;
   }
 
-  /* line 6, ../sass/_mobile_layout.scss */
   header {
     clear: both;
   }
 
-  /* line 9, ../sass/_mobile_layout.scss */
   .sidebar, .body {
     float: none;
     clear: both;
   }
 
-  /* line 13, ../sass/_mobile_layout.scss */
   nav {
     width: 100%;
     height: 50px;
     overflow: hidden;
   }
-  /* line 18, ../sass/_mobile_layout.scss */
   nav ul {
     display: none;
     margin: 0;
     padding: 10px;
   }
-  /* line 22, ../sass/_mobile_layout.scss */
   nav ul ul {
     padding: 0;
   }
 
-  /* line 27, ../sass/_mobile_layout.scss */
   #nav:target {
     width: 100%;
     height: auto;
   }
-  /* line 30, ../sass/_mobile_layout.scss */
   #nav:target ul {
     display: block;
   }
-  /* line 33, ../sass/_mobile_layout.scss */
   #nav:target:after {
     content: "";
   }
 
   /* end layout */
-  /* line 16, ../sass/screen.scss */
   img, .cap img, .cap {
     margin: 5px;
   }
 
-  /* line 19, ../sass/screen.scss */
   .cap {
     width: 200px;
     margin: 10px;
@@ -581,7 +491,6 @@ input:focus, textarea:focus {
 @media only screen and (min-device-width: 768px) {
   /* Styles */
   /* Grid with margins and border */
-  /* line 4, ../sass/_grid.scss */
   .container {
     width: 1200px;
     overflow: hidden;
@@ -589,233 +498,193 @@ input:focus, textarea:focus {
     color: #333333;
   }
 
-  /* line 10, ../sass/_grid.scss */
   .row {
     overflow: hidden;
     clear: both;
     position: relative;
   }
-  /* line 3, ../sass/_mixins.scss */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 16, ../sass/_grid.scss */
   .col {
     float: left;
     overflow: hidden;
   }
 
   /*main "default" grid*/
-  /* line 22, ../sass/_grid.scss */
   .span1 {
     width: 6.37333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span1:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span2 {
     width: 14.70667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span2:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span3 {
     width: 23.04%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span3:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span4 {
     width: 31.37333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span4:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span5 {
     width: 39.70667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span5:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span6 {
     width: 48.04%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span6:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span7 {
     width: 56.37333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span7:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span8 {
     width: 64.70667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span8:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span9 {
     width: 73.04%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span9:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span10 {
     width: 81.37333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span10:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span11 {
     width: 89.70667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span11:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
-  /* line 22, ../sass/_grid.scss */
   .span12 {
     width: 98.04%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
   .span12:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
   /* no margin */
-  /* line 36, ../sass/_grid.scss */
   .span1-no-margin {
     width: 8.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span2-no-margin {
     width: 16.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span3-no-margin {
     width: 25%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span4-no-margin {
     width: 33.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span5-no-margin {
     width: 41.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span6-no-margin {
     width: 50%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span7-no-margin {
     width: 58.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span8-no-margin {
     width: 66.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span9-no-margin {
     width: 75%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span10-no-margin {
     width: 83.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span11-no-margin {
     width: 91.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span12-no-margin {
     width: 100%;
     margin-left: 0;
   }
 
   /* with a border */
-  /* line 44, ../sass/_grid.scss */
   .add-border-span1 {
     border-style: solid;
     border-width: 0.0625em;
@@ -824,12 +693,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 2.83333%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span1 h2, .add-border-span1 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span2 {
     border-style: solid;
     border-width: 0.0625em;
@@ -838,12 +705,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 11.16667%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span2 h2, .add-border-span2 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span3 {
     border-style: solid;
     border-width: 0.0625em;
@@ -852,12 +717,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 19.5%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span3 h2, .add-border-span3 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span4 {
     border-style: solid;
     border-width: 0.0625em;
@@ -866,12 +729,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 27.83333%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span4 h2, .add-border-span4 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span5 {
     border-style: solid;
     border-width: 0.0625em;
@@ -880,12 +741,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 36.16667%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span5 h2, .add-border-span5 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span6 {
     border-style: solid;
     border-width: 0.0625em;
@@ -894,12 +753,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 44.5%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span6 h2, .add-border-span6 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span7 {
     border-style: solid;
     border-width: 0.0625em;
@@ -908,12 +765,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 52.83333%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span7 h2, .add-border-span7 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span8 {
     border-style: solid;
     border-width: 0.0625em;
@@ -922,12 +777,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 61.16667%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span8 h2, .add-border-span8 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span9 {
     border-style: solid;
     border-width: 0.0625em;
@@ -936,12 +789,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 69.5%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span9 h2, .add-border-span9 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span10 {
     border-style: solid;
     border-width: 0.0625em;
@@ -950,12 +801,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 77.83333%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span10 h2, .add-border-span10 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span11 {
     border-style: solid;
     border-width: 0.0625em;
@@ -964,12 +813,10 @@ input:focus, textarea:focus {
     border-color: black;
     width: 86.16667%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span11 h2, .add-border-span11 p {
     margin-top: 0;
   }
 
-  /* line 44, ../sass/_grid.scss */
   .add-border-span12 {
     border-style: solid;
     border-width: 0.0625em;
@@ -978,225 +825,186 @@ input:focus, textarea:focus {
     border-color: black;
     width: 94.5%;
   }
-  /* line 17, ../sass/_mixins.scss */
   .add-border-span12 h2, .add-border-span12 p {
     margin-top: 0;
   }
 
   /*pull and push*/
-  /* line 54, ../sass/_grid.scss */
   .pull-span1 {
     left: 91.66667%;
     width: 8.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span2 {
     left: 83.33333%;
     width: 16.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span3 {
     left: 75%;
     width: 25%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span4 {
     left: 66.66667%;
     width: 33.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span5 {
     left: 58.33333%;
     width: 41.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span6 {
     left: 50%;
     width: 50%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span7 {
     left: 41.66667%;
     width: 58.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span8 {
     left: 33.33333%;
     width: 66.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span9 {
     left: 25%;
     width: 75%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span10 {
     left: 16.66667%;
     width: 83.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span11 {
     left: 8.33333%;
     width: 91.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span12 {
     left: 0%;
     width: 100%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span1 {
     left: -91.66667%;
     width: 8.33333%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span2 {
     left: -83.33333%;
     width: 16.66667%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span3 {
     left: -75%;
     width: 25%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span4 {
     left: -66.66667%;
     width: 33.33333%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span5 {
     left: -58.33333%;
     width: 41.66667%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span6 {
     left: -50%;
     width: 50%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span7 {
     left: -41.66667%;
     width: 58.33333%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span8 {
     left: -33.33333%;
     width: 66.66667%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span9 {
     left: -25%;
     width: 75%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span10 {
     left: -16.66667%;
     width: 83.33333%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span11 {
     left: -8.33333%;
     width: 91.66667%;
   }
 
-  /* line 63, ../sass/_grid.scss */
   .push-span12 {
     left: 0%;
     width: 100%;
   }
 
   /*offset*/
-  /* line 72, ../sass/_grid.scss */
   offset1 {
     margin-left: 8.33333%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset2 {
     margin-left: 16.66667%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset3 {
     margin-left: 25%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset4 {
     margin-left: 33.33333%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset5 {
     margin-left: 41.66667%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset6 {
     margin-left: 50%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset7 {
     margin-left: 58.33333%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset8 {
     margin-left: 66.66667%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset9 {
     margin-left: 75%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset10 {
     margin-left: 83.33333%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset11 {
     margin-left: 91.66667%;
   }
 
-  /* line 72, ../sass/_grid.scss */
   offset12 {
     margin-left: 100%;
   }
 
   /*start layout */
-  /* line 3, ../sass/_tablet_layout.scss */
   header {
     clear: both;
     margin-top: 60px;
   }
 
-  /* line 9, ../sass/_tablet_layout.scss */
   nav {
     clear: both;
     position: fixed;
@@ -1213,33 +1021,28 @@ input:focus, textarea:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
     line-height: 50px;
   }
-  /* line 17, ../sass/_tablet_layout.scss */
   nav ul {
     margin: 0 auto;
     width: 900px;
     background: rgba(250, 250, 250, 0.5);
     overflow: hidden;
   }
-  /* line 26, ../sass/_tablet_layout.scss */
   nav li {
     float: left;
     position: relative;
     z-index: 5;
   }
-  /* line 31, ../sass/_tablet_layout.scss */
   nav li a {
     display: block;
     background: none;
     margin: -1px 0 0;
     padding: 5px 17px;
   }
-  /* line 36, ../sass/_tablet_layout.scss */
   nav li a:link, nav li a:visited {
     color: #333333;
     text-decoration: none;
     border: 1px solid transparent;
   }
-  /* line 41, ../sass/_tablet_layout.scss */
   nav li a:hover {
     border: 1px solid #b3b3b3;
     border-bottom: none;
@@ -1253,32 +1056,39 @@ input:focus, textarea:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
   }
 
-  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   * html {
     font-size: 100%;
   }
 
-  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 16px;
     line-height: 1.7em;
   }
 
-  /* line 55, ../sass/_tablet_layout.scss */
   .container {
     width: 900px;
   }
 
   /* iPads (portrait) ----------- */
   /* end layout */
+  .mobileOnly {
+    display: none;
+  }
+
+  .no-ipad {
+    display: none;
+  }
+
+  .ipad-break-landscape {
+    clear: both;
+    width: 100%;
+  }
 }
 @media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* line 65, ../sass/_tablet_layout.scss */
   .container {
     width: 750px;
   }
 
-  /* line 68, ../sass/_tablet_layout.scss */
   nav ul {
     margin: 0 auto;
     width: 750px;
@@ -1289,23 +1099,19 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 1224px) {
   /* Styles */
   /*start layout */
-  /* line 3, ../sass/_desktop_layout.scss */
   nav ul {
     width: 1200px;
   }
 
-  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   * html {
     font-size: 118.75%;
   }
 
-  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 19px;
     line-height: 1.7em;
   }
 
-  /* line 13, ../sass/_desktop_layout.scss */
   .container {
     width: 1200px;
   }
