@@ -1,5 +1,3 @@
-
-
 /* Grid with margins and border */
 .container{ 
  	width: $pageWidth; 
@@ -16,6 +14,8 @@
 .col{
   float:left;
   overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
 }
 /*main "default" grid*/
 @for $i from 1 through $numCols {
@@ -43,7 +43,7 @@
 @for $i from 1 through $numCols {
   .#{$addBorder}-#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
-    @include addBorder(1px, $borderStyle, $borderColor, $offset, $xwidth);
+    @include addBorder(1px, $borderStyle, $borderColor, $xwidth);
   }
 }
 //.span1.right{ 
@@ -53,24 +53,28 @@
 @for $i from 1 through $numCols {
   .#{$right}-#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
+    $offsetPos : $xwidth - ($gutter * 98);
 	left: $hundred - $xwidth;
          //@include clearfix;
-	width: $xwidth;
+	width:$xwidth;
         
 	    }
 }
 @for $i from 1 through $numCols {
   .#{$left}-#{$classSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
-	left: ($hundred - $xwidth) * -1;
+    $offsetPos : $xwidth - ($gutter * 98);
+	left: (($hundred - $xwidth)) * -1;
          //@include clearfix;
-	width: $xwidth;
+	width: $xwidth - ($gutter * 98);
 	  }
 }
 /*offset*/
-@for $i from 1 through $numCols {
-#{$offsetSlug}#{$i}{
+@for $i from 1 through $numCols - 1 {.#{$offsetSlug}#{$i}{
     $xwidth : percentage($i/$numCols);
-	margin-left: $xwidth;
+	margin-left: $xwidth - 4.49;
+      &:last-child{ 
+        //float: right;
+      }
   }
 }

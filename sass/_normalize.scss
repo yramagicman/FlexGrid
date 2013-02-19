@@ -12,9 +12,9 @@ $legacy-ie: false !default;
 
 
 // Set the default font family here so you don't have to override it later
-$normalized_font_family: sans-serif !default;
+$font_family: "Droid Serif", Georgia, serif !default;
 
-$normalize_headings: true !default;
+$normalize_headings: false !default;
 
 $h1_font_size: 2em !default;
 $h2_font_size: 1.5em !default;
@@ -101,9 +101,9 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif;
+    font-family: $font-family;
 }
-//@include establish-baseline();
+//@include establish-baseline(); //done in media query sheets.
 // Addresses margins handled incorrectly in IE6/7
 
 body {
