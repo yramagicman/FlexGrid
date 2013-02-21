@@ -92,11 +92,6 @@ width:96%;
 .sub-title,.page-title{
 float:none;
 }
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.7;
-$font-size: $base-font-size;//line11
-
-@include establish-baseline();
 //.row:nth-child(2){
 //clear:right !important;
 //}

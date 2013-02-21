@@ -11,13 +11,6 @@
   }
 	
   /* your css files */
-include('normalize.css');
-include('grid.css');
-include('grid.flipped.css');
-include('grid.no-margin.css');
-include('typography.images.css');
-include('index.css');
-include('mediaqueries.fluid.css');
 include('screen.css');
 
 
