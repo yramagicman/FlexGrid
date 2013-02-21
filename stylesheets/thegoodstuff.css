@@ -1,261 +1,61 @@
-/*image definitions and usefull classes*/
-img {
-  max-width: 100%;
-  margin: 1em;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.center {
-  margin: auto;
-  display: block;
-}
-
-.cap {
-  font-size: 0.8em;
-  display: block;
-  margin: 0 1em 0;
-}
-
-.cap img, .cap img {
-  display: block;
-  margin-bottom: 0;
-}
-
-.text-align-left {
-  text-align: left;
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-.cleared {
-  clear: both;
-}
-
-/*links*/
-a:link {
-  color: #1e1e8c;
-}
-a:visited {
-  color: #8c1e1e;
-}
-a:hover, a:active {
-  color: #151562;
-}
-
-input, textarea, select[size] {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid gray;
-  background: #fafafa;
-  padding: 5px;
-  margin: 2px;
-  -webkit-box-shadow: inset 1px 1px 2px #c2c2c2;
-  -moz-box-shadow: inset 1px 1px 2px #c2c2c2;
-  box-shadow: inset 1px 1px 2px #c2c2c2;
-}
-
-select {
-  margin: 5px;
-}
-
-input[type=date], input[type=time], input[type=color], input[type=datetime] {
-  padding: 0;
-  background: #fff;
-}
-input[type=range] {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-input[type=submit], .button {
-  background: white;
-  background: -moz-linear-gradient(top, white 0%, #c2c2c2 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #c2c2c2));
-  background: -webkit-linear-gradient(top, white 0%, #c2c2c2 100%);
-  background: -o-linear-gradient(top, white 0%, #c2c2c2 100%);
-  background: -ms-linear-gradient(top, white 0%, #c2c2c2 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #c2c2c2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
-  box-shadow: none;
-}
-
-textarea {
-  width: 17em;
-  height: 7em;
-}
-
-input:focus, textarea:focus {
-  background-color: #fff;
-  background-image: none;
-  outline: none;
-  box-shadow: none;
-}
-
-.action {
-  background: #7a9fe6;
-  background: -moz-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a9fe6), color-stop(100%, #2861d3));
-  background: -webkit-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
-  background: -o-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
-  background: -ms-linear-gradient(top, #7a9fe6 0%, #2861d3 100%);
-  background: linear-gradient(to bottom, #7a9fe6 0%, #2861d3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
-  text-shadow: 0 1px 1px #030812;
-  padding: 5px 10px;
-  border: 1px solid gray;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-.action:link, .action:visited {
-  color: white;
-}
-.action:hover {
-  text-shadow: 0 -1px 1px #030812;
-}
-.action:active {
-  background: #2861d3;
-  background: -moz-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2861d3), color-stop(100%, #7a9fe6));
-  background: -webkit-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
-  background: -o-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
-  background: -ms-linear-gradient(top, #2861d3 0%, #7a9fe6 100%);
-  background: linear-gradient(to bottom, #2861d3 0%, #7a9fe6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
-}
-
-.button {
-  text-shadow: 0 1px 1px white;
-  padding: 5px 10px;
-  border: 1px solid gray;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-.button:link, .button:visited {
-  color: black;
-}
-.button:hover {
-  text-shadow: 0 -1px 1px white;
-}
-.button:active {
-  background: #c2c2c2;
-  background: -moz-linear-gradient(top, #c2c2c2 0%, white 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c2c2c2), color-stop(100%, white));
-  background: -webkit-linear-gradient(top, #c2c2c2 0%, white 100%);
-  background: -o-linear-gradient(top, #c2c2c2 0%, white 100%);
-  background: -ms-linear-gradient(top, #c2c2c2 0%, white 100%);
-  background: linear-gradient(to bottom, #c2c2c2 0%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
-}
-
-.zero-margin {
-  margin: 0;
-}
-
-.zero-padding {
-  padding: 0;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyHidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 @media only screen and (max-device-width: 480px) {
   /* Styles */
   /*start layout */
+  /* line 2, ../sass/_mobile_layout.scss */
   .container {
     width: 95%;
     margin: auto;
   }
 
+  /* line 6, ../sass/_mobile_layout.scss */
   header {
     clear: both;
   }
 
+  /* line 9, ../sass/_mobile_layout.scss */
   .sidebar, .body {
     float: none;
     clear: both;
   }
 
+  /* line 13, ../sass/_mobile_layout.scss */
   nav {
     width: 100%;
     height: 50px;
     overflow: hidden;
   }
+  /* line 18, ../sass/_mobile_layout.scss */
   nav ul {
     display: none;
     margin: 0;
     padding: 10px;
   }
+  /* line 22, ../sass/_mobile_layout.scss */
   nav ul ul {
     padding: 0;
   }
 
+  /* line 27, ../sass/_mobile_layout.scss */
   #nav:target {
     width: 100%;
     height: auto;
   }
+  /* line 30, ../sass/_mobile_layout.scss */
   #nav:target ul {
     display: block;
   }
+  /* line 33, ../sass/_mobile_layout.scss */
   #nav:target:after {
     content: "";
   }
 
   /* end layout */
+  /* line 11, ../sass/thegoodstuff.scss */
   img, .cap img, .cap {
     margin: 5px;
   }
 
+  /* line 14, ../sass/thegoodstuff.scss */
   .cap {
     width: 200px;
     margin: 10px;
@@ -264,24 +64,28 @@ input:focus, textarea:focus {
 @media only screen and (min-device-width: 768px) {
   /* Styles */
   /* Grid with margins and border */
+  /* line 2, ../sass/_grid.scss */
   .container {
-    width: 1200px;
+    width: 90%;
     overflow: hidden;
     margin: auto;
     color: #333333;
   }
 
+  /* line 8, ../sass/_grid.scss */
   .row {
     overflow: hidden;
     clear: both;
     position: relative;
   }
+  /* line 3, ../sass/_mixins.scss */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
+  /* line 14, ../sass/_grid.scss */
   .col {
     float: left;
     overflow: hidden;
@@ -290,492 +94,434 @@ input:focus, textarea:focus {
   }
 
   /*main "default" grid*/
+  /* line 22, ../sass/_grid.scss */
   .span1 {
     width: 6.37333%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span1:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span2 {
     width: 14.70667%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span2:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span3 {
     width: 23.04%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span3:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span4 {
     width: 31.37333%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span4:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span5 {
     width: 39.70667%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span5:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span6 {
     width: 48.04%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span6:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span7 {
     width: 56.37333%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span7:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span8 {
     width: 64.70667%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span8:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span9 {
     width: 73.04%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span9:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span10 {
     width: 81.37333%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span10:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span11 {
     width: 89.70667%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span11:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
+  /* line 22, ../sass/_grid.scss */
   .span12 {
     width: 98.04%;
     margin-left: 2%;
   }
+  /* line 28, ../sass/_grid.scss */
   .span12:first-child {
     margin-left: 0;
     /*remove margin from every first element in a row */
   }
 
   /* no margin */
+  /* line 36, ../sass/_grid.scss */
   .span1-no-margin {
     width: 8.33333%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span2-no-margin {
     width: 16.66667%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span3-no-margin {
     width: 25%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span4-no-margin {
     width: 33.33333%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span5-no-margin {
     width: 41.66667%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span6-no-margin {
     width: 50%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span7-no-margin {
     width: 58.33333%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span8-no-margin {
     width: 66.66667%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span9-no-margin {
     width: 75%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span10-no-margin {
     width: 83.33333%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span11-no-margin {
     width: 91.66667%;
     margin-left: 0;
   }
 
+  /* line 36, ../sass/_grid.scss */
   .span12-no-margin {
     width: 100%;
     margin-left: 0;
   }
 
   /* with a border */
-  .add-border-span1 {
+  /* line 44, ../sass/_grid.scss */
+  .add-border {
     border-style: solid;
     border-width: 0.0625em;
     padding: 0.7875em;
     margin-top: 0.85em;
     border-color: black;
-    width: 2.83333%;
   }
-  .add-border-span1 h2, .add-border-span1 p {
-    margin-top: 0;
-  }
-
-  .add-border-span2 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 11.16667%;
-  }
-  .add-border-span2 h2, .add-border-span2 p {
-    margin-top: 0;
-  }
-
-  .add-border-span3 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 19.5%;
-  }
-  .add-border-span3 h2, .add-border-span3 p {
-    margin-top: 0;
-  }
-
-  .add-border-span4 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 27.83333%;
-  }
-  .add-border-span4 h2, .add-border-span4 p {
-    margin-top: 0;
-  }
-
-  .add-border-span5 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 36.16667%;
-  }
-  .add-border-span5 h2, .add-border-span5 p {
-    margin-top: 0;
-  }
-
-  .add-border-span6 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 44.5%;
-  }
-  .add-border-span6 h2, .add-border-span6 p {
-    margin-top: 0;
-  }
-
-  .add-border-span7 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 52.83333%;
-  }
-  .add-border-span7 h2, .add-border-span7 p {
-    margin-top: 0;
-  }
-
-  .add-border-span8 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 61.16667%;
-  }
-  .add-border-span8 h2, .add-border-span8 p {
-    margin-top: 0;
-  }
-
-  .add-border-span9 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 69.5%;
-  }
-  .add-border-span9 h2, .add-border-span9 p {
-    margin-top: 0;
-  }
-
-  .add-border-span10 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 77.83333%;
-  }
-  .add-border-span10 h2, .add-border-span10 p {
-    margin-top: 0;
-  }
-
-  .add-border-span11 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 86.16667%;
-  }
-  .add-border-span11 h2, .add-border-span11 p {
-    margin-top: 0;
-  }
-
-  .add-border-span12 {
-    border-style: solid;
-    border-width: 0.0625em;
-    padding: 0.7875em;
-    margin-top: 0.85em;
-    border-color: black;
-    width: 94.5%;
-  }
-  .add-border-span12 h2, .add-border-span12 p {
+  /* line 26, ../sass/_mixins.scss */
+  .add-border h2, .add-border p {
     margin-top: 0;
   }
 
   /*pull and push*/
+  /* line 54, ../sass/_grid.scss */
   .pull-span1 {
     left: 91.66667%;
     width: 8.33333%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span2 {
     left: 83.33333%;
     width: 16.66667%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span3 {
     left: 75%;
     width: 25%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span4 {
     left: 66.66667%;
     width: 33.33333%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span5 {
     left: 58.33333%;
     width: 41.66667%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span6 {
     left: 50%;
     width: 50%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span7 {
     left: 41.66667%;
     width: 58.33333%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span8 {
     left: 33.33333%;
     width: 66.66667%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span9 {
     left: 25%;
     width: 75%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span10 {
     left: 16.66667%;
     width: 83.33333%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span11 {
     left: 8.33333%;
     width: 91.66667%;
   }
 
+  /* line 54, ../sass/_grid.scss */
   .pull-span12 {
     left: 0%;
     width: 100%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span1 {
     left: -91.66667%;
     width: 6.37333%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span2 {
     left: -83.33333%;
     width: 14.70667%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span3 {
     left: -75%;
     width: 23.04%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span4 {
     left: -66.66667%;
     width: 31.37333%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span5 {
     left: -58.33333%;
     width: 39.70667%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span6 {
     left: -50%;
     width: 48.04%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span7 {
     left: -41.66667%;
     width: 56.37333%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span8 {
     left: -33.33333%;
     width: 64.70667%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span9 {
     left: -25%;
     width: 73.04%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span10 {
     left: -16.66667%;
     width: 81.37333%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span11 {
     left: -8.33333%;
     width: 89.70667%;
   }
 
+  /* line 64, ../sass/_grid.scss */
   .push-span12 {
     left: 0%;
     width: 98.04%;
   }
 
   /*offset*/
+  /* line 73, ../sass/_grid.scss */
   .offset1 {
     margin-left: 3.84333%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset2 {
     margin-left: 12.17667%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset3 {
     margin-left: 20.51%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset4 {
     margin-left: 28.84333%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset5 {
     margin-left: 37.17667%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset6 {
     margin-left: 45.51%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset7 {
     margin-left: 53.84333%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset8 {
     margin-left: 62.17667%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset9 {
     margin-left: 70.51%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset10 {
     margin-left: 78.84333%;
   }
 
+  /* line 73, ../sass/_grid.scss */
   .offset11 {
     margin-left: 87.17667%;
   }
 
   /*start layout */
+  /* line 3, ../sass/_tablet_layout.scss */
   header {
     clear: both;
     margin-top: 60px;
   }
 
+  /* line 9, ../sass/_tablet_layout.scss */
   nav {
     clear: both;
     position: fixed;
@@ -792,28 +538,33 @@ input:focus, textarea:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
     line-height: 50px;
   }
+  /* line 17, ../sass/_tablet_layout.scss */
   nav ul {
     margin: 0 auto;
-    width: 900px;
+    width: 90%;
     background: rgba(250, 250, 250, 0.5);
     overflow: hidden;
   }
+  /* line 26, ../sass/_tablet_layout.scss */
   nav li {
     float: left;
     position: relative;
     z-index: 5;
   }
+  /* line 31, ../sass/_tablet_layout.scss */
   nav li a {
     display: block;
     background: none;
     margin: -1px 0 0;
     padding: 5px 17px;
   }
+  /* line 36, ../sass/_tablet_layout.scss */
   nav li a:link, nav li a:visited {
     color: #333333;
     text-decoration: none;
     border: 1px solid transparent;
   }
+  /* line 41, ../sass/_tablet_layout.scss */
   nav li a:hover {
     border: 1px solid #b3b3b3;
     border-bottom: none;
@@ -827,53 +578,84 @@ input:focus, textarea:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor,GradientType=0 );
   }
 
+  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   * html {
     font-size: 100%;
   }
 
+  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 16px;
     line-height: 1.7em;
   }
 
+  /* line 55, ../sass/_tablet_layout.scss */
   .container {
-    width: 900px;
+    width: 90%;
   }
 
   /*iPads (landscape)*/
   /* iPads (portrait) ----------- */
   /* end layout */
+  /* line 24, ../sass/thegoodstuff.scss */
   .mobileOnly {
     display: none;
   }
 }
 @media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* line 63, ../sass/_tablet_layout.scss */
   .ipad-break-landscape {
     clear: both;
     width: 100%;
   }
 
+  /* line 67, ../sass/_tablet_layout.scss */
   .no-ipad {
     display: none;
   }
 }
 @media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* line 76, ../sass/_tablet_layout.scss */
   .container {
-    width: 750px;
+    width: 90%;
   }
 
+  /* line 79, ../sass/_tablet_layout.scss */
   nav ul {
     margin: 0 auto;
-    width: 750px;
+    width: 90%;
     background: rgba(250, 250, 250, 0.5);
     overflow: hidden;
   }
 
+  /* line 85, ../sass/_tablet_layout.scss */
+  nav li a {
+    padding: 10px;
+  }
+
+  /* line 88, ../sass/_tablet_layout.scss */
   .ipad-break-portrait, .ipad-break-landscape {
     clear: both;
     width: 96%;
   }
 
+  /* line 92, ../sass/_tablet_layout.scss */
+  .sub-title, .page-title {
+    float: none;
+  }
+
+  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  * html {
+    font-size: 87.5%;
+  }
+
+  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  html {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  /* line 103, ../sass/_tablet_layout.scss */
   .no-ipad {
     display: none;
   }
@@ -881,21 +663,25 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 1224px) {
   /* Styles */
   /*start layout */
+  /* line 3, ../sass/_desktop_layout.scss */
   nav ul {
-    width: 1200px;
+    width: 90%;
   }
 
+  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   * html {
     font-size: 118.75%;
   }
 
+  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 19px;
     line-height: 1.7em;
   }
 
+  /* line 13, ../sass/_desktop_layout.scss */
   .container {
-    width: 1200px;
+    width: 90%;
   }
 
   /* end layout */

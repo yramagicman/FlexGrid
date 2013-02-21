@@ -9,7 +9,7 @@ $startColor:rgba(230,230,230, 0.6);
 nav{
 clear: both;
 position:fixed;
-left:0;
+left: 0;
 width:100%;
 z-index: 9999;
 @include simpleGradient($endColor, $startColor);
@@ -82,10 +82,21 @@ width: $pageWidth;
 background: rgba(250,250,250, 0.5);
 overflow:hidden;
 }
+nav li a{
+  padding:  10px;
+}
 .ipad-break-portrait, .ipad-break-landscape{
 clear:both;
 width:96%;
 }
+.sub-title,.page-title{
+float:none;
+}
+$base-font-size: 14px;
+$base-line-height: $base-font-size * 1.7;
+$font-size: $base-font-size;//line11
+
+@include establish-baseline();
 //.row:nth-child(2){
 //clear:right !important;
 //}

@@ -40,12 +40,12 @@
   }
 }
 /* with a border */
-@for $i from 1 through $numCols {
-  .#{$addBorder}-#{$classSlug}#{$i}{
-    $xwidth : percentage($i/$numCols);
-    @include addBorder(1px, $borderStyle, $borderColor, $xwidth);
-  }
+
+.#{$addBorder}{
+  //$xwidth : percentage($i/$numCols);
+  @include addBorder(1px, $borderStyle, $borderColor);
 }
+
 //.span1.right{ 
 //	left: percentage($colWidth);
 //}

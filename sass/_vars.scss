@@ -5,10 +5,10 @@ $font-size: $base-font-size;//line11
 $lines: 0.5;
 
 // grid definitions
-$pageWidth: 1200px;
+$pageWidth: 90%;
 $desktopPageWidth: $pageWidth;
-$ipadPageWidthPortrait: 750px;
-$ipadPageWidthLandscape: 900px;
+$ipadPageWidthPortrait: 90%;
+$ipadPageWidthLandscape: 90%;
 $numCols: 12;
 $gutter: .02;
 $offset: 5.5;
