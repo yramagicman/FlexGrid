@@ -6,15 +6,15 @@
 <title>Grid system</title>
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css">
 <!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-				<![endif]-->
-			 <script type="text/javascript">
-					document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'); 
-					</script>
-					<script src="scripts/respond.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>        
-				<style type="text/css">
-			
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link rel="stylesheet" href="stylesheets/ie.css" type="text/css">
+<![endif]-->
+<!-- <script type="text/javascript">
+document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'); 
+</script>-->
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+<style type="text/css">			
 #example .col {
 	background: #999;
 	overflow-x: ellipsis;
@@ -35,7 +35,7 @@
 	<nav id="nav"> 
 	<a href="#nav" class="mobileOnly">Skip Nav</a>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html" id="home" class="active">Home</a></li>
 			<li><a href="#why" id="whylink">Why the Choosy Grid System</a></li>
 			<li><a href="#typography" id="typelink">Typography</a></li>
 			<li><a href="#images" id="imageslink">Images</a></li>
@@ -535,40 +535,59 @@
 		</form>
 		<p>&nbsp;</p>
 	</div>
-	<footer class="col span12">
+	<footer class="row col span12">
 		<p>Copyright 2014, Jonathan Gilson. All code released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU License</a></p>
 	</footer>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>')</script>
 <script type="text/javascript">
 var loc = window.location;
 var url = loc.pathname;
-$('#whylink').click(function(event){
-		 event.preventDefault();
-		 window.location = url + "#why";
-				$(document).scrollTop(90);
-			});
- $('#typelink').click(function(event){
-		 event.preventDefault();
-		 window.location = url + "#typography";
-				$(document).scrollTop(980);
-				});
-$('#imageslink').click(function(event){
-			 event.preventDefault();
-			 window.location = url + "#images";
-				$(document).scrollTop(1500);
-				});
-$('#formslink').click(function(event){
-		event.preventDefault();
-		window.location = url + "#forms";
-				$(document).scrollTop(5170);
-				});
-$('#examplelink').click(function(event){
-		event.preventDefault();
-		window.location = url + "#forms";
-				$(document).scrollTop(3610);
-		});
- </script>
+$('#home').click(function (event) {
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+});
+$('#whylink').click(function (event) {
+    event.preventDefault();
+    window.location = url + "#why";
+    var scrollPos = $(document).scrollTop() - 50;
+    $(document).scrollTop(scrollPos);
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+});
+$('#typelink').click(function (event) {
+    event.preventDefault();
+    window.location = url + "#typography";
+    var scrollPos = $(document).scrollTop() - 50;
+    $(document).scrollTop(scrollPos);
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+});
+$('#imageslink').click(function (event) {
+    event.preventDefault();
+    window.location = url + "#images";
+    var scrollPos = $(document).scrollTop() - 50;
+    $(document).scrollTop(scrollPos);
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+});
+$('#formslink').click(function (event) {
+    event.preventDefault();
+    window.location = url + "#forms";
+    var scrollPos = $(document).scrollTop() - 50;
+    $(document).scrollTop(scrollPos);
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+});
+$('#examplelink').click(function (event) {
+    event.preventDefault();
+    window.location = url + "#example";
+    var scrollPos = $(document).scrollTop() - 50;
+    $(document).scrollTop(scrollPos);
+    $("nav a").removeClass('active');
+    $(this).addClass('active');
+}); 
+</script>
 </body>
 </html>

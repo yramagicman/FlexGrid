@@ -14,12 +14,12 @@ img{
   margin:auto;
   display: block;
 }
-.cap{
+figure, .cap{
   font-size: 0.8em;
   display:block;
    margin: 0 1em 0;
 }
-.cap img, .cap img{
+.cap img, figcaption{
   display:block;
   margin-bottom:0;
 }

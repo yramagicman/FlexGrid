@@ -38,13 +38,21 @@ li{
                 text-decoration:none;
                 border: 1px solid transparent;
               }
+               &.active{
+              border:1px solid lighten($borderColor, 70%);
+                border-bottom:none;
+                @include simpleGradient($startColor2, $endColor2);
+                //text-decoration: underline;
+              }
+
               &:hover{
                 //background:$bgColor;
                 border:1px solid lighten($borderColor, 70%);
                 border-bottom:none;
-                @include simpleGradient($startColor2, $endColor2);
+                @include simpleGradient(lighten($startColor2, 50%), $endColor2);
+                //text-decoration: none;
               }
-	}
+    	}
 }
 }
 $base-font-size: 16px;
