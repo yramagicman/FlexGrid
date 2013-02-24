@@ -1,10 +1,19 @@
 /*start layout */
 $pageWidth: $desktopPageWidth;
+.col{	
+	min-width: 0;
+	position: relative;
+//  margin-left: percentage($gutter);
+}
+.span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
+	min-width:0;
+}
+
 nav ul{
 width: $pageWidth;
 }
 
-$base-font-size: 19px;
+$base-font-size: 18px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;//line11
 //$lines: 1;

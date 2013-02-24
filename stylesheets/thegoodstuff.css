@@ -1,61 +1,90 @@
 @media only screen and (max-device-width: 480px) {
   /* Styles */
   /*start layout */
-  /* line 2, ../sass/_mobile_layout.scss */
   .container {
-    width: 95%;
+    width: 95% !important;
     margin: auto;
   }
 
-  /* line 6, ../sass/_mobile_layout.scss */
   header {
     clear: both;
   }
+  header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.05em;
+    float: none !important;
+  }
 
-  /* line 9, ../sass/_mobile_layout.scss */
   .sidebar, .body {
     float: none;
     clear: both;
   }
 
-  /* line 13, ../sass/_mobile_layout.scss */
   nav {
-    width: 100%;
-    height: 50px;
+    width: 100% !important;
     overflow: hidden;
   }
-  /* line 18, ../sass/_mobile_layout.scss */
   nav ul {
-    display: none;
+    position: absolute;
+    top: -100em;
     margin: 0;
-    padding: 10px;
+    padding: 0;
   }
-  /* line 22, ../sass/_mobile_layout.scss */
   nav ul ul {
     padding: 0;
   }
 
-  /* line 27, ../sass/_mobile_layout.scss */
   #nav:target {
     width: 100%;
     height: auto;
   }
-  /* line 30, ../sass/_mobile_layout.scss */
   #nav:target ul {
     display: block;
+    top: 30px;
+    z-index: 10;
+    width: 100% !important;
   }
-  /* line 33, ../sass/_mobile_layout.scss */
+  #nav:target a:link, #nav:target a:visited {
+    display: block;
+    background: white;
+    color: #333333;
+    border: 1px solid #cccccc;
+    margin-bottom: -1px;
+    padding: 5px;
+    text-decoration: none;
+  }
   #nav:target:after {
     content: "";
   }
 
+  .col {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+
+  .mobileOnly:link, .mobileOnly:visited, #nav:target .mobileOnly:link, #nav:target .mobileOnly:visited {
+    display: block;
+    text-align: center;
+    background: #cfcfcf;
+    padding: 5px;
+    text-decoration: none;
+    color: #333333;
+  }
+
+  .mobileOnly.hidenav:link, .mobileOnly.hidenav:visited {
+    display: none;
+  }
+
+  #nav:target .shownav:link, #nav:target .shownav:visited {
+    display: none !important;
+  }
+
   /* end layout */
-  /* line 11, ../sass/thegoodstuff.scss */
   img, .cap img, .cap {
     margin: 5px;
   }
 
-  /* line 14, ../sass/thegoodstuff.scss */
   .cap {
     width: 200px;
     margin: 10px;
@@ -63,29 +92,26 @@
 }
 @media only screen and (min-device-width: 768px) {
   /* Styles */
-  /* Grid with margins and border */
-  /* line 2, ../sass/_grid.scss */
+  /* @group global classes */
   .container {
-    width: 80%;
     overflow: hidden;
     margin: auto;
     color: #333333;
+    position: relative;
   }
 
-  /* line 8, ../sass/_grid.scss */
   .row {
     overflow: hidden;
     clear: both;
     position: relative;
+    width: 100%;
   }
-  /* line 3, ../sass/_mixins.scss */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 14, ../sass/_grid.scss */
   .col {
     float: left;
     overflow: hidden;
@@ -93,214 +119,137 @@
     box-sizing: border-box;
   }
 
-  /*main "default" grid*/
-  /* line 22, ../sass/_grid.scss */
+  /* @end */
+  /* @group default grid*/
   .span1 {
-    width: 6.37333%;
+    width: 6.33333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span1:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span2 {
-    width: 14.70667%;
+    width: 14.66667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span2:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span3 {
-    width: 23.04%;
+    width: 23%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span3:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span4 {
-    width: 31.37333%;
+    width: 31.33333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span4:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span5 {
-    width: 39.70667%;
+    width: 39.66667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span5:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span6 {
-    width: 48.04%;
+    width: 48%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span6:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span7 {
-    width: 56.37333%;
+    width: 56.33333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span7:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span8 {
-    width: 64.70667%;
+    width: 64.66667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span8:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span9 {
-    width: 73.04%;
+    width: 73%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span9:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span10 {
-    width: 81.37333%;
+    width: 81.33333%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span10:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span11 {
-    width: 89.70667%;
+    width: 89.66667%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span11:first-child {
-    margin-left: 0;
-    /*remove margin from every first element in a row */
-  }
 
-  /* line 22, ../sass/_grid.scss */
   .span12 {
-    width: 98.04%;
+    width: 98%;
     margin-left: 2%;
   }
-  /* line 28, ../sass/_grid.scss */
-  .span12:first-child {
+
+  /* remove margins from every first child */
+  .span1:first-child, .span2:first-child, .span3:first-child, .span4:first-child, .span5:first-child, .span6:first-child, .span7:first-child, .span8:first-child, .span9:first-child, .span10:first-child, .span11:first-child, .span12:first-child {
     margin-left: 0;
-    /*remove margin from every first element in a row */
   }
 
-  /* no margin */
-  /* line 36, ../sass/_grid.scss */
+  /* @end */
+  /* @group no margin */
   .span1-no-margin {
     width: 8.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span2-no-margin {
     width: 16.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span3-no-margin {
     width: 25%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span4-no-margin {
     width: 33.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span5-no-margin {
     width: 41.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span6-no-margin {
     width: 50%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span7-no-margin {
     width: 58.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span8-no-margin {
     width: 66.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span9-no-margin {
     width: 75%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span10-no-margin {
     width: 83.33333%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span11-no-margin {
     width: 91.66667%;
     margin-left: 0;
   }
 
-  /* line 36, ../sass/_grid.scss */
   .span12-no-margin {
     width: 100%;
     margin-left: 0;
   }
 
-  /* with a border */
-  /* line 44, ../sass/_grid.scss */
+  /* @end */
+  /* @group with a border */
   .add-border {
     border-style: solid;
     border-width: 0.0625em;
@@ -308,298 +257,207 @@
     margin-top: 0.85em;
     border-color: black;
   }
-  /* line 26, ../sass/_mixins.scss */
   .add-border h2, .add-border p {
     margin-top: 0;
   }
 
-  /*pull and push*/
-  /* line 54, ../sass/_grid.scss */
+  /* @end */
+  /* @group pull and push*/
   .pull-span1 {
     left: 91.66667%;
     width: 8.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span2 {
     left: 83.33333%;
     width: 16.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span3 {
     left: 75%;
     width: 25%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span4 {
     left: 66.66667%;
     width: 33.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span5 {
     left: 58.33333%;
     width: 41.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span6 {
     left: 50%;
     width: 50%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span7 {
     left: 41.66667%;
     width: 58.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span8 {
     left: 33.33333%;
     width: 66.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span9 {
     left: 25%;
     width: 75%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span10 {
     left: 16.66667%;
     width: 83.33333%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span11 {
     left: 8.33333%;
     width: 91.66667%;
   }
 
-  /* line 54, ../sass/_grid.scss */
   .pull-span12 {
     left: 0%;
     width: 100%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span1 {
     left: -91.66667%;
     width: 6.37333%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span2 {
     left: -83.33333%;
     width: 14.70667%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span3 {
     left: -75%;
     width: 23.04%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span4 {
     left: -66.66667%;
     width: 31.37333%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span5 {
     left: -58.33333%;
     width: 39.70667%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span6 {
     left: -50%;
     width: 48.04%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span7 {
     left: -41.66667%;
     width: 56.37333%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span8 {
     left: -33.33333%;
     width: 64.70667%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span9 {
     left: -25%;
     width: 73.04%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span10 {
     left: -16.66667%;
     width: 81.37333%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span11 {
     left: -8.33333%;
     width: 89.70667%;
   }
 
-  /* line 64, ../sass/_grid.scss */
   .push-span12 {
     left: 0%;
     width: 98.04%;
   }
 
-  /*offset*/
-  /* line 73, ../sass/_grid.scss */
+  /* @end */
+  /* @group offset*/
   .offset1 {
     margin-left: 3.84333%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset2 {
     margin-left: 12.17667%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset3 {
     margin-left: 20.51%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset4 {
     margin-left: 28.84333%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset5 {
     margin-left: 37.17667%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset6 {
     margin-left: 45.51%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset7 {
     margin-left: 53.84333%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset8 {
     margin-left: 62.17667%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset9 {
     margin-left: 70.51%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset10 {
     margin-left: 78.84333%;
   }
 
-  /* line 73, ../sass/_grid.scss */
   .offset11 {
     margin-left: 87.17667%;
   }
 
-  /*start layout */
-  /* line 3, ../sass/_tablet_layout.scss */
+  /* @end */
+  /* @group global layout */
   header {
     clear: both;
     margin-top: 60px;
   }
 
-  /* line 9, ../sass/_tablet_layout.scss */
-  nav {
-    clear: both;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: #c2c2c2;
-    background: -moz-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c2c2c2), color-stop(100%, rgba(230, 230, 230, 0.6)));
-    background: -webkit-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -o-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: -ms-linear-gradient(top, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    background: linear-gradient(to bottom, #c2c2c2 0%, rgba(230, 230, 230, 0.6) 100%);
-    line-height: 50px;
-  }
-  /* line 17, ../sass/_tablet_layout.scss */
-  nav ul {
-    margin: 0 auto;
-    width: 80%;
-    background: rgba(250, 250, 250, 0.5);
-    overflow: hidden;
-  }
-  /* line 26, ../sass/_tablet_layout.scss */
-  nav li {
-    float: left;
-    position: relative;
-    z-index: 5;
-  }
-  /* line 31, ../sass/_tablet_layout.scss */
-  nav li a {
-    display: block;
-    background: none;
-    margin: -1px 0 0;
-    padding: 5px 17px;
-  }
-  /* line 36, ../sass/_tablet_layout.scss */
-  nav li a:link, nav li a:visited {
-    color: #333333;
-    text-decoration: none;
-    border: 1px solid transparent;
-  }
-  /* line 41, ../sass/_tablet_layout.scss */
-  nav li a.active {
-    border: 1px solid #b3b3b3;
-    border-bottom: none;
-    background: whitesmoke;
-    background: -moz-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, whitesmoke), color-stop(100%, rgba(245, 245, 245, 0)));
-    background: -webkit-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -o-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -ms-linear-gradient(top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: linear-gradient(to bottom, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
-  }
-  /* line 48, ../sass/_tablet_layout.scss */
-  nav li a:hover {
-    border: 1px solid #b3b3b3;
-    border-bottom: none;
-    background: white;
-    background: -moz-linear-gradient(top, white 0%, rgba(245, 245, 245, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(245, 245, 245, 0)));
-    background: -webkit-linear-gradient(top, white 0%, rgba(245, 245, 245, 0) 100%);
-    background: -o-linear-gradient(top, white 0%, rgba(245, 245, 245, 0) 100%);
-    background: -ms-linear-gradient(top, white 0%, rgba(245, 245, 245, 0) 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, rgba(245, 245, 245, 0) 100%);
+  .sub-title {
+    margin-left: 20px;
   }
 
-  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  .col {
+    min-width: 48%;
+    position: static;
+  }
+
+  .span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
+    min-width: 100%;
+  }
+
   * html {
     font-size: 100%;
   }
 
-  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 16px;
     line-height: 1.7em;
   }
 
-  /* line 63, ../sass/_tablet_layout.scss */
   .container {
     width: 80%;
   }
@@ -607,54 +465,50 @@
   /*iPads (landscape)*/
   /* iPads (portrait) ----------- */
   /* end layout */
-  /* line 24, ../sass/thegoodstuff.scss */
   .mobileOnly {
     display: none;
   }
 }
-@media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* line 71, ../sass/_tablet_layout.scss */
-  .ipad-break-landscape {
-    clear: both;
-    width: 100%;
-  }
-
-  /* line 75, ../sass/_tablet_layout.scss */
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .no-ipad {
     display: none;
   }
+
+  .sub-title {
+    margin-left: 0;
+  }
 }
-@media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* line 84, ../sass/_tablet_layout.scss */
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .container {
     width: 80%;
+    margin: auto;
   }
 
-  /* line 87, ../sass/_tablet_layout.scss */
   nav ul {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     background: rgba(250, 250, 250, 0.5);
     overflow: hidden;
   }
 
-  /* line 93, ../sass/_tablet_layout.scss */
   nav li a {
     padding: 10px;
   }
 
-  /* line 96, ../sass/_tablet_layout.scss */
   .ipad-break-portrait, .ipad-break-landscape {
-    clear: both;
-    width: 96%;
+    width: 48%;
   }
 
-  /* line 100, ../sass/_tablet_layout.scss */
+  .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+    width: 100%;
+    clear: both;
+  }
+
   .sub-title, .page-title {
     float: none;
+    margin-left: 0;
   }
 
-  /* line 106, ../sass/_tablet_layout.scss */
   .no-ipad {
     display: none;
   }
@@ -662,23 +516,28 @@
 @media only screen and (min-width: 1224px) {
   /* Styles */
   /*start layout */
-  /* line 3, ../sass/_desktop_layout.scss */
+  .col {
+    min-width: 0;
+    position: relative;
+  }
+
+  .span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
+    min-width: 0;
+  }
+
   nav ul {
     width: 80%;
   }
 
-  /* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   * html {
-    font-size: 118.75%;
+    font-size: 112.5%;
   }
 
-  /* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.7em;
   }
 
-  /* line 13, ../sass/_desktop_layout.scss */
   .container {
     width: 80%;
   }

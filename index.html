@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Grid system</title>
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css">
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<link rel="stylesheet" href="stylesheets/ie.css" type="text/css">
-<![endif]-->
-<!-- <script type="text/javascript">
+ <script type="text/javascript">
 document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'); 
-</script>-->
-
+</script>
+<script src="scripts/modernizr.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
 <style type="text/css">			
 #example .col {
@@ -33,7 +35,8 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 <body>
 <div class="container">
 	<nav id="nav"> 
-	<a href="#nav" class="mobileOnly">Skip Nav</a>
+	<a href="#nav" class="mobileOnly shownav">Show Navigation</a>
+	<a href="index.html" class="mobileOnly hidenav">Hide Navigation</a>
 		<ul>
 			<li><a href="index.html" id="home" class="active">Home</a></li>
 			<li><a href="#why" id="whylink">Why the Choosy Grid System</a></li>
@@ -46,6 +49,9 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 	<header class="row col span12-no-margin">
 		<h1 class="page-title float-left">Choosy</h1>
 		<h1 class="sub-title float-right">The responsive grid system that lets you decide </h1>
+<!--[if lt IE 9]>
+		    <p class="chromeframe cf">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
 	</header>
 	<div id="body" class="row col span12-no-marign">
 		<article class="row col span12-no-marign">
@@ -55,17 +61,17 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 				<p>If you're curious, <a href="#example" id="exLink">check out an example</a>, or keep reading to find out more.</p>
 			</div>
 			<div class="row col span12-no-margin">
-				<div class="col add-border span4 first ipad-break-portrait">
+				<div class="col add-border span4 ipad-break-landscape">
 					<h2>Math and Media Queries</h2>
 					<p class="justified">The Choosy Grid System is percentage based, not pixel based, so you don't have to bother with nasty re-calculations when changing media types. Just add the modify theappropriate css file and let the system take do the work. This also allows for completely fluid layouts, or adaptive layouts, if that's more your thing. Just swich the media query file when you want to switch responsive modes.</p>
 				</div>
-				<div class="col span4 ipad-break-portrait ">
+				<div class="col span4 ipad-break-landscape">
 					<h2>Built in compression</h2>
 					<p>This grid system contains a buit in PHP based CSS compression script that compiles and minifies all the necessary CSS files. All you have to do is include your css files along with the others and they're automatically compressed with the rest of the files. just use<br>
 						<code>&lt;link href=&quot;example-folder/minified.php&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</code> <br >
 						instead of the usual link to a stylesheet. The cool thing about this system, is that your stylesheets are always readable and editable, but you serve the end user a slower page because they get a compressed file.</p>
 				</div>
-				<div class="col span4 ipad-break-portrait ">
+				<div class="col span4 ipad-break-landscape-expand">
 					<h2>Typography and Images</h2>
 					<p class="justified">Like most other grid systems, this one comes with basic typography and image styles already defined, saving you time.</p>
 					<h2>WordPress Classes</h2>
@@ -77,7 +83,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<h2>Typography</h2>
 		</hgroup>
 		<div class="row span12 boxbottom">
-			<div class="col span6">
+			<div class="col span6 ipad-break-landscape-expand">
 				<h4>Ordered List </h4>
 				<ol>
 					<li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
@@ -91,7 +97,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 					<li>Maecenas faucibus mollis interdum.</li>
 				</ul>
 			</div>
-			<div class="col span6-no-margin ipad-break-landscape">
+			<div class="col span6 ipad-break-landscape">
 				<h1>heading 1</h1>
 				<h2>heading 2</h2>
 				<h3>heading 3</h3>
@@ -539,11 +545,14 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 		<p>Copyright 2014, Jonathan Gilson. All code released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU License</a></p>
 	</footer>
 </div>
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-<script>window.jQuery || document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>')
+</script>
 <script type="text/javascript">
 var loc = window.location;
 var url = loc.pathname;
+
 $('#home').click(function (event) {
     $("nav a").removeClass('active');
     $(this).addClass('active');

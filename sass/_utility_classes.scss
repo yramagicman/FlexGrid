@@ -68,3 +68,9 @@
 .invisible{
   visibility:hidden
 }
+.cf{
+  @include clearfix;
+}
+.chromeframe{
+clear:both;
+}
