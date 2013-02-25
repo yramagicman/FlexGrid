@@ -7,6 +7,7 @@
 
 /* @group normalize */
 @import "_normalize.scss";
+
 /* @end */
 /* @group grid */
 @import "_grid.scss";
@@ -14,6 +15,14 @@
 /* @end */
 /* @group type and images */
 @import "_type-and-images.scss";
+
+/* @end */
+/* @group forms */
+@import "_forms.scss";
+
+/* @end */
+/* @group utility classes */
+@import "_utility_classes.scss";
 
 /* @end */
 /* @group mobile layout */
@@ -45,21 +54,28 @@
 }
 
 /* @end */
-/* @group forms */
-@import "_forms.scss";
-
-/* @end */
-/* @group utility classes */
-@import "_utility_classes.scss";
-
-/* @end */
+/* @group lt ie 9 */
 .lt-ie9 {
   .mobileOnly {
     display: none;
   }
-}
-
-@media print{
-@import "_print.scss";
-
+  body{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+  nav {
+  	li {
+  		//display: inline;
+  		float: left;
+  		a{
+  			display: inline;
+  		//	float: left;
+  		padding: 10px;
+  		}
+  	}
+  }
+ }
+/* @end */
+@media print {
+  @import "_print.scss";
 }
