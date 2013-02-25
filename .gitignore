@@ -1,5 +1,6 @@
 .sass-cache
 *.esproj
+*.esproj/*
 temp
 dist
 # Compiled source #
