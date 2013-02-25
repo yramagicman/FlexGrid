@@ -1,76 +1,82 @@
-.action{
-  @include simpleGradient($startActionColor,$endActionColor);
+.action {
+  @include simpleGradient($startActionColor, $endActionColor);
   text-shadow: 0 1px 1px darken($action, 50%);
-  padding:5px 10px;
+  padding: 5px 10px;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
-  @include border-radius();
-  text-decoration:none;
-  &:link, &:visited{
+  @include border-radius;
+  text-decoration: none;
+  &:link, &:visited {
     color: white;
   }
-  &:hover{
+  &:hover {
     //color: lighten($textColor, 50%);
     text-shadow: 0 -1px 1px darken($action, 50%);
-
   }
-  &:active{
-   @include simpleGradient($endActionColor,$startActionColor);
+  &:active {
+    @include simpleGradient($endActionColor, $startActionColor);
   }
 }
 
-.button{
+.button {
   @extend input[type=submit];
   text-shadow: 0 1px 1px white;
   padding: 5px 10px;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
-  @include border-radius();
-  text-decoration:none;
-   &:link, &:visited{
+  @include border-radius;
+  text-decoration: none;
+  &:link, &:visited {
     color: black;
   }
-  &:hover{
+  &:hover {
     text-shadow: 0 -1px 1px white;
   }
-  &:active{
-   @include simpleGradient($endColor,$startColor);
+  &:active {
+    @include simpleGradient($endColor, $startColor);
   }
 }
-.zero-margin{
-  margin:0;
-}
-.zero-padding{
-  padding:0;
-}
-.hidden {
-    display: none !important;
-    visibility: hidden;
+
+.zero-margin {
+  margin: 0;
 }
 
-.visuallyHidden{
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.zero-padding {
+  padding: 0;
 }
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
-.invisible{
-  visibility:hidden
+
+.invisible {
+  visibility: hidden;
 }
-.cf{
+
+.cf {
   @include clearfix;
 }
-.chromeframe{
-clear:both;
+
+.chromeframe {
+  clear: both;
 }

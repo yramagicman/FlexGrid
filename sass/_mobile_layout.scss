@@ -1,87 +1,96 @@
 /*start layout */
-.container{
-  width:95% !important;
-  margin:auto;
+.container {
+  width: 90% !important;
+  margin: auto;
 }
-header{
-	clear: both;
-        h1{
-        font-size: 1.5em;
-        margin-bottom:0.05em;
-        float:none !important;
-        }
+
+header {
+  clear: both;
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.05em;
+    float: none !important;
+  }
 }
-.sidebar, .body{
- float:none;
- clear:both;
+
+.sidebar, .body {
+  float: none;
+  clear: both;
 }
-nav{
-  width:100% !important;
+
+nav {
+  width: 100% !important;
   //height:50px;
-  overflow:hidden;
+  overflow: hidden;
+  ul {
+    position: absolute;
+    top: -100em;
+    margin: 0;
+    padding: 0;
+    ul {
+      padding: 0;
+    }
+  }
+}
 
+#nav:target {
+  width: 100%;
+  height: auto;
+  ul {
+    display: block;
+    top: 30px;
+    z-index: 10;
+    width: 100% !important;
+  }
+  a {
+    &:link, &:visited {
+      display: block;
+      background: $startColor;
+      color: $textColor;
+      border: 1px solid #cccccc;
+      margin-bottom: -1px;
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+  &:after {
+    content: "";
+  }
+}
 
-  ul{
-  position:absolute;
-  top: -100em;
-  margin:0;
-  padding:0;
-  ul{
-  padding:0;
-  }
-  }
+body {
+  //  font-size: 250%;
 }
-#nav:target{
-  width:100%;
-  height:auto;
-  ul{
-  display:block;
-  top:30px;
-  z-index:10;
-  width:100% !important;
-  }
-  a{
-    &:link, &:visited{
-  display:block;
-  background:$startColor;
-  color: $textColor;
-  border: 1px solid #ccc;
-  margin-bottom:-1px;
-  padding: 5px;
-  text-decoration: none;
+
+.col {
+  width: 100%;
+  margin: 0;
+  position: static;
 }
-  }
-  &:after{
-  content:"";
+
+.mobileOnly, #nav:target .mobileOnly {
+  &:link, &:visited {
+    display: block;
+    text-align: center;
+    background: lighten($endColor, 5%);
+    padding: 5px;
+    text-decoration: none;
+    color: $textColor;
   }
 }
-body{
-//  font-size: 250%;
+
+.hidenav {
+  &:link, &:visited {
+    display: none;
+  }
 }
-.col{
-width:100%;
-margin:0;
-position: static;
+
+#nav:target .shownav {
+  &:link, &:visited {
+    display: none !important;
+  }
 }
-.mobileOnly, #nav:target .mobileOnly{
-  &:link, &:visited{
-  display:block;
-  text-align:center;
-  background: lighten($endColor, 5%);
-  padding: 5px;
-  text-decoration:none;
-  color: $textColor;
-}
-}
-.mobileOnly.hidenav{
-&:link, &:visited{
+.no-mobile, .no-ipad{
 	display:none;
-	}
 }
-#nav:target .shownav{ 
-&:link, &:visited{
-	display:none !important;
-	}
-}
-
 /* end layout */

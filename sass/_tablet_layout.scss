@@ -1,81 +1,73 @@
 /* @group global layout */
 $pageWidth: $ipadPageWidthLandscape;
-header{
+
+header {
   clear: both;
-  margin-top:60px;
-}
-.sub-title{
-  margin-left:20px;
-}
-.col{
-	min-width: 48%;
-	&:nth-child(odd){
-//	margin-left:0;
-}
-position:static;
-}
-.span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
-	min-width:100%
+  margin-top: 60px;
 }
 
-$base-font-size: 16px;
-$base-line-height: $base-font-size * 1.7;
-$font-size: $base-font-size;//line11
-
-@include establish-baseline();
-.container{
- width: $pageWidth;
+.sub-title {
+  margin-left: 20px;
 }
+
+.container {
+  width: $pageWidth;
+}
+
 /*iPads (landscape)*/
-@media only screen 
-//and (min-width : 768px) 
-and (max-width : 1024px) 
-and (orientation : landscape) {
-//.ipad-break-landscape-expand{
-//clear:both;
-//width:100%;
-//}
-//.ipad-break-landscape{
-//	width:48%;
-//}
-.no-ipad{ display: none;}
-.sub-title{ margin-left:0}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .ipad-break-landscape-expand {
+    clear: both;
+    width: 100%;
+  }
+  .ipad-break-landscape {
+    width: 48%;
+  }
+  .no-ipad {
+    display: none;
+  }
+  .sub-title {
+    margin-left: 0;
+  }
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-//and (min-width : 768px) 
-and (max-width : 1024px) 
-and (orientation : portrait) {
-$pageWidth: $ipadPageWidthPortrait;
-  .container{
-   width: $pageWidth;
-   margin:auto
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  $pageWidth: $ipadPageWidthPortrait;
+  .container {
+    width: $pageWidth;
+    margin: auto;
   }
-nav ul{
-margin:0 auto;
-width: 100%;
-background: rgba(250,250,250, 0.5);
-overflow:hidden;
-}
-nav li a{
-  padding:  10px;
-}
-header{
-//margin-top:50px !important;
-}
-.ipad-break-portrait, .ipad-break-landscape{
-	width:48%;
-}
-.ipad-break-portrait-expand, .ipad-break-landscape-expand{
-width:100%;
-clear:both;
-}
-.sub-title,.page-title{
-float:none;
-margin-left:0;
+  nav ul {
+    margin: 0 auto;
+    width: 100%;
+    background: rgb(250, 250, 250);
+    background: rgba(250, 250, 250, 0.5);
+    overflow: hidden;
+  }
+  nav li a {
+    padding: 10px;
+  }
+  header {
+    //margin-top:50px !important;
+ 
+  }
+  .ipad-break-portrait, .ipad-break-landscape {
+    width: 48%;
+  }
+  .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+    width: 100%;
+    clear: both;
+  }
+  .sub-title,.page-title {
+    float: none;
+    margin-left: 0;
+  }
+  .no-ipad {
+    display: none;
+  }
 }
 
-.no-ipad{ display: none;}
-}
 /* end layout */

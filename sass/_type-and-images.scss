@@ -1,49 +1,59 @@
 //font size declarations for responsive design are in their respective files. This file contains allignment classes and image size definitions
 /*image definitions and usefull classes*/
-img{
-  max-width:100%;
-  margin:1em;
+img {
+  max-width: 100%;
+  margin: 1em;
 }
-.float-left{
+
+.float-left {
   float: left;
 }
-.float-right{
+
+.float-right {
   float: right;
 }
-.center{
-  margin:auto;
+
+.center {
+  margin: auto;
   display: block;
 }
-figure, .cap{
+
+figure, .cap {
   font-size: 0.8em;
-  display:block;
-   margin: 0 1em 0;
+  display: block;
+  margin: 0 1em 0;
 }
-.cap img, figcaption{
-  display:block;
-  margin-bottom:0;
+
+.cap img, figcaption {
+  display: block;
+  margin-bottom: 0;
 }
-.text-align-left{
+
+.text-align-left {
   text-align: left;
 }
-.text-align-right{
-  text-align:right;
+
+.text-align-right {
+  text-align: right;
 }
-.text-align-center{
-  text-align:center;
+
+.text-align-center {
+  text-align: center;
 }
-.cleared{
-  clear:both;
+
+.cleared {
+  clear: both;
 }
+
 /*links*/
-a{
-  &:link{
-	color: $links;
-      }
-&:visited{
-	color: $visited;
-}
-&:hover, &:active{
-	color: $hover;
-}
+a {
+  &:link {
+    color: $links;
+  }
+  &:visited {
+    color: $visited;
+  }
+  &:hover, &:active {
+    color: $hover;
+  }
 }

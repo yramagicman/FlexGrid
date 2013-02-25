@@ -1,42 +1,49 @@
 /* @group global classes */
-.container{  
- 	overflow: hidden;
- 	margin: auto;
- 	color: $textColor;
-        position:relative;
- }
-.row{
-	overflow:hidden;
-	clear: both;
-        position: relative;
-        width: 100%;
-	@include clearfix;
+
+.container {
+  overflow: hidden;
+  margin: auto;
+  color: $textColor;
+  position: relative;
 }
-.col{
-  float:left;
+
+.row {
+  overflow: hidden;
+  clear: both;
+  position: relative;
+  width: 100%;
+  @include clearfix;
+}
+
+.col {
+  float: left;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-//    margin-left: percentage($gutter);
+  //  margin-left: percentage($gutter);
 }
+
 /* @end */
 /* @group default grid*/
 @for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}{
-    $xwidth : percentage($i/$numCols);
-	width: $xwidth - ($gutter * 100); 
-	// because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
-	    margin-left: percentage($gutter);
-	//express gutter as percentage
-      }
+  .#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    width: $xwidth - $gutter * 100;
+    margin-left: percentage($gutter);
+    // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
+ 
+  }
 }
+
 /* remove margins from every first child */
-.span1:first-child{
-  margin-left:0; //remove margin from every first element in a row */
+.span1:first-child {
+  margin-left: 0;
+  //remove margin from every first element in a row */
 }
+
 @for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}:first-child{
-  @extend .span1:first-child;  
+  .#{$classSlug}#{$i}:first-child {
+    @extend .span1:first-child;
   }
 }
 
@@ -44,54 +51,64 @@
 /* @group no margin */
 
 @for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}-#{$no-margin}{
-    $xwidth : percentage($i/$numCols);
-	width: $xwidth;
-  margin-left:0;
+  .#{$classSlug}#{$i}-#{$no-margin} {
+    $xwidth: percentage($i / $numCols);
+    width: $xwidth;
+    margin-left: 0;
   }
 }
+
 /* @end */
 /* @group with a border */
 
-.#{$addBorder}{
+.#{$addBorder} {
   //$xwidth : percentage($i/$numCols);
   @include addBorder(1px, $borderStyle, $borderColor);
 }
+
 /* @end */
-//.span1.right{ 
-//	left: percentage($colWidth);
-//}
+
 /* @group pull and push*/
 @for $i from 1 through $numCols {
-  .#{$pull}-#{$classSlug}#{$i}{
-    $xwidth : percentage($i/$numCols);
-    $offsetPos : $xwidth;
-	left: $hundred - $xwidth;
-         //@include clearfix;
-	width: $xwidth;
-//	    margin-left: percentage($gutter);
-        
-	    }
-}
-@for $i from 1 through $numCols {
-  .#{$push}-#{$classSlug}#{$i}{
-    $xwidth : percentage($i/$numCols);
-    $offsetPos : $xwidth;
-	left: (($hundred - $xwidth)) * -1;
-         //@include clearfix;
-	width: $xwidth - ($gutter * 98);
-//	margin-left:0;
-//    margin-left: percentage($gutter);
-	  }
-}
-/* @end */
-/* @group offset*/
-@for $i from 1 through $numCols - 1 {.#{$offsetSlug}#{$i}{
-    $xwidth : percentage($i/$numCols);
-	margin-left: $xwidth - 4.49;
-      &:last-child{ 
-        //float: right;
-      }
+  .#{$pull}-#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    $offsetPos: $xwidth;
+    @if $i == 12 {
+      left: 0;
+    }
+    @else {
+      left: $hundred - $xwidth;
+    }
+    @include clearfix;
+    width: $xwidth;
+    margin-left: 0;
+ 
   }
 }
+
+@for $i from 1 through $numCols {
+  .#{$push}-#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    $offsetPos: $xwidth;
+    @if $i == 12 {
+      left: 0;
+    }
+    @else {
+      left: ($hundred - $xwidth) * -1;
+    }
+    width: $xwidth - $gutter * 98;
+    margin-left: 0;
+ 
+  }
+}
+
+/* @end */
+/* @group offset*/
+@for $i from 1 through $numCols - 1 {
+  .#{$offsetSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    margin-left: $xwidth - 4.49;
+  }
+}
+/* the final offset is unnecessary as it puts the content off the page */
 /* @end */
