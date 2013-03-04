@@ -8,7 +8,7 @@
 }
 
 .row {
-  overflow: hidden;
+//  overflow: hidden;
   clear: both;
   position: relative;
   width: 100%;
@@ -61,10 +61,10 @@
 /* @end */
 /* @group with a border */
 
-.#{$addBorder} {
+//.#{$addBorder} {
   //$xwidth : percentage($i/$numCols);
-  @include addBorder(1px, $borderStyle, $borderColor);
-}
+//  @include addBorder(1px, $borderStyle, $borderColor);
+//}
 
 /* @end */
 

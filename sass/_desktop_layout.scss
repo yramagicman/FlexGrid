@@ -6,10 +6,6 @@ $pageWidth: $desktopPageWidth;
   //  margin-left: percentage($gutter);
 }
 
-.span4:last-child, .span4-no-margin:last-child, .span4-push:last-child, .span4-pull:last-child {
-  min-width: 0;
-}
-
 nav ul {
   width: $pageWidth;
 }

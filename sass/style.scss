@@ -7,34 +7,24 @@
 
 /* @group normalize */
 @import "_normalize.scss";
-
-/* @end */
-/* @group grid */
-@import "_grid.scss";
-
 /* @end */
 /* @group type and images */
 @import "_type-and-images.scss";
-
 /* @end */
 /* @group forms */
 @import "_forms.scss";
-
 /* @end */
 /* @group utility classes */
 @import "_utility_classes.scss";
-
 /* @end */
 /* @group mobile layout */
-@media only screen and (max-width: 767px) {
-  /* Styles */
   @import "_mobile_layout.scss";
-}
-
 /* @end*/
 /* @group tablet layout */
-
 @media only screen and (min-width: 768px) {
+  /* @group grid */
+  @import "_grid.scss";
+  /* @end */
   /* @group navigation */
   @import "_nav.scss";
   /* @end */
@@ -42,6 +32,9 @@
   @import "_tablet_layout.scss";
   .mobileOnly {
     display: none;
+    &:link, &:visited{
+    display:none;
+    }
   }
 }
 
@@ -76,5 +69,5 @@
  }
 /* @end */
 @media print {
-  @import "_print.scss";
+//  @import "_print.scss";
 }

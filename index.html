@@ -15,15 +15,19 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 </script>
 <script src="scripts/modernizr.min.js"></script>
 <!--<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
-<style type="text/css">			
+<style type="text/css">
+#example{
+  margin: 2px;
+  overflow: visible;
+}			
 #example .col {
-	background: #999;
+	background: #f7f7f7;
 	overflow-x: ellipsis;
 	white-space: nowrap;
 	border-radius: 5px;
-	box-sizing: border-box;
-	padding:3px 5px;
-	border: 1px solid black;
+	text-indent: 10px;
+	box-shadow: -1px -1px 1px #444 inset, -1px -1px 1px #444;
+/*	border: 1px solid black;*/
 }
 #example .row {
 	margin-bottom: 10px;
@@ -33,7 +37,6 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 <body>
 <div class="container">
 	<nav id="nav"> 
-	<span id="scroll" style="float:left;"></span>
 	<a href="#nav" class="mobileOnly shownav">Show Navigation</a>
 	<a href="index.html" class="mobileOnly hidenav">Hide Navigation</a>
 		<ul>
@@ -45,7 +48,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<li><a href="#forms" id="formslink">Forms</a></li>
 		</ul>
 	</nav>
-	<header class="row col span12-no-margin">
+	<header>
 		<h1 class="page-title float-left">Choosy</h1>
 		<h1 class="sub-title float-right">The responsive grid system that lets you decide </h1>
 <!--[if lt IE 9]>
@@ -60,7 +63,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 				<p>If you're curious, <a href="#example" id="exLink">check out an example</a>, or keep reading to find out more.</p>
 			</div>
 			<div class="row col span12-no-margin">
-				<div class="col add-border span4 ipad-break-landscape">
+				<div class="col span4 ipad-break-landscape">
 					<h2>Math and Media Queries</h2>
 					<p class="justified">The Choosy Grid System is percentage based, not pixel based, so you don't have to bother with nasty re-calculations when changing media types. Just add the modify theappropriate css file and let the system take do the work. This also allows for completely fluid layouts, or adaptive layouts, if that's more your thing. Just swich the media query file when you want to switch responsive modes.</p>
 				</div>
@@ -119,7 +122,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<img src="images/waterfall.jpg" alt="waterfall" class="center"/> <span class="cap float-left mid-img text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/44419264@N06/4406942040/">© Salim Photography/ www.salimphoto.com</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></span>
 		</div>
 	</div>
-	<div class="row col span12-no-margin" id="example">
+	<div id="example">
 		<hgroup class="row span12">
 		<h2>Fluid Grid Example</h2>
 		</hgroup>
