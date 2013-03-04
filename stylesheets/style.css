@@ -470,87 +470,89 @@ input:focus, textarea:focus {
 
 /* @end */
 /* @group mobile layout */
-/*start layout */
-.container {
-  width: 90%;
-  margin: auto;
-}
+@media only screen and (min-width: 320px) {
+  /*start layout */
+  .container {
+    width: 90%;
+    margin: auto;
+  }
 
-header .float-right, header .float-left {
-  margin-bottom: 0.05em;
-  float: none;
-}
+  header .float-right, header .float-left {
+    margin-bottom: 0.05em;
+    float: none;
+  }
 
-.sidebar, .body {
-  float: none;
-  clear: both;
-}
+  .sidebar, .body {
+    float: none;
+    clear: both;
+  }
 
-nav {
-  width: 100%;
-  overflow: hidden;
-}
-nav ul {
-  position: absolute;
-  top: -100em;
-  margin: 0;
-  padding: 0;
-}
-nav ul ul {
-  padding: 0;
-}
+  nav {
+    width: 100%;
+    overflow: hidden;
+  }
+  nav ul {
+    position: absolute;
+    top: -100em;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul ul {
+    padding: 0;
+  }
 
-#nav:target {
-  width: 100%;
-  height: auto;
-}
-#nav:target ul {
-  display: block;
-  top: 35px;
-  z-index: 10;
-  width: 100%;
-}
-#nav:target a:link, #nav:target a:visited {
-  display: block;
-  background: white;
-  color: #333333;
-  border: 1px solid #cccccc;
-  margin-bottom: -1px;
-  padding: 5px;
-  text-decoration: none;
-}
-#nav:target:after {
-  content: "";
-}
+  #nav:target {
+    width: 100%;
+    height: auto;
+  }
+  #nav:target ul {
+    display: block;
+    top: 35px;
+    z-index: 10;
+    width: 100%;
+  }
+  #nav:target a:link, #nav:target a:visited {
+    display: block;
+    background: white;
+    color: #333333;
+    border: 1px solid #cccccc;
+    margin-bottom: -1px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  #nav:target:after {
+    content: "";
+  }
 
-.col {
-  width: 100%;
-  margin: 0;
-  position: static;
-}
+  .col {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
 
-.mobileOnly:link, .mobileOnly:visited, #nav:target .mobileOnly:link, #nav:target .mobileOnly:visited {
-  display: block;
-  text-align: center;
-  background: #cfcfcf;
-  padding: 5px;
-  text-decoration: none;
-  color: #333333;
-}
+  .mobileOnly:link, .mobileOnly:visited, #nav:target .mobileOnly:link, #nav:target .mobileOnly:visited {
+    display: block;
+    text-align: center;
+    background: #cfcfcf;
+    padding: 5px;
+    text-decoration: none;
+    color: #333333;
+  }
 
-.hidenav:link, .hidenav:visited {
-  display: none;
-}
+  .hidenav:link, .hidenav:visited {
+    display: none;
+  }
 
-#nav:target .shownav:link, #nav:target .shownav:visited {
-  display: none;
-}
+  #nav:target .shownav:link, #nav:target .shownav:visited {
+    display: none;
+  }
 
-.no-mobile, .no-ipad {
-  display: none;
-}
+  .no-mobile, .no-ipad {
+    display: none;
+  }
 
-/* end layout */
+  /* end layout */
+}
 /* @end*/
 /* @group tablet layout */
 @media only screen and (min-width: 768px) {
@@ -1035,7 +1037,7 @@ nav ul ul {
   /* Styles */
   /* @group global layout */
   header {
-    clear: both;
+    clear: none;
     margin-top: 60px;
   }
   header .float-right {
@@ -1162,3 +1164,79 @@ nav ul ul {
 }
 
 /* @end */
+@media print {
+  /* Choosy Grid System, by Jonathan Gilson. Released under GNU License */
+  body {
+    margin: 0.25in 0.5in;
+  }
+
+  nav, header {
+    display: none;
+  }
+
+  * {
+    background: transparent !important;
+    color: black !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .chromeframe {
+    display: none !important;
+  }
+}
