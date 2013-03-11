@@ -577,9 +577,10 @@ input:focus, textarea:focus {
   }
 
   .col {
-    float: left;
-    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
     position: relative;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -714,6 +715,17 @@ input:focus, textarea:focus {
 
   /* @end */
   /* @group with a border */
+  .add-border {
+    border-style: solid;
+    border-width: 0.0625em;
+    padding: 0.7875em;
+    margin-top: 0.85em;
+    border-color: black;
+  }
+  .add-border h2, .add-border p {
+    margin-top: 0;
+  }
+
   /* @end */
   /* @group pull and push*/
   .pull-span1 {
@@ -1154,6 +1166,9 @@ input:focus, textarea:focus {
 .lt-ie9 body {
   padding-right: 10px;
   padding-left: 10px;
+}
+.lt-ie9 nav {
+  clear: both;
 }
 .lt-ie9 nav li {
   float: left;

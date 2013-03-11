@@ -16,9 +16,12 @@
 }
 
 .col {
-  float: left;
-  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+//  float:left;
+//  overflow: hidden;
   position: relative;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   //  margin-left: percentage($gutter);
 }
@@ -61,10 +64,10 @@
 /* @end */
 /* @group with a border */
 
-//.#{$addBorder} {
-  //$xwidth : percentage($i/$numCols);
-//  @include addBorder(1px, $borderStyle, $borderColor);
-//}
+.#{$addBorder} {
+//  $xwidth : percentage($i/$numCols);
+  @include addBorder(1px, $borderStyle, $borderColor);
+}
 
 /* @end */
 
