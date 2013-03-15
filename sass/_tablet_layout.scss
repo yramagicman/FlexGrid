@@ -1,5 +1,7 @@
 /* @group global layout */
-$pageWidth: $ipadPageWidthLandscape;
+$ipadPageWidthPortrait: 80%;
+$ipadPageWidthLandscape: 80%;
+
 
 header {
   clear: none;
@@ -19,6 +21,7 @@ header {
 }
 
 .container {
+  $pageWidth: $ipadPageWidthLandscape;
   width: $pageWidth;
   margin: auto;
 }

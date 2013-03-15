@@ -1,5 +1,21 @@
-/* @group global classes */
+// grid definitions
 
+$pageWidth:80%;
+$numCols: 12;
+$gutter: 0.02;
+$offset: 5.5;
+
+$hundred: 100;
+
+// classes
+$classSlug: span !default;
+$no-margin: no-margin !default;
+$addBorder: add-border !default;
+$push: push !default;
+$pull: pull !default;
+$offsetSlug: offset !default;
+
+/* @group global classes */
 .container {
   overflow: hidden;
   margin: auto;

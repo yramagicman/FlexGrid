@@ -1,5 +1,7 @@
 /*start layout */
-$pageWidth: $desktopPageWidth;
+// grid definitions
+$desktopPageWidth: 80%;
+$maxWidth:1200px;
 .col {
   min-width: 0;
   position: relative;
@@ -7,12 +9,12 @@ $pageWidth: $desktopPageWidth;
 }
 
 nav ul {
-  width: $pageWidth;
+  width: $desktopPageWidth;
 }
 
 //@include establish-baseline();
 .container {
-  width: $pageWidth;
+  width: $desktopPageWidth;
   max-width: $maxWidth;
 }
 .no-desktop{

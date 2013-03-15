@@ -6,21 +6,16 @@
     clear: both;
   }
 }
+// border stuff
+$borderWidth: 1;
+$borderStyle: solid !default;
 
 @mixin lrPad($padding: 0.5em) {
   padding: 0 $padding;
 }
 
-//@mixin addBorder($borderWidth:1px, $borderStyle:solid, $color:$borderColor, $offset:5, $colWidth:0.1) {
-//	@include rhythm-borders($borderWidth, $lines, $font-size, $borderStyle);
-//        @include margin-leader(0.5);
-//	border-color: $color;
-//	width: $colWidth - $offset;
-//        & h2, & p { 
-//        margin-top:0;
-//      }
-//}
 @mixin addBorder($borderWidth: 1px, $borderStyle: solid, $color: $borderColor, $colWidth: 1) {
+  $lines: 0.5;
   @include rhythm-borders($borderWidth, $lines, $font-size, $borderStyle);
   @include margin-leader(0.5);
   border-color: $color;

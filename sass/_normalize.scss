@@ -11,6 +11,9 @@ $legacy-ie: false !default;
 
 // Set the default font family here so you don't have to override it later
 $font_family: "Droid Serif", Georgia, serif !default;
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.7;
+$font-size: $base-font-size;
 
 $normalize_headings: true !default;
 
@@ -27,6 +30,21 @@ $h3_margin: 1em 0 !default;
 $h4_margin: 1.33em 0 !default;
 $h5_margin: 1.67em 0 !default;
 $h6_margin: 2.33em 0 !default;
+
+//colors
+$textColor: #333333;
+$bgColor: whitesmoke;
+$action: #3a70da;
+$links: rgb(30, 30, 140);
+$hover: darken($links, 30%);
+$visited: rgb(140, 30, 30);
+$borderColor: black;
+//standard gradient
+$startColor: lighten($bgColor, 5%);
+$endColor: darken($bgColor, 20%);
+//action buttons
+$startActionColor: lighten($action, 15%);
+$endActionColor: darken($action, 5%);
 
 // =============================================================================
 // HTML5 display definitions
@@ -116,11 +134,6 @@ body {
   color: $textColor;
 }
 
-$base-font-size: 16px;
-$base-line-height: $base-font-size * 1.7;
-$font-size: $base-font-size;
-
-//line11
 
 @include establish-baseline;
 
