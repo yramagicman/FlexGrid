@@ -5,11 +5,6 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "components",
-    "gridScss.esproj",
-    "config.rb",
-    "images",
-    "stylesheets",
-    "index.html"
+    "components"
   ]
 }
