@@ -1,36 +1,10 @@
-// box-shadow
-$default-border-radius: 4px;
-$default-box-shadow-color: darken($bgColor, 20%);
-$color: $default-box-shadow-color;
-$default-box-shadow-h-offset: 1px;
-$hOffset: $default-box-shadow-h-offset;
-
-//The default horizontal offset. Positive is to the right.
-
-$default-box-shadow-v-offset: 1px;
-$vOffset: $default-box-shadow-v-offset;
-
-//The default vertical offset. Positive is down.
-
-$default-box-shadow-blur: 2px;
-$blur: $default-box-shadow-blur;
-
-//The default blur length.
-
-$default-box-shadow-spread: false;
-$spread: $default-box-shadow-spread;
-
-//The default spread length.
-
-$default-box-shadow-inset: true;
-$inset: false;
 input, textarea,select[size] {
   @include border-radius;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
   background: lighten($bgColor, 2%);
   padding: 5px;
   margin: 2px;
-  @include box-shadow;
+//  @include boxShadow( 1px, 1px, 1px, #000);
 }
 
 select {
@@ -56,7 +30,7 @@ input {
 }
 
 textarea {
-  width: 17em;
+  width: 90%;
   height: 7em;
 }
 

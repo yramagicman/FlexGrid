@@ -1,12 +1,12 @@
 @mixin clearfix {
   //&{clear:both;}
-  &:after {
+  &:after, &:before {
     content: "";
     display: table;
     clear: both;
   }
 }
-// border stuff
+$lines: 0.5;
 $borderWidth: 1;
 $borderStyle: solid !default;
 
@@ -15,7 +15,6 @@ $borderStyle: solid !default;
 }
 
 @mixin addBorder($borderWidth: 1px, $borderStyle: solid, $color: $borderColor, $colWidth: 1) {
-  $lines: 0.5;
   @include rhythm-borders($borderWidth, $lines, $font-size, $borderStyle);
   @include margin-leader(0.5);
   border-color: $color;
@@ -49,11 +48,16 @@ $borderStyle: solid !default;
 @mixin simpleGradient($startColor, $endColor) {
   background: ie-hex-str($startColor);
   background: $startColor;
-  background: -moz-linear-gradient(top, $startColor 0, $endColor 100%);
+  background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(100%, $endColor));
-  background: -webkit-linear-gradient(top, $startColor 0, $endColor 100%);
-  background: -o-linear-gradient(top, $startColor 0, $endColor 100%);
-  //	background: -ms-linear-gradient(top, $startColor 0, $endColor 100%);
-  background: linear-gradient(to bottom, $startColor 0, $endColor 100%);
+  background: -webkit-linear-gradient(top, $startColor 0%, $endColor 100%);
+  background: -o-linear-gradient(top, $startColor 0%, $endColor 100%);
+  //	background: -ms-linear-gradient(top, $startColor 0%, $endColor 100%);
+  background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$startColor, endColorstr= $endColor,GradientType=0 );
+}
+// box-shadow
+@mixin boxShadow($hoffset:1px, $voffset:1px, $blur:1px, $spread:1px, $color:#000 ) {
+  -webkit-box-shadow: $hoffset $voffset $blur $spread $color;
+  box-shadow: $hoffset $voffset $blur $spread $color;
 }

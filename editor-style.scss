@@ -1,0 +1,28 @@
+/*
+Theme Name: Wordpress Html5
+Theme URI: 
+Description: 
+Version:
+Author: Jonathan
+Author URI: http://www.perpetuallycreative.com/
+Tags: tag me
+*/
+/*pretty tinyMCE*/
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "_mixins.scss";
+/* @group normalize */
+@import "_normalize.scss";
+/* @end */
+/* @group type and images */
+@import "_type-and-images.scss";
+/* @end */
+/* @group forms */
+@import "_forms.scss";
+/* @end */
+/* @group utility classes */
+@import "_utility_classes.scss";
+/* @end */
+/*@group required wordpress classes */
+@import "_required.scss";
+/* @end */

@@ -9,9 +9,17 @@ Tags: full-width-template
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl.html
 */
-
 /*
-Make sure you're working with the SCSS file!
+If you're not using a SASS/Compass edit this css file and rename it to style.css
+Normalize ends on line 259. 
+Form styling starts on 273.
+Wordpress Core styling starts on line 322
+Utility classes begin on line 417
+Print styling starts on line 528
+*/
+/*
+If you're not using a SASS/Compass edit this css file and rename it to style.css
+
 */
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
@@ -19,38 +27,24 @@ Make sure you're working with the SCSS file!
 /* @group normalize */
 @import "_normalize.scss";
 /* @end */
-/* @group grid */
-@import "_grid.scss";
 
-/* @end */
-/* @group type and images */
-@import "_type-and-images.scss";
-/* @end */
-/* @group mobile layout */
 @media only screen and (min-width: 320px) {
-  /* Styles */
-  @import "_mobile_layout.scss";
+  /* Mobile Styles */
 }
 
 /* @end*/
 /* @group tablet layout */
+
 @media only screen and (min-width: 768px) {
-  /* @group navigation */
-  @import "_nav.scss";
-  /* @end */
-  /* Styles */
-  @import "_tablet_layout.scss";
-  .mobileOnly {
-    display: none;
-  }
+
+  /* Tablet Styles */
 }
 
 /* @end */
 /* @group desktop layout */
 
 @media only screen and (min-width: 1224px) {
-  /* Styles */
-  @import "_desktop_layout.scss";
+  /* Desktop Styles */
 }
 
 /* @end */
@@ -58,7 +52,7 @@ Make sure you're working with the SCSS file!
 @import "_forms.scss";
 
 /* @end */
-/* @group required */
+/* @group WordPress required */
 @import "_required.scss";
 /* @end */
 
@@ -66,11 +60,6 @@ Make sure you're working with the SCSS file!
 @import "_utility_classes.scss";
 
 /* @end */
-.lt-ie9 {
-  .mobileOnly {
-    display: none;
-  }
-}
 @media print{
-  @import "_print.scss";
+@import "_print.scss";
 }

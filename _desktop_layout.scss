@@ -1,24 +1,23 @@
 /*start layout */
-// grid definitions
-$desktopPageWidth: 80%;
-$maxWidth:1200px;
+$pageWidth: $desktopPageWidth;
+
 .col {
-  min-width: 0;
-  position: relative;
+//  min-width: 0;
+//  position: relative;
   //  margin-left: percentage($gutter);
 }
 
 nav ul {
-  width: $desktopPageWidth;
+  width: $pageWidth;
 }
 
 //@include establish-baseline();
 .container {
-  width: $desktopPageWidth;
-  max-width: $maxWidth;
+  width: $pageWidth;
+  overflow: visible;
 }
-.no-desktop{
-	display:none;
+.content{
+  overflow: visible;
 }
 
 /* end layout */

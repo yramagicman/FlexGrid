@@ -1,33 +1,24 @@
 /* @group global layout */
-$ipadPageWidthPortrait: 80%;
-$ipadPageWidthLandscape: 80%;
-
+$pageWidth: $ipadPageWidthLandscape;
 
 header {
-  clear: none;
-  margin-top: 60px;
-//  overflow: hidden;
-  .float-right{
-    float:right;
-    clear:none;
-  }
-  .float-left{
-    float:left;
-    clear:none;
-  }
+  clear: both;
 }
+
 .sub-title {
   margin-left: 20px;
 }
 
 .container {
-  $pageWidth: $ipadPageWidthLandscape;
   width: $pageWidth;
-  margin: auto;
+  overflow:visible;
 }
-
+.col{
+  min-width:0;
+  position:relative;
+}
 /*iPads (landscape)*/
-
+.mobileOnly{display:none;}
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .ipad-break-landscape-expand {
     clear: both;
@@ -50,6 +41,7 @@ header {
   $pageWidth: $ipadPageWidthPortrait;
   .container {
     width: $pageWidth;
+    margin: auto;
   }
   nav ul {
     margin: 0 auto;
@@ -60,6 +52,10 @@ header {
   }
   nav li a {
     padding: 10px;
+  }
+  header {
+    //margin-top:50px !important;
+ 
   }
   .ipad-break-portrait, .ipad-break-landscape {
     width: 48%;
