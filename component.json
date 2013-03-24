@@ -1,0 +1,15 @@
+{
+  "name": "FlexGrid",
+  "version": "1.0.0",
+  "main": "/sass/*.sass",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "gridScss.esproj",
+    "config.rb",
+    "images",
+    "stylesheets",
+    "index.html"
+  ]
+}
