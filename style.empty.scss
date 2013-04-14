@@ -1,25 +1,6 @@
-/*!
-Theme Name: WordpressHTML5
-Theme URI: https://github.com/yramagicman/wordpressHTML5
-Description: Description
-Version: 1.1
-Author: Jonathan Gilson
-Author URI: http://www.perpetuallycreative.com
-Tags: full-width-template
-License: GPL
-License URI: http://www.gnu.org/licenses/gpl.html
-*/
-/*
-If you're not using a SASS/Compass edit this css file and rename it to style.css
-Normalize ends on line 259. 
-Form styling starts on 273.
-Wordpress Core styling starts on line 322
-Utility classes begin on line 417
-Print styling starts on line 528
-*/
-/*
-If you're not using a SASS/Compass edit this css file and rename it to style.css
 
+/*
+Make sure you're working with the SCSS file!
 */
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
@@ -27,24 +8,38 @@ If you're not using a SASS/Compass edit this css file and rename it to style.css
 /* @group normalize */
 @import "_normalize.scss";
 /* @end */
+/* @group grid */
+@import "_grid.scss";
 
+/* @end */
+/* @group type and images */
+@import "_type-and-images.scss";
+/* @end */
+/* @group mobile layout */
 @media only screen and (min-width: 320px) {
-  /* Mobile Styles */
+  /* Styles */
+//  @import "_mobile_layout.scss";
 }
 
 /* @end*/
 /* @group tablet layout */
-
 @media only screen and (min-width: 768px) {
-
-  /* Tablet Styles */
+  ///* @group navigation */
+//  @import "_nav.scss";
+//  /* @end */
+//  /* Styles */
+//  @import "_tablet_layout.scss";
+  .mobileOnly {
+    display: none;
+  }
 }
 
 /* @end */
 /* @group desktop layout */
 
 @media only screen and (min-width: 1224px) {
-  /* Desktop Styles */
+  /* Styles */
+//  @import "_desktop_layout.scss";
 }
 
 /* @end */
@@ -52,7 +47,7 @@ If you're not using a SASS/Compass edit this css file and rename it to style.css
 @import "_forms.scss";
 
 /* @end */
-/* @group WordPress required */
+/* @group required */
 @import "_required.scss";
 /* @end */
 
@@ -60,6 +55,11 @@ If you're not using a SASS/Compass edit this css file and rename it to style.css
 @import "_utility_classes.scss";
 
 /* @end */
+.lt-ie9 {
+  .mobileOnly {
+    display: none;
+  }
+}
 @media print{
-@import "_print.scss";
+  @import "_print.scss";
 }

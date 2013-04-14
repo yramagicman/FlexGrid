@@ -1,25 +1,5 @@
 /*
-Theme Name: WordpressHTML5
-Theme URI: https://github.com/yramagicman/wordpressHTML5
-Description: Description
-Version: 1.1
-Author: Jonathan Gilson
-Author URI: http://www.perpetuallycreative.com
-Tags: full-width-template
-License: GPL
-License URI: http://www.gnu.org/licenses/gpl.html
-*/
-/*
-If you're not using a SASS/Compass edit this css file and rename it to style.css
-Normalize ends on line 259. 
-Form styling starts on 273.
-Wordpress Core styling starts on line 322
-Utility classes begin on line 417
-Print styling starts on line 528
-*/
-/*
-If you're not using a SASS/Compass edit this css file and rename it to style.css
-
+Make sure you're working with the SCSS file!
 */
 /* @group normalize */
 /* line 61, ../_normalize.scss */
@@ -311,18 +291,506 @@ table {
 }
 
 /* @end */
+/* @group grid */
+/* @group global classes */
+/* line 20, ../_grid.scss */
+.container {
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+/* line 26, ../_grid.scss */
+.row {
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+/* line 3, ../_mixins.scss */
+.row:after, .row:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 34, ../_grid.scss */
+.col {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* @end */
+/* @group default grid*/
+/* line 44, ../_grid.scss */
+.span1 {
+  margin-left: 2%;
+  width: 6.33333%;
+}
+
+/* line 44, ../_grid.scss */
+.span2 {
+  margin-left: 2%;
+  width: 14.66667%;
+}
+
+/* line 44, ../_grid.scss */
+.span3 {
+  margin-left: 2%;
+  width: 23%;
+}
+
+/* line 44, ../_grid.scss */
+.span4 {
+  margin-left: 2%;
+  width: 31.33333%;
+}
+
+/* line 44, ../_grid.scss */
+.span5 {
+  margin-left: 2%;
+  width: 39.66667%;
+}
+
+/* line 44, ../_grid.scss */
+.span6 {
+  margin-left: 2%;
+  width: 48%;
+}
+
+/* line 44, ../_grid.scss */
+.span7 {
+  margin-left: 2%;
+  width: 56.33333%;
+}
+
+/* line 44, ../_grid.scss */
+.span8 {
+  margin-left: 2%;
+  width: 64.66667%;
+}
+
+/* line 44, ../_grid.scss */
+.span9 {
+  margin-left: 2%;
+  width: 73%;
+}
+
+/* line 44, ../_grid.scss */
+.span10 {
+  margin-left: 2%;
+  width: 81.33333%;
+}
+
+/* line 44, ../_grid.scss */
+.span11 {
+  margin-left: 2%;
+  width: 89.66667%;
+}
+
+/* line 44, ../_grid.scss */
+.span12 {
+  margin-left: 2%;
+  width: 98%;
+}
+
+/* remove margins from every first child */
+/* line 54, ../_grid.scss */
+.span1:first-child, .span2:first-child, .span3:first-child, .span4:first-child, .span5:first-child, .span6:first-child, .span7:first-child, .span8:first-child, .span9:first-child, .span10:first-child, .span11:first-child, .span12:first-child {
+  margin-left: 0;
+}
+
+/* @end */
+/* @group no margin */
+/* line 67, ../_grid.scss */
+.span1-no-margin {
+  width: 8.33333%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span2-no-margin {
+  width: 16.66667%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span3-no-margin {
+  width: 25%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span4-no-margin {
+  width: 33.33333%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span5-no-margin {
+  width: 41.66667%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span6-no-margin {
+  width: 50%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span7-no-margin {
+  width: 58.33333%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span8-no-margin {
+  width: 66.66667%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span9-no-margin {
+  width: 75%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span10-no-margin {
+  width: 83.33333%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span11-no-margin {
+  width: 91.66667%;
+  margin-left: 0;
+}
+
+/* line 67, ../_grid.scss */
+.span12-no-margin {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* @end */
+/* @group with a border */
+/* line 76, ../_grid.scss */
+.add-border {
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 0.7875em;
+  margin-top: 0.85em;
+  border-color: black;
+}
+/* line 22, ../_mixins.scss */
+.add-border h2, .add-border p {
+  margin-top: 0;
+}
+
+/* @end */
+/* @group pull and push*/
+/* line 82, ../_grid.scss */
+.pull-span1 {
+  left: 91.66667%;
+  width: 8.33333%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span2 {
+  left: 83.33333%;
+  width: 16.66667%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span3 {
+  left: 75%;
+  width: 25%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span4 {
+  left: 66.66667%;
+  width: 33.33333%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span5 {
+  left: 58.33333%;
+  width: 41.66667%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span6 {
+  left: 50%;
+  width: 50%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span7 {
+  left: 41.66667%;
+  width: 58.33333%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span8 {
+  left: 33.33333%;
+  width: 66.66667%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span9 {
+  left: 25%;
+  width: 75%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span10 {
+  left: 16.66667%;
+  width: 83.33333%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span11 {
+  left: 8.33333%;
+  width: 91.66667%;
+  margin-left: 0;
+}
+
+/* line 82, ../_grid.scss */
+.pull-span12 {
+  left: 0%;
+  width: 100%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span1 {
+  left: -91.66667%;
+  width: 6.37333%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span2 {
+  left: -83.33333%;
+  width: 14.70667%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span3 {
+  left: -75%;
+  width: 23.04%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span4 {
+  left: -66.66667%;
+  width: 31.37333%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span5 {
+  left: -58.33333%;
+  width: 39.70667%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span6 {
+  left: -50%;
+  width: 48.04%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span7 {
+  left: -41.66667%;
+  width: 56.37333%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span8 {
+  left: -33.33333%;
+  width: 64.70667%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span9 {
+  left: -25%;
+  width: 73.04%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span10 {
+  left: -16.66667%;
+  width: 81.37333%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span11 {
+  left: -8.33333%;
+  width: 89.70667%;
+  margin-left: 0;
+}
+
+/* line 93, ../_grid.scss */
+.push-span12 {
+  left: 0%;
+  width: 98.04%;
+  margin-left: 0;
+}
+
+/* @end */
+/* @group offset*/
+/* line 107, ../_grid.scss */
+.offset1 {
+  margin-left: 3.84333%;
+}
+
+/* line 107, ../_grid.scss */
+.offset2 {
+  margin-left: 12.17667%;
+}
+
+/* line 107, ../_grid.scss */
+.offset3 {
+  margin-left: 20.51%;
+}
+
+/* line 107, ../_grid.scss */
+.offset4 {
+  margin-left: 28.84333%;
+}
+
+/* line 107, ../_grid.scss */
+.offset5 {
+  margin-left: 37.17667%;
+}
+
+/* line 107, ../_grid.scss */
+.offset6 {
+  margin-left: 45.51%;
+}
+
+/* line 107, ../_grid.scss */
+.offset7 {
+  margin-left: 53.84333%;
+}
+
+/* line 107, ../_grid.scss */
+.offset8 {
+  margin-left: 62.17667%;
+}
+
+/* line 107, ../_grid.scss */
+.offset9 {
+  margin-left: 70.51%;
+}
+
+/* line 107, ../_grid.scss */
+.offset10 {
+  margin-left: 78.84333%;
+}
+
+/* line 107, ../_grid.scss */
+.offset11 {
+  margin-left: 87.17667%;
+}
+
+/* @end */
+/* @end */
+/* @group type and images */
+/*image definitions and usefull classes*/
+/* line 3, ../_type-and-images.scss */
+img {
+  max-width: 100%;
+  margin: 1em;
+}
+
+/* line 8, ../_type-and-images.scss */
+figure, .cap {
+  font-size: 0.8em;
+  display: block;
+  margin: 0 1em 0;
+}
+
+/* line 14, ../_type-and-images.scss */
+.cap img, figcaption {
+  display: block;
+  margin-bottom: 0;
+}
+
+/* line 19, ../_type-and-images.scss */
+.text-align-left {
+  text-align: left;
+}
+
+/* line 23, ../_type-and-images.scss */
+.text-align-right {
+  text-align: right;
+}
+
+/* line 27, ../_type-and-images.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 31, ../_type-and-images.scss */
+.cleared {
+  clear: both;
+}
+
+/*links*/
+/* line 37, ../_type-and-images.scss */
+a:link {
+  color: #5ebdee;
+}
+/* line 40, ../_type-and-images.scss */
+a:visited {
+  color: #d05517;
+}
+/* line 43, ../_type-and-images.scss */
+a:hover, a:active {
+  color: #0d5173;
+}
+
+/* @end */
+/* @group mobile layout */
 @media only screen and (min-width: 320px) {
-  /* Mobile Styles */
+  /* Styles */
 }
 /* @end*/
 /* @group tablet layout */
 @media only screen and (min-width: 768px) {
-  /* Tablet Styles */
+  /* line 32, ../style.empty.scss */
+  .mobileOnly {
+    display: none;
+  }
 }
 /* @end */
 /* @group desktop layout */
 @media only screen and (min-width: 1224px) {
-  /* Desktop Styles */
+  /* Styles */
 }
 /* @end */
 /* @group forms */
@@ -382,7 +850,7 @@ input:focus, textarea:focus {
 }
 
 /* @end */
-/* @group WordPress required */
+/* @group required */
 /* =WordPress Core
 -------------------------------------------------------------- */
 /* line 3, ../_required.scss */
@@ -620,6 +1088,11 @@ a img.aligncenter {
 }
 
 /* @end */
+/* line 59, ../style.empty.scss */
+.lt-ie9 .mobileOnly {
+  display: none;
+}
+
 @media print {
   /* line 1, ../_print.scss */
   body {
