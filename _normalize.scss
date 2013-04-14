@@ -33,12 +33,19 @@ $h5_margin: 1.67em 0 !default;
 $h6_margin: 2.33em 0 !default;
 
 //Color scheme
+$base: saturate(#228dc4, 10%);
+$compliment: complement($base);
+$darken-base: darken($base, 20%);
+$lighten-base: lighten($base, 20%);
+$lighten-compliment: lighten($compliment, 20%);
+$darken-compliment: darken($compliment, 20%);
+
 $textColor: #444;
 $bgColor: #fff;
-$action: #3a70da;
-$links: rgb(30, 30, 140);
-$hover: darken($links, 30%);
-$visited: rgb(140, 30, 30);
+$action: $compliment;
+$links: $lighten-base;
+$hover: $darken-base;
+$visited: $compliment;
 $borderColor: black;
 
 //Gradients
@@ -51,7 +58,12 @@ $endActionColor: darken($action, 5%);
 // =============================================================================
 // HTML5 display definitions
 // =============================================================================
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
 // Corrects block display not defined in IE6/7/8/9 & FF3
 
 article,

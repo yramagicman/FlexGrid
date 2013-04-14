@@ -9,10 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Grid system</title>
-<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
- <script type="text/javascript">
-document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'); 
-</script>
+<link rel="stylesheet" href="compiled/style.css" type="text/css" media="all">
 <script src="scripts/modernizr.min.js"></script>
 <!--<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
 <style type="text/css">
@@ -49,13 +46,22 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
     </ul>
   </nav>
   <header>
-    <h1 class="page-title float-left">Choosy</h1>
-    <h1 class="sub-title float-right">The responsive grid system that lets you decide </h1>
+    <h1 class="page-title alignleft">Choosy</h1>
+    <h1 class="sub-title alignright">The responsive grid system that lets you decide </h1>
 <!--[if lt IE 9]>
         <p class="chromeframe cf">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
   </header>
   <div id="body" class="row col span12-no-marign">
+      <div class="colorscheme row col span12-no-margin">
+          <div class="color1 colors col span2"></div>
+          <div class="color2 colors col span2"></div>
+          <div class="color3 colors col span2"></div>
+          <div class="color4 colors col span2"></div>
+          <div class="color5 colors col span2"></div>
+          <div class="color6 colors col span2"></div>
+      </div>
+      
     <article class="row col span12-no-marign">
       <div id="why" class="row col span12-no-marign boxtop">
         <h2 class="cleared">Why Choose the Choosy Grid System </h2>
@@ -114,12 +120,12 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
     </hgroup>
     <div class="col span12">
       <h4>Left Aligned Image</h4>
-      <p class="cf"> <span class="cap float-left small-img"><img src="images/monkey1.jpg" alt="monkey">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2446976124/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
+      <p class="cf"> <span class="cap alignleft small-img"><img src="images/monkey1.jpg" alt="monkey">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2446976124/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.</p>
       <h4>Right Aligned Image</h4>
-      <p class="cf"><span class="cap float-right small-img"><img src="images/monkey2.jpg" alt="monkey">Photo Credit: <a href="http://www.flickr.com/photos/8070464@N04/627607268/">Tambako the Jaguar</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></span>Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Maecenas sed diam eget risus varius blandit sit amet non magna. Dcol span12c sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Dcol span12c sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      <p class="cf"><span class="cap alignright small-img"><img src="images/monkey2.jpg" alt="monkey">Photo Credit: <a href="http://www.flickr.com/photos/8070464@N04/627607268/">Tambako the Jaguar</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></span>Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Maecenas sed diam eget risus varius blandit sit amet non magna. Dcol span12c sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Dcol span12c sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
       <h4>Centered Image</h4>
-      <p><img src="images/monkey3.jpg" class="center" alt="monkey"/><span class="cap center text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2284440868/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Dcol span12c sed odio dui. Dcol span12c id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-      <img src="images/waterfall.jpg" alt="waterfall" class="center"/> <span class="cap float-left mid-img text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/44419264@N06/4406942040/">© Salim Photography/ www.salimphoto.com</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></span>
+      <p><img src="images/monkey3.jpg" class="aligncenter" alt="monkey"/><span class="cap center text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/66164649@N00/2284440868/">law_keven</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Dcol span12c sed odio dui. Dcol span12c id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <img src="images/waterfall.jpg" alt="waterfall" class="center"/> <span class="cap alignleft mid-img text-align-center">Photo Credit: <a href="http://www.flickr.com/photos/44419264@N06/4406942040/">© Salim Photography/ www.salimphoto.com</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></span>
     </div>
   </div>
   <div id="example">

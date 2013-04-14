@@ -63,3 +63,24 @@ Make sure you're working with the SCSS file!
 @media print{
   @import "_print.scss";
 }
+.colors{
+    height: 60px;
+}
+.color1{
+    background: $darken-base;
+}
+.color2{
+    background: $lighten-base;
+}
+.color3{
+    background: $base;
+}
+.color4{
+    background: $compliment;
+}
+.color5{
+    background: $lighten-compliment;
+}
+.color6{
+    background: $darken-compliment;
+}
