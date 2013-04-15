@@ -4,6 +4,7 @@
   "main": "./*.sass, ./*.css",
   "ignore": [
     "**/.*",
+    "*.rb"
     "node_modules",
     "components",
     "images",
