@@ -34,18 +34,18 @@ $h6_margin: 2.33em 0 !default;
 
 //Color scheme
 $base: saturate(#228dc4, 10%);
-$compliment: complement($base);
+$secondary: complement($base);
 $darken-base: darken($base, 20%);
 $lighten-base: lighten($base, 20%);
-$lighten-compliment: lighten($compliment, 20%);
-$darken-compliment: darken($compliment, 20%);
+$lighten-secondary: lighten($secondary, 20%);
+$darken-secondary: darken($secondary, 20%);
 
 $textColor: #444;
 $bgColor: #fff;
-$action: $compliment;
+$action: $secondary;
 $links: $lighten-base;
 $hover: $darken-base;
-$visited: $compliment;
+$visited: $secondary;
 $borderColor: black;
 
 //Gradients
