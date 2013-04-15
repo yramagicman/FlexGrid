@@ -12,6 +12,6 @@
     "scripts",
     "gridScss.esproj",
     "_nav.scss",
-    "_*_layout.scss",
+    "_*_layout.scss"
   ]
 }
