@@ -13,6 +13,7 @@
     "gridScss.esproj",
     "_nav.scss",
     "_style.scss",
-    "_*_layout.scss"
+    "_*_layout.scss",
+    "_required.scss"
   ]
 }
