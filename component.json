@@ -1,7 +1,7 @@
 {
   "name": "FlexGrid",
   "version": "1.2.1",
-  "main": "_grid.scss, _normalize.scss, _forms.scss, _mixins.scss, _utility_classes",
+  "main": "_grid.scss, _normalize.scss, _forms.scss, _mixins.scss, _utility_classes.scss",
   "ignore": [
     "**/.*",
     "*.rb",
