@@ -60,12 +60,12 @@ body {
   color: #444444;
 }
 
-/* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 1.7em;
@@ -720,6 +720,60 @@ table {
 /* @end */
 /* @end */
 /* @group type and images */
+/*image definitions and usefull classes*/
+/* line 3, ../_type-and-images.scss */
+img {
+  max-width: 100%;
+  margin: 1em;
+}
+
+/* line 8, ../_type-and-images.scss */
+figure, .cap {
+  font-size: 0.8em;
+  display: block;
+  margin: 0 1em 0;
+}
+
+/* line 14, ../_type-and-images.scss */
+.cap img, figcaption {
+  display: block;
+  margin-bottom: 0;
+}
+
+/* line 19, ../_type-and-images.scss */
+.text-align-left {
+  text-align: left;
+}
+
+/* line 23, ../_type-and-images.scss */
+.text-align-right {
+  text-align: right;
+}
+
+/* line 27, ../_type-and-images.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 31, ../_type-and-images.scss */
+.cleared {
+  clear: both;
+}
+
+/*links*/
+/* line 37, ../_type-and-images.scss */
+a:link {
+  color: #5ebdee;
+}
+/* line 40, ../_type-and-images.scss */
+a:visited {
+  color: #d05517;
+}
+/* line 43, ../_type-and-images.scss */
+a:hover, a:active {
+  color: #0d5173;
+}
+
 /* @end */
 /* @group mobile layout */
 @media only screen and (min-width: 320px) {
@@ -928,4 +982,81 @@ input:focus, textarea:focus {
 /* line 59, ../style.empty.scss */
 .lt-ie9 .mobileOnly {
   display: none;
+}
+
+@media print {
+  /* line 1, ../_print.scss */
+  body {
+    margin: 0.25in 0.5in;
+  }
+
+  /* line 4, ../_print.scss */
+  nav, header {
+    display: none;
+  }
+
+  /* line 7, ../_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 13, ../_print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 16, ../_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 19, ../_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 22, ../_print.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 25, ../_print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 29, ../_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 32, ../_print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 35, ../_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 38, ../_print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 42, ../_print.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 45, ../_print.scss */
+  .chromeframe {
+    display: none !important;
+  }
 }
