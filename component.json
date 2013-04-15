@@ -11,6 +11,7 @@
     "index.html",
     "scripts",
     "gridScss.esproj",
-    "stylesheets"
+    "_nav.scss",
+    "_*_layout.scss",
   ]
 }
