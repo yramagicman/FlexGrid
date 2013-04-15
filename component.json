@@ -1,6 +1,6 @@
 {
   "name": "FlexGrid",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "./*.scss",
   "ignore": [
     "**/.*",
@@ -12,6 +12,7 @@
     "scripts",
     "gridScss.esproj",
     "_nav.scss",
+    "_style.scss",
     "_*_layout.scss"
   ]
 }
