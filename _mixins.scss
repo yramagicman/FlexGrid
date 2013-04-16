@@ -57,7 +57,13 @@ $borderStyle: solid !default;
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$startColor, endColorstr= $endColor,GradientType=0 );
 }
 // box-shadow
-@mixin boxShadow($hoffset:1px, $voffset:1px, $blur:1px, $spread:1px, $color:#000 ) {
-  -webkit-box-shadow: $hoffset $voffset $blur $spread $color;
-  box-shadow: $hoffset $voffset $blur $spread $color;
+@mixin boxShadow($hoffset:1px, $voffset:1px, $blur:1px, $spread:1px, $color:#000, $inset:false ) {
+    @if ($inset == false) {
+        -webkit-box-shadow: $hoffset $voffset $blur $spread $color;
+        box-shadow: $hoffset $voffset $blur $spread $color;   
+    }
+    @if $inset == inset {
+        -webkit-box-shadow: $hoffset $voffset $blur $spread $color $inset;
+        box-shadow: $hoffset $voffset $blur $spread $color $inset;   
+    }
 }
