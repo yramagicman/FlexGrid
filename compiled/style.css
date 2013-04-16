@@ -666,9 +666,17 @@ table {
 .offset1 {
   margin-left: 3.84333%;
 }
+/* line 111, ../grid.scss */
+.offset1:first-child {
+  margin-left: 3.84333%;
+}
 
 /* line 108, ../grid.scss */
 .offset2 {
+  margin-left: 12.17667%;
+}
+/* line 111, ../grid.scss */
+.offset2:first-child {
   margin-left: 12.17667%;
 }
 
@@ -676,9 +684,17 @@ table {
 .offset3 {
   margin-left: 20.51%;
 }
+/* line 111, ../grid.scss */
+.offset3:first-child {
+  margin-left: 20.51%;
+}
 
 /* line 108, ../grid.scss */
 .offset4 {
+  margin-left: 28.84333%;
+}
+/* line 111, ../grid.scss */
+.offset4:first-child {
   margin-left: 28.84333%;
 }
 
@@ -686,9 +702,17 @@ table {
 .offset5 {
   margin-left: 37.17667%;
 }
+/* line 111, ../grid.scss */
+.offset5:first-child {
+  margin-left: 37.17667%;
+}
 
 /* line 108, ../grid.scss */
 .offset6 {
+  margin-left: 45.51%;
+}
+/* line 111, ../grid.scss */
+.offset6:first-child {
   margin-left: 45.51%;
 }
 
@@ -696,9 +720,17 @@ table {
 .offset7 {
   margin-left: 53.84333%;
 }
+/* line 111, ../grid.scss */
+.offset7:first-child {
+  margin-left: 53.84333%;
+}
 
 /* line 108, ../grid.scss */
 .offset8 {
+  margin-left: 62.17667%;
+}
+/* line 111, ../grid.scss */
+.offset8:first-child {
   margin-left: 62.17667%;
 }
 
@@ -706,14 +738,26 @@ table {
 .offset9 {
   margin-left: 70.51%;
 }
+/* line 111, ../grid.scss */
+.offset9:first-child {
+  margin-left: 70.51%;
+}
 
 /* line 108, ../grid.scss */
 .offset10 {
   margin-left: 78.84333%;
 }
+/* line 111, ../grid.scss */
+.offset10:first-child {
+  margin-left: 78.84333%;
+}
 
 /* line 108, ../grid.scss */
 .offset11 {
+  margin-left: 87.17667%;
+}
+/* line 111, ../grid.scss */
+.offset11:first-child {
   margin-left: 87.17667%;
 }
 
@@ -964,7 +1008,7 @@ a:hover, a:active {
 
   /* line 12, ../_tablet_layout.scss */
   .container {
-    width: 80%;
+    width: 100%;
     overflow: visible;
   }
 
@@ -1012,7 +1056,7 @@ a:hover, a:active {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* line 42, ../_tablet_layout.scss */
   .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -1059,12 +1103,12 @@ a:hover, a:active {
   /*start layout */
   /* line 10, ../_desktop_layout.scss */
   nav ul {
-    width: 80%;
+    width: 100%;
   }
 
   /* line 15, ../_desktop_layout.scss */
   .container {
-    width: 80%;
+    width: 100%;
     overflow: visible;
   }
 
