@@ -525,7 +525,7 @@ input:focus, textarea:focus {
   visibility: hidden;
 }
 
-/* line 3, ../_mixins.scss */
+/* line 30, ../mixins.scss */
 .clearfix:after, .clearfix:before {
   content: "";
   display: table;

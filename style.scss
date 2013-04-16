@@ -4,7 +4,7 @@ Make sure you're working with the SCSS file!
 */
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
-@import "_mixins.scss";
+@import "mixins.scss";
 /* @group normalize */
 @import "_normalize.scss";
 /* @end */

@@ -1,27 +1,6 @@
 /* @group global classes */
 // grid definitions
-@import "_mixins.scss";
-$base: saturate(#228dc4, 10%);
-$secondary: complement($base);
-$darken-base: darken($base, 20%);
-$lighten-base: lighten($base, 20%);
-$lighten-secondary: lighten($secondary, 20%);
-$darken-secondary: darken($secondary, 20%);
-
-$textColor: #444;
-$bgColor: #fff;
-$action: $secondary;
-$links: $lighten-base;
-$hover: $darken-base;
-$visited: $secondary;
-$borderColor: black;
-
-//Gradients
-$startColor: lighten($bgColor, 5%);
-$endColor: darken($bgColor, 20%);
-$startActionColor: lighten($action, 15%);
-$endActionColor: darken($action, 5%);
-
+@import "mixins.scss";
 $pageWidth: 80%;
 $desktopPageWidth: $pageWidth;
 $ipadPageWidthPortrait: 80%;
