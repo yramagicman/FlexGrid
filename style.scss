@@ -9,7 +9,7 @@ Make sure you're working with the SCSS file!
 @import "_normalize.scss";
 /* @end */
 /* @group grid */
-@import "_grid.scss";
+@import "grid.scss";
 
 /* @end */
 /* @group type and images */
@@ -76,11 +76,11 @@ Make sure you're working with the SCSS file!
     background: $base;
 }
 .color4{
-    background: $compliment;
+    background: $secondary;
 }
 .color5{
-    background: $lighten-compliment;
+    background: $lighten-secondary;
 }
 .color6{
-    background: $darken-compliment;
+    background: $darken-secondary;
 }
