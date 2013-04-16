@@ -1,10 +1,10 @@
 /* @group global classes */
 // grid definitions
 @import "mixins.scss";
-$pageWidth: 80%;
+$pageWidth: 100%;
 $desktopPageWidth: $pageWidth;
-$ipadPageWidthPortrait: 80%;
-$ipadPageWidthLandscape: 80%;
+$ipadPageWidthPortrait: 100%;
+$ipadPageWidthLandscape: 100%;
 $numCols: 12;
 $gutter: 0.02;
 $offset: 5.5;
@@ -108,11 +108,10 @@ $offsetSlug: offset !default;
   .#{$offsetSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
     margin-left: $xwidth - 4.49;
-    &:last-child {
-      //float: right;
+    &:first-child {
+      margin-left: $xwidth - 4.49;
    
     }
   }
 }
-
 /* @end */
