@@ -251,7 +251,7 @@ table {
 /* @group global classes */
 .container {
   overflow: hidden;
-  margin: auto;
+  padding: auto;
   position: relative;
 }
 
@@ -276,130 +276,68 @@ table {
 /* @end */
 /* @group default grid*/
 .span1 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 6.33333%;
 }
 
 .span2 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 14.66667%;
 }
 
 .span3 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 23%;
 }
 
 .span4 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 31.33333%;
 }
 
 .span5 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 39.66667%;
 }
 
 .span6 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 48%;
 }
 
 .span7 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 56.33333%;
 }
 
 .span8 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 64.66667%;
 }
 
 .span9 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 73%;
 }
 
 .span10 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 81.33333%;
 }
 
 .span11 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 89.66667%;
 }
 
 .span12 {
-  margin-left: 2%;
+  padding-left: 2%;
   width: 98%;
 }
 
-/* remove margins from every first child */
-.span1:first-child, .span2:first-child, .span3:first-child, .span4:first-child, .span5:first-child, .span6:first-child, .span7:first-child, .span8:first-child, .span9:first-child, .span10:first-child, .span11:first-child, .span12:first-child {
-  margin-left: 0;
-}
-
-/* @end */
-/* @group no margin */
-.span1-no-margin {
-  width: 8.33333%;
-  margin-left: 0;
-}
-
-.span2-no-margin {
-  width: 16.66667%;
-  margin-left: 0;
-}
-
-.span3-no-margin {
-  width: 25%;
-  margin-left: 0;
-}
-
-.span4-no-margin {
-  width: 33.33333%;
-  margin-left: 0;
-}
-
-.span5-no-margin {
-  width: 41.66667%;
-  margin-left: 0;
-}
-
-.span6-no-margin {
-  width: 50%;
-  margin-left: 0;
-}
-
-.span7-no-margin {
-  width: 58.33333%;
-  margin-left: 0;
-}
-
-.span8-no-margin {
-  width: 66.66667%;
-  margin-left: 0;
-}
-
-.span9-no-margin {
-  width: 75%;
-  margin-left: 0;
-}
-
-.span10-no-margin {
-  width: 83.33333%;
-  margin-left: 0;
-}
-
-.span11-no-margin {
-  width: 91.66667%;
-  margin-left: 0;
-}
-
-.span12-no-margin {
-  width: 100%;
-  margin-left: 0;
+/* @group no padding */
+.no-padding {
+  padding-left: 0;
 }
 
 /* @end */
@@ -420,145 +358,145 @@ table {
 .pull-span1 {
   left: 91.66667%;
   width: 8.33333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span2 {
   left: 83.33333%;
   width: 16.66667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span3 {
   left: 75%;
   width: 25%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span4 {
   left: 66.66667%;
   width: 33.33333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span5 {
   left: 58.33333%;
   width: 41.66667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span6 {
   left: 50%;
   width: 50%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span7 {
   left: 41.66667%;
   width: 58.33333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span8 {
   left: 33.33333%;
   width: 66.66667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span9 {
   left: 25%;
   width: 75%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span10 {
   left: 16.66667%;
   width: 83.33333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span11 {
   left: 8.33333%;
   width: 91.66667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .pull-span12 {
   left: 0%;
   width: 100%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span1 {
   left: -91.66667%;
   width: 6.37333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span2 {
   left: -83.33333%;
   width: 14.70667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span3 {
   left: -75%;
   width: 23.04%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span4 {
   left: -66.66667%;
   width: 31.37333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span5 {
   left: -58.33333%;
   width: 39.70667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span6 {
   left: -50%;
   width: 48.04%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span7 {
   left: -41.66667%;
   width: 56.37333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span8 {
   left: -33.33333%;
   width: 64.70667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span9 {
   left: -25%;
   width: 73.04%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span10 {
   left: -16.66667%;
   width: 81.37333%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span11 {
   left: -8.33333%;
   width: 89.70667%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .push-span12 {
   left: 0%;
   width: 98.04%;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 /* @end */
@@ -641,6 +579,167 @@ table {
 }
 
 /* @end */
+@media only screen and (min-width: 320px) {
+  /* Styles */
+  /*start layout */
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+
+  header {
+    clear: both;
+  }
+
+  .menu {
+    width: 100%;
+  }
+  .menu ul {
+    position: absolute;
+    top: -100em;
+    margin: 0;
+    padding: 0;
+  }
+  .menu ul ul {
+    position: static;
+    padding: 0;
+  }
+
+  #nav:target {
+    width: 100%;
+    height: auto;
+  }
+  #nav:target ul {
+    display: block;
+    top: 0px;
+    z-index: 10;
+    width: 100% !important;
+  }
+  #nav:target a:link, #nav:target a:visited {
+    display: block;
+    background: white;
+    color: #444444;
+    border: 1px solid #cccccc;
+    margin-bottom: -1px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  #nav:target:after {
+    content: "";
+  }
+
+  .col {
+    min-width: 100%;
+    position: static;
+  }
+
+  .mobileOnly {
+    display: block;
+    text-align: center;
+    background: #d9d9d9;
+    padding: 5px;
+    text-decoration: none;
+    color: #444444;
+  }
+
+  .hidenav:link, .hidenav:visited {
+    display: none;
+  }
+
+  #nav:target .shownav:link, #nav:target .shownav:visited {
+    display: none !important;
+  }
+
+  /* end layout */
+}
+/* @end*/
+/* @group tablet layout */
+@media only screen and (min-width: 768px) {
+  /* Styles */
+  .container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .col {
+    /*override mobile */
+    min-width: 0;
+    position: relative;
+  }
+
+  /*iPads (landscape)*/
+  .mobileOnly {
+    display: none;
+  }
+
+  /* iPads (portrait) ----------- */
+  /* end layout */
+  .mobileOnly {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ipad-break-landscape-expand {
+    clear: both;
+    width: 100%;
+  }
+
+  .ipad-break-landscape {
+    width: 48%;
+  }
+
+  .no-ipad {
+    display: none;
+  }
+
+  .sub-title {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container {
+    width: 100%;
+    padding: auto;
+  }
+
+  .ipad-break-portrait, .ipad-break-landscape {
+    width: 48%;
+  }
+
+  .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+    width: 100%;
+    clear: both;
+  }
+
+  .sub-title, .page-title {
+    float: none;
+    padding-left: 0;
+  }
+
+  .no-ipad {
+    display: none;
+  }
+}
+/* @end */
+/* @group desktop layout */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /*start layout */
+  nav ul {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .content {
+    overflow: visible;
+  }
+
+  /* end layout */
+}
 /* @end */
 /* @group type and images */
 /*image definitions and usefull classes*/

@@ -1,6 +1,7 @@
 /* @group global classes */
 // grid definitions
 @import "mixins.scss";
+
 $pageWidth: 100%;
 $desktopPageWidth: $pageWidth;
 $ipadPageWidthPortrait: 100%;
@@ -9,10 +10,9 @@ $numCols: 12;
 $gutter: 0.02;
 $offset: 5.5;
 
-
 // classes
 $classSlug: span !default;
-$no-margin: no-margin !default;
+$no-padding: no-padding !default;
 $addBorder: add-border !default;
 $push: push !default;
 $pull: pull !default;
@@ -20,12 +20,12 @@ $offsetSlug: offset !default;
 
 .container {
   overflow: hidden;
-  margin: auto;
+  padding: auto;
   position: relative;
 }
 
 .row {
-//  overflow: hidden;
+  //  overflow: hidden;
   clear: both;
   position: relative;
   width: 100%;
@@ -44,39 +44,25 @@ $offsetSlug: offset !default;
 @for $i from 1 through $numCols {
   .#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    margin-left: percentage($gutter);
+    padding-left: percentage($gutter);
     width: $xwidth - $gutter * 100;
     // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
  
   }
 }
+/* @group no padding */
 
-/* remove margins from every first child */
-.span1:first-child {
-  margin-left: 0;
-}
-
-@for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}:first-child {
-    @extend .span1:first-child;
+  .no-padding{
+    padding-left: 0;
   }
-}
 
-/* @end */
-/* @group no margin */
-@for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}-#{$no-margin} {
-    $xwidth: percentage($i / $numCols);
-    width: $xwidth;
-    margin-left: 0;
-  }
-}
 
 /* @end */
 /* @group with a border */
 .#{$addBorder} {
   @include addBorder(1px, $borderStyle, $borderColor);
 }
+
 /* @end */
 /* @group pull and push*/
 @for $i from 1 through $numCols {
@@ -85,8 +71,7 @@ $offsetSlug: offset !default;
     $offsetPos: $xwidth;
     left: 100 - $xwidth;
     width: $xwidth;
-    margin-left: 0;
- 
+    padding-left: 0;
   }
 }
 
@@ -97,8 +82,7 @@ $offsetSlug: offset !default;
     left: (100 - $xwidth) * -1;
     //@include clearfix;
     width: $xwidth - $gutter * 98;
-    margin-left: 0;
- 
+    padding-left: 0;
   }
 }
 
@@ -110,8 +94,180 @@ $offsetSlug: offset !default;
     margin-left: $xwidth - 4.49;
     &:first-child {
       margin-left: $xwidth - 4.49;
-   
     }
   }
 }
+
 /* @end */
+@media only screen and (min-width: 320px) {
+  /* Styles */
+    /*start layout */
+    .container {
+      width: 95%;
+      margin: auto;
+    }
+
+    header {
+      clear: both;
+    }
+
+    .menu {
+      width: 100%;
+    //  height:50px;
+    //  overflow: scroll;
+      ul {
+        position: absolute;
+        top: -100em;
+        margin: 0;
+        padding: 0;
+        ul {
+          position:static;
+          padding: 0;
+        }
+      }
+    }
+    #nav:target {
+      width: 100%;
+      height: auto;
+      ul {
+        display: block;
+        top: 0px;
+        z-index: 10;
+        width: 100% !important;
+      }
+      a {
+        &:link, &:visited {
+          display: block;
+          background: $startColor;
+          color: $textColor;
+          border: 1px solid #cccccc;
+          margin-bottom: -1px;
+          padding: 5px;
+          text-decoration: none;
+        }
+      }
+      &:after {
+        content: "";
+      }
+    }
+
+    .col {
+      min-width: 100%;
+      position: static;
+    }
+
+    .mobileOnly {
+        display: block;
+        text-align: center;
+        background: lighten($endColor, 5%);
+        padding: 5px;
+        text-decoration: none;
+        color: $textColor;
+      }
+
+
+    .hidenav {
+      &:link, &:visited {
+        display: none;
+      }
+    }
+
+    #nav:target .shownav {
+      &:link, &:visited {
+        display: none !important;
+      }
+    }
+
+    /* end layout */
+}
+
+/* @end*/
+/* @group tablet layout */
+@media only screen and (min-width: 768px) {
+  /* Styles */
+  .container {
+    width: $pageWidth;
+    overflow: visible;
+  }
+  .col {
+    /*override mobile */
+    min-width: 0;
+    position: relative;
+  }
+  /*iPads (landscape)*/
+  .mobileOnly {
+    display: none;
+  }
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .ipad-break-landscape-expand {
+      clear: both;
+      width: 100%;
+    }
+    .ipad-break-landscape {
+      width: 48%;
+    }
+    .no-ipad {
+      display: none;
+    }
+    .sub-title {
+      padding-left: 0;
+    }
+  }
+  /* iPads (portrait) ----------- */
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
+    $pageWidth: $ipadPageWidthPortrait;
+    .container {
+      width: $pageWidth;
+      padding: auto;
+    }
+    .ipad-break-portrait, .ipad-break-landscape {
+      width: 48%;
+    }
+    .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+      width: 100%;
+      clear: both;
+    }
+    .sub-title,.page-title {
+      float: none;
+      padding-left: 0;
+    }
+    .no-ipad {
+      display: none;
+    }
+  }
+  /* end layout */
+  .mobileOnly {
+    display: none;
+  }
+}
+
+/* @end */
+/* @group desktop layout */
+
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+    /*start layout */
+    $pageWidth: $desktopPageWidth;
+
+    .col {
+    //  min-width: 0;
+    //  position: relative;
+      //  padding-left: percentage($gutter);
+    }
+
+    nav ul {
+      width: $pageWidth;
+    }
+
+    //@include establish-baseline();
+    .container {
+      width: $pageWidth;
+      overflow: visible;
+    }
+    .content{
+      overflow: visible;
+    }
+
+    /* end layout */
+  
+}
