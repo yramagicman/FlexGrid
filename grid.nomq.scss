@@ -90,9 +90,6 @@ $offsetSlug: offset !default;
   .#{$offsetSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
     margin-left: $xwidth - 4.49;
-    &:first-child {
-      margin-left: $xwidth - 4.49;
-    }
   }
 }
 
