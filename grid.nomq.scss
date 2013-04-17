@@ -71,7 +71,6 @@ $offsetSlug: offset !default;
     $offsetPos: $xwidth;
     left: 100 - $xwidth;
     width: $xwidth;
-    padding-left: 0;
   }
 }
 
@@ -82,7 +81,6 @@ $offsetSlug: offset !default;
     left: (100 - $xwidth) * -1;
     //@include clearfix;
     width: $xwidth - $gutter * 98;
-    padding-left: 0;
   }
 }
 
