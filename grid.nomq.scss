@@ -1,0 +1,101 @@
+/* @group global classes */
+// grid definitions
+@import "mixins.scss";
+
+$pageWidth: 100%;
+$desktopPageWidth: $pageWidth;
+$ipadPageWidthPortrait: 100%;
+$ipadPageWidthLandscape: 100%;
+$numCols: 12;
+$gutter: 0.02;
+$offset: 5.5;
+
+// classes
+$classSlug: span !default;
+$no-padding: no-padding !default;
+$addBorder: add-border !default;
+$push: push !default;
+$pull: pull !default;
+$offsetSlug: offset !default;
+
+.container {
+  overflow: hidden;
+  padding: auto;
+  position: relative;
+}
+
+.row {
+  //  overflow: hidden;
+  clear: both;
+  position: relative;
+  width: 100%;
+  @include clearfix;
+}
+
+.col {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* @end */
+/* @group default grid*/
+@for $i from 1 through $numCols {
+  .#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    padding-left: percentage($gutter);
+    width: $xwidth;
+    // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
+ 
+  }
+}
+/* @group no padding */
+
+  .no-padding{
+    padding-left: 0;
+  }
+
+
+/* @end */
+/* @group with a border */
+.#{$addBorder} {
+  @include addBorder(1px, $borderStyle, $borderColor);
+}
+
+/* @end */
+/* @group pull and push*/
+@for $i from 1 through $numCols {
+  .#{$pull}-#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    $offsetPos: $xwidth;
+    left: 100 - $xwidth;
+    width: $xwidth;
+    padding-left: 0;
+  }
+}
+
+@for $i from 1 through $numCols {
+  .#{$push}-#{$classSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    $offsetPos: $xwidth;
+    left: (100 - $xwidth) * -1;
+    //@include clearfix;
+    width: $xwidth - $gutter * 98;
+    padding-left: 0;
+  }
+}
+
+/* @end */
+/* @group offset*/
+@for $i from 1 through $numCols - 1 {
+  .#{$offsetSlug}#{$i} {
+    $xwidth: percentage($i / $numCols);
+    margin-left: $xwidth - 4.49;
+    &:first-child {
+      margin-left: $xwidth - 4.49;
+    }
+  }
+}
+
+/* @end */
