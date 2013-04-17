@@ -10,38 +10,20 @@ Make sure you're working with the SCSS file!
 /* @end */
 /* @group grid */
 @import "grid.scss";
-
 /* @end */
 /* @group type and images */
 @import "_type-and-images.scss";
 /* @end */
-/* @group mobile layout */
-@media only screen and (min-width: 320px) {
-  /* Styles */
-  @import "_mobile_layout.scss";
-}
-
-/* @end*/
 /* @group tablet layout */
 @media only screen and (min-width: 768px) {
   /* @group navigation */
   @import "_nav.scss";
   /* @end */
-  /* Styles */
-  @import "_tablet_layout.scss";
-  .mobileOnly {
-    display: none;
+  .container{
+      width:80%;
+      margin:auto;
   }
 }
-
-/* @end */
-/* @group desktop layout */
-
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-  @import "_desktop_layout.scss";
-}
-
 /* @end */
 /* @group forms */
 @import "_forms.scss";

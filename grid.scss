@@ -1,6 +1,7 @@
 /* @group global classes */
 // grid definitions
 @import "mixins.scss";
+
 $pageWidth: 100%;
 $desktopPageWidth: $pageWidth;
 $ipadPageWidthPortrait: 100%;
@@ -8,7 +9,6 @@ $ipadPageWidthLandscape: 100%;
 $numCols: 12;
 $gutter: 0.02;
 $offset: 5.5;
-
 
 // classes
 $classSlug: span !default;
@@ -25,7 +25,7 @@ $offsetSlug: offset !default;
 }
 
 .row {
-//  overflow: hidden;
+  //  overflow: hidden;
   clear: both;
   position: relative;
   width: 100%;
@@ -77,6 +77,7 @@ $offsetSlug: offset !default;
 .#{$addBorder} {
   @include addBorder(1px, $borderStyle, $borderColor);
 }
+
 /* @end */
 /* @group pull and push*/
 @for $i from 1 through $numCols {
@@ -86,7 +87,6 @@ $offsetSlug: offset !default;
     left: 100 - $xwidth;
     width: $xwidth;
     margin-left: 0;
- 
   }
 }
 
@@ -98,7 +98,6 @@ $offsetSlug: offset !default;
     //@include clearfix;
     width: $xwidth - $gutter * 98;
     margin-left: 0;
- 
   }
 }
 
@@ -110,8 +109,103 @@ $offsetSlug: offset !default;
     margin-left: $xwidth - 4.49;
     &:first-child {
       margin-left: $xwidth - 4.49;
-   
     }
   }
 }
+
 /* @end */
+@media only screen and (min-width: 320px) {
+  /* Styles */
+  @import "_mobile_layout.scss";
+}
+
+/* @end*/
+/* @group tablet layout */
+@media only screen and (min-width: 768px) {
+  /* Styles */
+  .container {
+    width: $pageWidth;
+    overflow: visible;
+  }
+  .col {
+    /*override mobile */
+    min-width: 0;
+    position: relative;
+  }
+  /*iPads (landscape)*/
+  .mobileOnly {
+    display: none;
+  }
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .ipad-break-landscape-expand {
+      clear: both;
+      width: 100%;
+    }
+    .ipad-break-landscape {
+      width: 48%;
+    }
+    .no-ipad {
+      display: none;
+    }
+    .sub-title {
+      margin-left: 0;
+    }
+  }
+  /* iPads (portrait) ----------- */
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
+    $pageWidth: $ipadPageWidthPortrait;
+    .container {
+      width: $pageWidth;
+      margin: auto;
+    }
+    .ipad-break-portrait, .ipad-break-landscape {
+      width: 48%;
+    }
+    .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+      width: 100%;
+      clear: both;
+    }
+    .sub-title,.page-title {
+      float: none;
+      margin-left: 0;
+    }
+    .no-ipad {
+      display: none;
+    }
+  }
+  /* end layout */
+  .mobileOnly {
+    display: none;
+  }
+}
+
+/* @end */
+/* @group desktop layout */
+
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+    /*start layout */
+    $pageWidth: $desktopPageWidth;
+
+    .col {
+    //  min-width: 0;
+    //  position: relative;
+      //  margin-left: percentage($gutter);
+    }
+
+    nav ul {
+      width: $pageWidth;
+    }
+
+    //@include establish-baseline();
+    .container {
+      width: $pageWidth;
+      overflow: visible;
+    }
+    .content{
+      overflow: visible;
+    }
+
+    /* end layout */
+  
+}

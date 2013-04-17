@@ -641,54 +641,6 @@ table {
 }
 
 /* @end */
-/* @end */
-/* @group type and images */
-/*image definitions and usefull classes*/
-img {
-  max-width: 100%;
-  margin: 1em;
-}
-
-figure, .cap {
-  font-size: 0.8em;
-  display: block;
-  margin: 0 1em 0;
-}
-
-.cap img, figcaption {
-  display: block;
-  margin-bottom: 0;
-}
-
-.text-align-left {
-  text-align: left;
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-.cleared {
-  clear: both;
-}
-
-/*links*/
-a:link {
-  color: #5ebdee;
-}
-a:visited {
-  color: #d05517;
-}
-a:hover, a:active {
-  color: #0d5173;
-}
-
-/* @end */
-/* @group mobile layout */
 @media only screen and (min-width: 320px) {
   /* Styles */
   /*start layout */
@@ -769,6 +721,140 @@ a:hover, a:active {
 /* @end*/
 /* @group tablet layout */
 @media only screen and (min-width: 768px) {
+  /* Styles */
+  .container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .col {
+    /*override mobile */
+    min-width: 0;
+    position: relative;
+  }
+
+  /*iPads (landscape)*/
+  .mobileOnly {
+    display: none;
+  }
+
+  /* iPads (portrait) ----------- */
+  /* end layout */
+  .mobileOnly {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ipad-break-landscape-expand {
+    clear: both;
+    width: 100%;
+  }
+
+  .ipad-break-landscape {
+    width: 48%;
+  }
+
+  .no-ipad {
+    display: none;
+  }
+
+  .sub-title {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .ipad-break-portrait, .ipad-break-landscape {
+    width: 48%;
+  }
+
+  .ipad-break-portrait-expand, .ipad-break-landscape-expand {
+    width: 100%;
+    clear: both;
+  }
+
+  .sub-title, .page-title {
+    float: none;
+    margin-left: 0;
+  }
+
+  .no-ipad {
+    display: none;
+  }
+}
+/* @end */
+/* @group desktop layout */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /*start layout */
+  nav ul {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .content {
+    overflow: visible;
+  }
+
+  /* end layout */
+}
+/* @end */
+/* @group type and images */
+/*image definitions and usefull classes*/
+img {
+  max-width: 100%;
+  margin: 1em;
+}
+
+figure, .cap {
+  font-size: 0.8em;
+  display: block;
+  margin: 0 1em 0;
+}
+
+.cap img, figcaption {
+  display: block;
+  margin-bottom: 0;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.cleared {
+  clear: both;
+}
+
+/*links*/
+a:link {
+  color: #5ebdee;
+}
+a:visited {
+  color: #d05517;
+}
+a:hover, a:active {
+  color: #0d5173;
+}
+
+/* @end */
+/* @group tablet layout */
+@media only screen and (min-width: 768px) {
   /* @group navigation */
   .menu, nav {
     clear: both;
@@ -838,110 +924,10 @@ a:hover, a:active {
   }
 
   /* @end */
-  /* Styles */
-  /* @group global layout */
-  header {
-    clear: both;
-  }
-
-  .sub-title {
-    margin-left: 20px;
-  }
-
   .container {
-    width: 100%;
-    overflow: visible;
-  }
-
-  .col {
-    min-width: 0;
-    position: relative;
-  }
-
-  /*iPads (landscape)*/
-  .mobileOnly {
-    display: none;
-  }
-
-  /* iPads (portrait) ----------- */
-  /* end layout */
-  .mobileOnly {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .ipad-break-landscape-expand {
-    clear: both;
-    width: 100%;
-  }
-
-  .ipad-break-landscape {
-    width: 48%;
-  }
-
-  .no-ipad {
-    display: none;
-  }
-
-  .sub-title {
-    margin-left: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
-
-  nav ul {
-    margin: 0 auto;
-    width: 100%;
-    background: #fafafa;
-    background: rgba(250, 250, 250, 0.5);
-    overflow: hidden;
-  }
-
-  nav li a {
-    padding: 10px;
-  }
-
-  .ipad-break-portrait, .ipad-break-landscape {
-    width: 48%;
-  }
-
-  .ipad-break-portrait-expand, .ipad-break-landscape-expand {
-    width: 100%;
-    clear: both;
-  }
-
-  .sub-title, .page-title {
-    float: none;
-    margin-left: 0;
-  }
-
-  .no-ipad {
-    display: none;
-  }
-}
-/* @end */
-/* @group desktop layout */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-  /*start layout */
-  nav ul {
-    width: 100%;
-  }
-
-  .container {
-    width: 100%;
-    overflow: visible;
-  }
-
-  .content {
-    overflow: visible;
-  }
-
-  /* end layout */
 }
 /* @end */
 /* @group forms */
