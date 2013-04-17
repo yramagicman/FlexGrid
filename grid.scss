@@ -45,7 +45,7 @@ $offsetSlug: offset !default;
   .#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
     padding-left: percentage($gutter);
-    width: $xwidth - $gutter * 100;
+    width: $xwidth;
     // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
  
   }
