@@ -849,7 +849,7 @@ a:hover, a:active {
   }
 
   .container {
-    width: 100%;
+    width: 90%;
     overflow: visible;
   }
 
@@ -889,7 +889,7 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .container {
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 
@@ -929,11 +929,11 @@ a:hover, a:active {
   /* Styles */
   /*start layout */
   nav ul {
-    width: 100%;
+    width: 90%;
   }
 
   .container {
-    width: 100%;
+    width: 90%;
     overflow: visible;
   }
 

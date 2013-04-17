@@ -1,10 +1,10 @@
 /* @group global classes */
 // grid definitions
 @import "mixins.scss";
-$pageWidth: 100%;
+$pageWidth: 90%;
 $desktopPageWidth: $pageWidth;
-$ipadPageWidthPortrait: 100%;
-$ipadPageWidthLandscape: 100%;
+$ipadPageWidthPortrait: 90%;
+$ipadPageWidthLandscape: 90%;
 $numCols: 12;
 $gutter: 0.02;
 $offset: 5.5;
