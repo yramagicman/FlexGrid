@@ -1,14 +1,14 @@
 /* @group global classes */
 // grid definitions
 @import "mixins.scss";
-$pageWidth: 100%;
-$desktopPageWidth: $pageWidth;
-$ipadPageWidthPortrait: 100%;
-$ipadPageWidthLandscape: 100%;
-$numCols: 12;
-$gutter: 0.02;
-$offset: 5.5;
 
+$pageWidth: 90%;
+$desktopPageWidth: $pageWidth;
+$ipadPageWidthPortrait: 90%;
+$ipadPageWidthLandscape: 90%;
+$numCols: 12;
+$gutter: 0.03;
+$offset: 5.5;
 
 // classes
 $classSlug: span !default;
@@ -25,7 +25,7 @@ $offsetSlug: offset !default;
 }
 
 .row {
-//  overflow: hidden;
+  //  overflow: hidden;
   clear: both;
   position: relative;
   width: 100%;
@@ -37,6 +37,16 @@ $offsetSlug: offset !default;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  margin: 0 percentage($gutter / 2);
+}
+.flush-left{
+    margin-left:0;
+}
+.flush-right{
+    margin-right:0;
+}
+.no-margin{
+    margin:0;
 }
 
 /* @end */
@@ -44,7 +54,6 @@ $offsetSlug: offset !default;
 @for $i from 1 through $numCols {
   .#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    margin: 0 percentage($gutter/2);
     width: $xwidth - $gutter * 100;
     // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
  
@@ -65,7 +74,7 @@ $offsetSlug: offset !default;
 /* @end */
 /* @group no margin */
 //@for $i from 1 through $numCols {
-//  .#{$classSlug}#{$i}-#{$no-margin} {
+//  .#{$classSlug}#{$i}.#{$no-margin} {
 //    $xwidth: percentage($i / $numCols);
 //    width: $xwidth;
 //    margin: 0;
@@ -77,28 +86,24 @@ $offsetSlug: offset !default;
 .#{$addBorder} {
   @include addBorder(1px, $borderStyle, $borderColor);
 }
+
 /* @end */
 /* @group pull and push*/
 @for $i from 1 through $numCols {
   .#{$pull}-#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    $offsetPos: $xwidth;
+    $z: $xwidth - $gutter * 100;
     left: 100 - $xwidth;
-    width: $xwidth;
-    margin-left: 0;
- 
+    width: $z;
   }
 }
 
 @for $i from 1 through $numCols {
   .#{$push}-#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    $offsetPos: $xwidth;
+    $z: $xwidth - $gutter * 100;
     left: (100 - $xwidth) * -1;
-    //@include clearfix;
-    width: $xwidth - $gutter * 98;
-    margin-left: 0;
- 
+    width: $z;
   }
 }
 
@@ -108,7 +113,8 @@ $offsetSlug: offset !default;
   .#{$offsetSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
     margin-left: $xwidth;
-//    margin-right: percentage( $gutter * -1);
+ 
   }
 }
+
 /* @end */

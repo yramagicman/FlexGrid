@@ -271,68 +271,69 @@ table {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  margin: 0 1.5%;
+}
+
+.flush-left {
+  margin-left: 0;
+}
+
+.flush-right {
+  margin-right: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 /* @end */
 /* @group default grid*/
 .span1 {
-  margin: 0 1%;
-  width: 6.33333%;
+  width: 5.33333%;
 }
 
 .span2 {
-  margin: 0 1%;
-  width: 14.66667%;
+  width: 13.66667%;
 }
 
 .span3 {
-  margin: 0 1%;
-  width: 23%;
+  width: 22%;
 }
 
 .span4 {
-  margin: 0 1%;
-  width: 31.33333%;
+  width: 30.33333%;
 }
 
 .span5 {
-  margin: 0 1%;
-  width: 39.66667%;
+  width: 38.66667%;
 }
 
 .span6 {
-  margin: 0 1%;
-  width: 48%;
+  width: 47%;
 }
 
 .span7 {
-  margin: 0 1%;
-  width: 56.33333%;
+  width: 55.33333%;
 }
 
 .span8 {
-  margin: 0 1%;
-  width: 64.66667%;
+  width: 63.66667%;
 }
 
 .span9 {
-  margin: 0 1%;
-  width: 73%;
+  width: 72%;
 }
 
 .span10 {
-  margin: 0 1%;
-  width: 81.33333%;
+  width: 80.33333%;
 }
 
 .span11 {
-  margin: 0 1%;
-  width: 89.66667%;
+  width: 88.66667%;
 }
 
 .span12 {
-  margin: 0 1%;
-  width: 98%;
+  width: 97%;
 }
 
 /* remove margins from every first child */
@@ -355,146 +356,122 @@ table {
 /* @group pull and push*/
 .pull-span1 {
   left: 91.66667%;
-  width: 8.33333%;
-  margin-left: 0;
+  width: 5.33333%;
 }
 
 .pull-span2 {
   left: 83.33333%;
-  width: 16.66667%;
-  margin-left: 0;
+  width: 13.66667%;
 }
 
 .pull-span3 {
   left: 75%;
-  width: 25%;
-  margin-left: 0;
+  width: 22%;
 }
 
 .pull-span4 {
   left: 66.66667%;
-  width: 33.33333%;
-  margin-left: 0;
+  width: 30.33333%;
 }
 
 .pull-span5 {
   left: 58.33333%;
-  width: 41.66667%;
-  margin-left: 0;
+  width: 38.66667%;
 }
 
 .pull-span6 {
   left: 50%;
-  width: 50%;
-  margin-left: 0;
+  width: 47%;
 }
 
 .pull-span7 {
   left: 41.66667%;
-  width: 58.33333%;
-  margin-left: 0;
+  width: 55.33333%;
 }
 
 .pull-span8 {
   left: 33.33333%;
-  width: 66.66667%;
-  margin-left: 0;
+  width: 63.66667%;
 }
 
 .pull-span9 {
   left: 25%;
-  width: 75%;
-  margin-left: 0;
+  width: 72%;
 }
 
 .pull-span10 {
   left: 16.66667%;
-  width: 83.33333%;
-  margin-left: 0;
+  width: 80.33333%;
 }
 
 .pull-span11 {
   left: 8.33333%;
-  width: 91.66667%;
-  margin-left: 0;
+  width: 88.66667%;
 }
 
 .pull-span12 {
   left: 0%;
-  width: 100%;
-  margin-left: 0;
+  width: 97%;
 }
 
 .push-span1 {
   left: -91.66667%;
-  width: 6.37333%;
-  margin-left: 0;
+  width: 5.33333%;
 }
 
 .push-span2 {
   left: -83.33333%;
-  width: 14.70667%;
-  margin-left: 0;
+  width: 13.66667%;
 }
 
 .push-span3 {
   left: -75%;
-  width: 23.04%;
-  margin-left: 0;
+  width: 22%;
 }
 
 .push-span4 {
   left: -66.66667%;
-  width: 31.37333%;
-  margin-left: 0;
+  width: 30.33333%;
 }
 
 .push-span5 {
   left: -58.33333%;
-  width: 39.70667%;
-  margin-left: 0;
+  width: 38.66667%;
 }
 
 .push-span6 {
   left: -50%;
-  width: 48.04%;
-  margin-left: 0;
+  width: 47%;
 }
 
 .push-span7 {
   left: -41.66667%;
-  width: 56.37333%;
-  margin-left: 0;
+  width: 55.33333%;
 }
 
 .push-span8 {
   left: -33.33333%;
-  width: 64.70667%;
-  margin-left: 0;
+  width: 63.66667%;
 }
 
 .push-span9 {
   left: -25%;
-  width: 73.04%;
-  margin-left: 0;
+  width: 72%;
 }
 
 .push-span10 {
   left: -16.66667%;
-  width: 81.37333%;
-  margin-left: 0;
+  width: 80.33333%;
 }
 
 .push-span11 {
   left: -8.33333%;
-  width: 89.70667%;
-  margin-left: 0;
+  width: 88.66667%;
 }
 
 .push-span12 {
   left: 0%;
-  width: 98.04%;
-  margin-left: 0;
+  width: 97%;
 }
 
 /* @end */
