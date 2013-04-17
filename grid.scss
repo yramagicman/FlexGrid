@@ -44,7 +44,7 @@ $offsetSlug: offset !default;
 @for $i from 1 through $numCols {
   .#{$classSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    margin-left: percentage($gutter);
+    margin: 0 percentage($gutter/2);
     width: $xwidth - $gutter * 100;
     // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
  
@@ -52,25 +52,25 @@ $offsetSlug: offset !default;
 }
 
 /* remove margins from every first child */
-.span1:first-child {
-  margin-left: 0;
-}
-
-@for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}:first-child {
-    @extend .span1:first-child;
-  }
-}
+//.span1:last-child {
+//  margin-right: 0;
+//}
+//
+//@for $i from 1 through $numCols {
+//  .#{$classSlug}#{$i}:last-child {
+//    @extend .span1:last-child;
+//  }
+//}
 
 /* @end */
 /* @group no margin */
-@for $i from 1 through $numCols {
-  .#{$classSlug}#{$i}-#{$no-margin} {
-    $xwidth: percentage($i / $numCols);
-    width: $xwidth;
-    margin-left: 0;
-  }
-}
+//@for $i from 1 through $numCols {
+//  .#{$classSlug}#{$i}-#{$no-margin} {
+//    $xwidth: percentage($i / $numCols);
+//    width: $xwidth;
+//    margin: 0;
+//  }
+//}
 
 /* @end */
 /* @group with a border */
@@ -107,11 +107,8 @@ $offsetSlug: offset !default;
 @for $i from 1 through $numCols - 1 {
   .#{$offsetSlug}#{$i} {
     $xwidth: percentage($i / $numCols);
-    margin-left: $xwidth - 4.49;
-    &:first-child {
-      margin-left: $xwidth - 4.49;
-   
-    }
+    margin-left: $xwidth;
+//    margin-right: percentage( $gutter * -1);
   }
 }
 /* @end */
