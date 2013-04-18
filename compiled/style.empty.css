@@ -270,7 +270,6 @@ table {
   float: left;
   overflow: hidden;
   position: relative;
-  box-sizing: border-box;
 }
 
 /* @end */

@@ -1,30 +1,10 @@
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
-$base: saturate(#228dc4, 10%);
-$secondary: complement($base);
-$darken-base: darken($base, 20%);
-$lighten-base: lighten($base, 20%);
-$lighten-secondary: lighten($secondary, 20%);
-$darken-secondary: darken($secondary, 20%);
 
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.7;
 $font-size: $base-font-size;
-$textColor: #444;
-$bgColor: #fff;
-
-$action: $secondary;
-$links: $lighten-base;
-$hover: $darken-base;
-$visited: $secondary;
 $borderColor: black;
-
-//Gradients
-$startColor: lighten($bgColor, 5%);
-$endColor: darken($bgColor, 20%);
-$startActionColor: lighten($action, 15%);
-$endActionColor: darken($action, 5%);
-
 @mixin clearfix {
   //&{clear:both;}
   &:after, &:before {
@@ -72,7 +52,7 @@ $borderStyle: solid !default;
   @include trailing-border($borderWidth, $lines, $font-size, $borderStyle);
 }
 
-@mixin simpleGradient($startColor, $endColor) {
+@mixin simpleGradient($startColor:#fff, $endColor: #000) {
   background: ie-hex-str($startColor);
   background: $startColor;
   background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
@@ -93,4 +73,11 @@ $borderStyle: solid !default;
         -webkit-box-shadow: $hoffset $voffset $blur $spread $color $inset;
         box-shadow: $hoffset $voffset $blur $spread $color $inset;   
     }
+}
+@mixin transition($property, $duration, $style){
+ -webkit-transition: $property $duration $style;
+ -moz-transition: $property $duration $style;
+ -o-transition: $property $duration $style;
+ -ms-transition: $property $duration $style;
+ transition: $property $duration $style;
 }
