@@ -274,18 +274,6 @@ table {
   margin: 0 1.5%;
 }
 
-.flush-left {
-  margin-left: 0;
-}
-
-.flush-right {
-  margin-right: 0;
-}
-
-.no-margin {
-  margin: 0;
-}
-
 /* @end */
 /* @group default grid*/
 .span1 {
@@ -521,6 +509,18 @@ table {
 }
 
 /* @end */
+.flush-left {
+  margin-left: 0;
+}
+
+.flush-right {
+  margin-right: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 /* @end */
 /* @group type and images */
 /*image definitions and usefull classes*/

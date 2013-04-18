@@ -39,16 +39,6 @@ $offsetSlug: offset !default;
   box-sizing: border-box;
   margin: 0 percentage($gutter / 2);
 }
-.flush-left{
-    margin-left:0;
-}
-.flush-right{
-    margin-right:0;
-}
-.no-margin{
-    margin:0;
-}
-
 /* @end */
 /* @group default grid*/
 @for $i from 1 through $numCols {
@@ -80,7 +70,6 @@ $offsetSlug: offset !default;
 //    margin: 0;
 //  }
 //}
-
 /* @end */
 /* @group with a border */
 .#{$addBorder} {
@@ -118,3 +107,13 @@ $offsetSlug: offset !default;
 }
 
 /* @end */
+.flush-left{
+    margin-left:0;
+}
+.flush-right{
+    margin-right:0;
+}
+.no-margin{
+    margin:0;
+}
+
