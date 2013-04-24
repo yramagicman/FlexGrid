@@ -46,7 +46,7 @@ $offsetSlug: offset !default;
     margin-left: percentage($gutter);
     width: $xwidth - $gutter * 100;
     // because the gutter is a percentage width, the var is exprssed as a decimal, this number multiplied by the decimal provides the optimum collumn width.
- 
+
   }
 }
 
@@ -85,7 +85,7 @@ $offsetSlug: offset !default;
     left: 100 - $xwidth;
     width: $xwidth;
     margin-left: 0;
- 
+
   }
 }
 
@@ -97,7 +97,7 @@ $offsetSlug: offset !default;
     //@include clearfix;
     width: $xwidth - $gutter * 98;
     margin-left: 0;
- 
+
   }
 }
 
@@ -109,7 +109,7 @@ $offsetSlug: offset !default;
     margin-left: $xwidth - 4.49;
     &:first-child {
       margin-left: $xwidth - 4.49;
-   
+
     }
   }
 }

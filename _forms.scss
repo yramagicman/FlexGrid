@@ -1,6 +1,7 @@
 input, textarea,select[size] {
   @include border-radius;
   border: $borderWidth#{px} $borderStyle lighten($borderColor, 50%);
+
   background: lighten($bgColor, 2%);
   padding: 5px;
   margin: 2px;
@@ -15,28 +16,29 @@ input {
   &[type=date],&[type=time],&[type=color], &[type=datetime] {
     padding: 0;
     background: #fff;
-    //border:inherit;
- 
   }
+
   &[type=range] {
     background: none;
     border: none;
     box-shadow: none;
   }
+
   &[type=submit] {
     @include simpleGradient($startColor, $endColor);
     box-shadow: none;
   }
+
 }
 
 textarea {
   width: 90%;
   height: 7em;
 }
-
 input:focus, textarea:focus {
   background-color: #fff;
   background-image: none;
   outline: none;
   box-shadow: none;
 }
+

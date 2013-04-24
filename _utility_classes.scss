@@ -8,13 +8,16 @@
   &:link, &:visited {
     color: white;
   }
+
   &:hover {
     //color: lighten($textColor, 50%);
     text-shadow: 0 -1px 1px darken($action, 50%);
   }
+
   &:active {
     @include simpleGradient($endActionColor, $startActionColor);
   }
+
 }
 
 .button {
@@ -27,14 +30,16 @@
   &:link, &:visited {
     color: black;
   }
+
   &:hover {
     text-shadow: 0 -1px 1px white;
   }
+
   &:active {
     @include simpleGradient($endColor, $startColor);
   }
-}
 
+}
 .zero-margin {
   margin: 0;
 }
@@ -42,7 +47,6 @@
 .zero-padding {
   padding: 0;
 }
-
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -58,7 +62,6 @@
   position: absolute;
   width: 1px;
 }
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -72,7 +75,6 @@
 .invisible {
   visibility: hidden;
 }
-
 .clearfix {
   @include clearfix;
 }

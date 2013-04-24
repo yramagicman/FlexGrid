@@ -21,16 +21,15 @@ header {
       position:static;
       padding: 0;
     }
+
   }
+
 }
-.pad{padding:0;}
-//nav .header-menu-list:before{
-//  content:"Hi";
-//  display:block;
-//  position:absolute;
-//  top:100em;
-//  left:0;
-//}
+
+.pad{
+    padding:0;
+}
+
 #nav:target {
   width: 100%;
   height: auto;
@@ -40,6 +39,7 @@ header {
     z-index: 10;
     width: 100% !important;
   }
+
   a {
     &:link, &:visited {
       display: block;
@@ -50,10 +50,13 @@ header {
       padding: 5px;
       text-decoration: none;
     }
+
   }
+
   &:after {
     content: "";
   }
+
 }
 
 .col {
@@ -68,19 +71,20 @@ header {
     padding: 5px;
     text-decoration: none;
     color: $textColor;
-  }
-
+}
 
 .hidenav {
   &:link, &:visited {
     display: none;
   }
+
 }
 
 #nav:target .shownav {
   &:link, &:visited {
     display: none !important;
   }
+
 }
 
 /* end layout */

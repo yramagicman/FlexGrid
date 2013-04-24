@@ -37,10 +37,12 @@ a {
   &:link {
     color: $links;
   }
+
   &:visited {
     color: $visited;
   }
   &:hover, &:active {
     color: $hover;
   }
+
 }

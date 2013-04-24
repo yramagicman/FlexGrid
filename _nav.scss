@@ -13,6 +13,7 @@ $subMenuWidth: 10em;
     top:0;
     z-index:10;
   }
+
   li {
     position: relative;
     float: left;
@@ -21,7 +22,9 @@ $subMenuWidth: 10em;
       padding: 5px 17px;
       float: left;
     }
+
   }
+
   .children, .sub-menu {
     position:absolute;
     top: 2em;
@@ -44,15 +47,20 @@ $subMenuWidth: 10em;
         &:hover{
           background: darken($bgColor, 15%);
         }
+
       }
+
     }
+
   }
+
 
   li:hover .children, li:hover .sub-menu {
     left:0;
     opacity:1;
-    
+
   }
+
   .children li .children, .sub-menu li .sub-menu {
     background: $bgColor;
     z-index: 10;
@@ -63,8 +71,11 @@ $subMenuWidth: 10em;
     -moz-transition: opacity 400ms ease;
     transition: opacity 400ms ease;
   }
+
   .children li:hover .children, .sub-menu li:hover .sub-menu {
     left: $subMenuWidth + 2.2;
     opacity:1;
   }
+
 }
+
