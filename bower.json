@@ -1,6 +1,6 @@
 {
   "name": "FlexGrid",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "main": "./*.scss, _mixins.scss",
   "ignore": [
     "**/.*",
